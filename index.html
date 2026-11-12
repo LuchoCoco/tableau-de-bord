@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Tableau de bord</title>
+
+<script>
+/* =====================================================================
+   CONFIGURATION — c'est la SEULE partie que tu as besoin de modifier.
+   Règles pour ne rien casser :
+   - garde les guillemets "..." autour des textes ;
+   - garde la virgule à la fin de chaque ligne (sauf la dernière d'un bloc) ;
+   - après une modification, recharge la page : si tu vois un bandeau rouge,
+     c'est qu'il y a une faute de frappe (souvent une virgule ou un guillemet).
+   ===================================================================== */
+var CONFIG = {
+
+  // ---- Lieu (sert à la météo et au lever/coucher du soleil) ----
+  ville: "Pontcarré",
+  pays: "FR",                       // code pays, pour éviter les villes homonymes
+  departement: "Seine-et-Marne",    // aide à choisir la bonne ville ("" si inutile)
+  fuseau: "Europe/Paris",
+  // La page trouve les coordonnées toute seule (géocodage Open-Meteo).
+  // Si jamais ça échoue, tu peux les forcer ici, par ex. { lat: 48.80, lon: 2.70 }
+  coordonneesForcees: null,
+
+  // ---- Météo (Open-Meteo, gratuit, sans clé) ----
+  meteo: {
+    actualisationMinutes: 15,       // fréquence de mise à jour
+    heuresAffichees: 8,             // nombre d'heures dans la prévision heure par heure
+    seuilPluie: 50                  // % de probabilité à partir duquel on annonce de la pluie
+  },
+
+  // ---- Agenda Google (via le script Google Apps Script, voir README) ----
+  agenda: {
+    // URL de ton application web Apps Script (elle finit par /exec).
+    // ATTENTION : si ton dépôt GitHub est public, NE la colle PAS ici
+    // (tout le monde pourrait lire ton agenda). Colle-la plutôt dans l'écran
+    // « Réglages » de la tablette : elle reste alors uniquement sur la tablette.
+    url: "",
+    joursAffiches: 7,               // nombre de jours à récupérer
+    actualisationMinutes: 10,
+    nbProchains: 3,                 // nombre d'événements listés sous la frise
+    exemplesSiVide: true            // affiche des événements d'exemple tant que l'agenda n'est pas connecté
+  },
+
+  // ---- Frise de la journée ----
+  frise: {
+    heureDebut: 7,                  // la frise commence à 7 h...
+    heureFin: 23                    // ...et finit à 23 h (elle s'élargit si un événement dépasse)
+  },
+
+  // ---- Actualités « Ce matin » ----
+  // La LISTE DES FLUX RSS est dans le fichier sources-actus.json (lu par le robot GitHub).
+  actus: {
+    fichier: "news.json",
+    nbAccueil: 5,                   // titres affichés sur l'écran principal
+    nbParTheme: 8,                  // titres par thème sur l'écran « Actus »
+    liensCliquables: true,          // toucher un titre ouvre l'article
+    ceJourLa: true,                 // ligne « Ce jour-là » (Wikipédia)
+    actualisationMinutes: 30
+  },
+
+  // ---- Cartes « À apprendre » ----
+  cartes: {
+    fichier: "cards.json",
+    inactiviteMinutes: 3,           // sans toucher l'écran pendant X min, les cartes défilent
+    secondesQuestion: 10,           // durée d'affichage de la question
+    secondesReponse: 12             // durée d'affichage de la réponse
+  },
+
+  // Retour automatique à l'écran principal après X minutes sans toucher l'écran
+  retourAccueilMinutes: 2,
+
+  // ---- Musique : tes playlists Spotify ----
+  // Pour obtenir un lien : dans Spotify > playlist > « ... » > Partager > Copier le lien.
+  // Couleurs possibles : n'importe quel code couleur (ex. "#1db954").
+  playlists: [
+    { nom: "Deep Focus",     lien: "https://open.spotify.com/playlist/37i9dQZF1DWZeKCadgRdKQ", couleur: "#2d6cdf" },
+    { nom: "Lofi beats",     lien: "https://open.spotify.com/playlist/37i9dQZF1DWWQRwui0ExPn", couleur: "#8a4fd8" },
+    { nom: "Peaceful Piano", lien: "https://open.spotify.com/playlist/37i9dQZF1DX4sWSpwq3LiO", couleur: "#1f9d74" },
+    { nom: "Top Hits",       lien: "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M", couleur: "#d0563b" }
+  ],
+  // Façon d'ouvrir Spotify : "intent" (recommandé dans Fully Kiosk), "spotify" ou "web".
+  // Si ça ne marche pas sur la tablette, essaie les autres dans l'écran Réglages.
+  methodeSpotify: "intent",
+
+  // ---- Mode nuit ----
+  nuit: {
+    actif: true,
+    debut: "22:30",                 // format HH:MM
+    fin: "07:00",
+    // Luminosité de l'écran (0 à 255). Ne fonctionne QUE dans Fully Kiosk avec
+    // l'« interface JavaScript » activée (option payante PLUS). Sinon la page
+    // assombrit seulement ses couleurs.
+    luminositeNuit: 5,
+    luminositeJour: 160,
+    deplacementMinutes: 5           // la grosse horloge de nuit change de place toutes les X minutes
+  },
+
+  // ---- Protection contre le marquage de l'écran (rémanence) ----
+  antiRemanence: {
+    pixelsMax: 6,                   // décalage maximal de toute la page, en pixels
+    intervalleMinutes: 3
+  },
+
+  // Rechargement automatique de la page une fois par jour (pour récupérer
+  // tes modifications). Seulement si internet fonctionne.
+  rechargementQuotidien: "04:00"
+};
+</script>
+
+<script>
+/* Filet de sécurité : toute erreur s'affiche en clair (bandeau rouge) au lieu d'un écran blanc. */
+window.__erreurs = [];
+window.onerror = function (message, fichier, ligne) {
+  var texte = message + (ligne ? ' (ligne ' + ligne + ')' : '');
+  window.__erreurs.push(texte);
+  var b = document.getElementById('erreur');
+  if (b) {
+    b.innerHTML = 'Erreur : ' + String(texte).replace(/</g, '&lt;') + '<br><small>Touchez pour masquer. Si vous venez de modifier CONFIG, vérifiez les virgules et guillemets.</small>';
+    b.style.display = 'block';
+  }
+  return false;
+};
+</script>
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 2.3vmin; }
+html, body { height: 100%; overflow: hidden; background: #0b0e13; }
+body {
+  color: #e8ecf1;
+  font-family: Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  -webkit-user-select: none; user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+button, input, select, textarea { font-family: inherit; font-size: 1rem; color: inherit; }
+button { background: #1d2430; border: 1px solid #2a3340; border-radius: .6rem; padding: .7rem 1.1rem; cursor: pointer; }
+button:active { background: #2a3444; }
+button.principal { background: #2d6cdf; border-color: #2d6cdf; color: #fff; }
+button.danger { background: #5a2020; border-color: #803030; }
+input, select, textarea { background: #0f141b; border: 1px solid #2a3340; border-radius: .5rem; padding: .7rem; -webkit-user-select: text; user-select: text; }
+
+#app { position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; flex-direction: column; padding: .6rem .7rem .4rem; transition: transform 3s; }
+.ecran { display: none; flex: 1; min-height: 0; flex-direction: column; }
+.ecran.actif { display: flex; }
+.rangee { display: flex; min-height: 0; }
+.rangee > * + * { margin-left: .6rem; }
+.carte { background: #131820; border: 1px solid #1c232d; border-radius: 1rem; padding: .8rem 1rem; min-width: 0; min-height: 0; overflow: hidden; position: relative; }
+.titre-carte { font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: #7d8898; margin-bottom: .4rem; }
+.titre-carte .droite { float: right; letter-spacing: 0; text-transform: none; }
+.discret { color: #7d8898; }
+.ellipse { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.vide { color: #6b7686; font-style: italic; }
+
+/* ---------- Écran principal ---------- */
+#rangee-haut { flex: 0 0 32%; margin-bottom: .6rem; }
+#rangee-bas { flex: 1; }
+#bloc-horloge { flex: 1.05; display: flex; flex-direction: column; justify-content: center; }
+#heure { font-size: 7.6rem; font-weight: 200; line-height: .95; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+#date { font-size: 1.9rem; font-weight: 300; margin-top: .3rem; }
+#soleil { font-size: 1.15rem; color: #b5bfcc; margin-top: .45rem; }
+#soleil span + span { margin-left: 1.2rem; }
+#soleil svg { width: 1.3rem; height: 1.3rem; vertical-align: -.25rem; margin-right: .2rem; }
+#etat-reseau { position: absolute; top: .6rem; right: .8rem; font-size: .8rem; color: #ffb86b; display: none; }
+
+#bloc-meteo { flex: 1.45; display: flex; flex-direction: column; }
+#meteo-haut { display: flex; align-items: center; }
+#meteo-icone svg { width: 4.8rem; height: 4.8rem; display: block; }
+#meteo-temp { font-size: 4.3rem; font-weight: 200; margin: 0 1rem 0 .4rem; line-height: 1; }
+#meteo-details { flex: 1; min-width: 0; font-size: 1.1rem; line-height: 1.45; }
+#meteo-desc { font-size: 1.35rem; }
+#meteo-pluie { color: #8ccaff; }
+#meteo-heures { display: flex; margin-top: auto; padding-top: .4rem; border-top: 1px solid #1f2731; }
+.heure-meteo { flex: 1; text-align: center; font-size: .95rem; }
+.heure-meteo svg { width: 2rem; height: 2rem; display: block; margin: .1rem auto; }
+.heure-meteo .pp { color: #8ccaff; font-size: .8rem; min-height: 1em; }
+
+#bloc-frise { flex: 0 0 auto; margin-bottom: .6rem; }
+#frise-journee { margin-bottom: .3rem; white-space: nowrap; overflow: hidden; }
+.puce { display: inline-block; background: #1e2633; border-radius: 1rem; padding: .15rem .7rem; font-size: .85rem; margin-right: .4rem; max-width: 40%; overflow: hidden; text-overflow: ellipsis; vertical-align: middle; }
+#frise-barre { position: relative; height: 3.1rem; background: #1a212b; border-radius: .6rem; overflow: hidden; }
+.frise-nuit { position: absolute; top: 0; bottom: 0; background: #0e1219; }
+.frise-evt { position: absolute; border-radius: .4rem; padding: .15rem .4rem; font-size: .82rem; line-height: 1.25; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; border-left: 3px solid #7cc4ff; background: rgba(124,196,255,.22); }
+.frise-evt.passe { opacity: .4; }
+#frise-maintenant { position: absolute; top: 0; bottom: 0; width: 2px; margin-left: -1px; background: #ff5b5b; }
+#frise-maintenant:before { content: ""; position: absolute; top: -3px; left: -4px; width: 10px; height: 10px; border-radius: 5px; background: #ff5b5b; }
+#frise-heures { position: relative; height: 1.3rem; font-size: .78rem; color: #7d8898; }
+#frise-heures span { position: absolute; top: .2rem; transform: translateX(-50%); }
+#frise-heures span.sol { color: #ffc65c; }
+#frise-bas { display: flex; margin-top: .3rem; }
+#prochains { flex: 2; min-width: 0; }
+#echeances-mini { flex: 1; min-width: 0; margin-left: 1rem; padding-left: 1rem; border-left: 1px solid #1f2731; }
+.ligne-evt { font-size: 1.05rem; line-height: 1.5; }
+.ligne-evt b { font-weight: 500; color: #9fd0ff; margin-right: .4rem; }
+.ligne-evt .dans { color: #ffb86b; font-size: .9rem; margin-left: .4rem; }
+.jx { display: inline-block; min-width: 3.4rem; font-weight: 600; color: #ffb86b; }
+.jx.proche { color: #ff6b6b; }
+
+#bloc-matin { flex: 1.5; display: flex; flex-direction: column; }
+#matin-liste { list-style: none; flex: 1; min-height: 0; overflow: hidden; }
+#matin-liste li { display: flex; align-items: baseline; font-size: 1.05rem; line-height: 1.35; padding: .28rem 0; border-bottom: 1px solid #1a212b; }
+#matin-liste li .h { color: #7d8898; font-size: .85rem; width: 3.3rem; flex: 0 0 3.3rem; }
+#matin-liste li .t { flex: 1; min-width: 0; }
+#matin-liste li .s { color: #7d8898; font-size: .8rem; margin-left: .6rem; white-space: nowrap; }
+#matin-wiki { font-size: .9rem; color: #aab4c2; margin-top: .35rem; line-height: 1.35; max-height: 2.7em; overflow: hidden; }
+#matin-wiki b { color: #c9a8ff; font-weight: 500; }
+
+#bloc-apprendre { flex: 1; display: flex; flex-direction: column; }
+.theme-carte { display: inline-block; font-size: .75rem; padding: .1rem .6rem; border-radius: 1rem; background: #2a2140; color: #c9a8ff; margin-bottom: .4rem; }
+.theme-carte.marketing { background: #3a2a18; color: #ffc27a; }
+.theme-carte.ia { background: #17304a; color: #8ccaff; }
+#cdj-question { font-size: 1.3rem; line-height: 1.35; font-weight: 500; }
+#cdj-reponse { flex: 1; min-height: 0; font-size: .98rem; line-height: 1.38; color: #c8d0db; margin-top: .4rem; overflow: hidden; }
+#cdj-reponse .ex { color: #8f9aab; font-size: .92rem; margin-top: .3rem; }
+#cdj-indice { flex: 0 0 auto; padding-top: .2rem; font-size: .8rem; color: #6b7686; }
+
+/* ---------- Écrans secondaires ---------- */
+.ecran h2 { font-size: 1.4rem; font-weight: 400; margin: .2rem 0 .7rem; }
+.defile { overflow-y: auto; -webkit-overflow-scrolling: touch; flex: 1; min-height: 0; }
+#actus-colonnes { display: flex; flex: 1; min-height: 0; }
+#actus-colonnes > .carte { flex: 1; display: flex; flex-direction: column; }
+#actus-colonnes > .carte + .carte { margin-left: .6rem; }
+.actu { padding: .5rem 0; border-bottom: 1px solid #1a212b; font-size: 1.05rem; line-height: 1.35; }
+.actu .meta { font-size: .8rem; color: #7d8898; margin-top: .15rem; }
+
+#cs-carte { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 1.5rem 2.5rem; }
+#cs-question { font-size: 2.1rem; line-height: 1.3; font-weight: 500; }
+#cs-reponse { font-size: 1.45rem; line-height: 1.45; color: #c8d0db; margin-top: 1.2rem; }
+#cs-reponse .ex { color: #8f9aab; font-size: 1.15rem; margin-top: .6rem; }
+.barre-boutons { display: flex; flex-wrap: wrap; align-items: center; margin-top: .6rem; }
+.barre-boutons > * { margin: 0 .5rem .4rem 0; }
+.barre-boutons button { min-height: 3.2rem; min-width: 5rem; }
+button.on { background: #2d6cdf; border-color: #2d6cdf; }
+
+#ech-form { display: flex; margin-bottom: .8rem; }
+#ech-form > * + * { margin-left: .5rem; }
+#ech-nom { flex: 2; }
+#ech-date { flex: 1; }
+.ech { display: flex; align-items: center; padding: .7rem .2rem; border-bottom: 1px solid #1a212b; font-size: 1.25rem; }
+.ech .jx { font-size: 1.6rem; min-width: 6rem; }
+.ech .n { flex: 1; min-width: 0; }
+.ech .d { color: #7d8898; font-size: .95rem; margin: 0 1rem; }
+.ech button { min-width: 4rem; min-height: 3rem; }
+textarea { width: 100%; height: 6rem; font-size: .85rem; font-family: monospace; }
+
+#musique-grille { display: flex; flex-wrap: wrap; align-content: flex-start; }
+.btn-musique { width: 31%; height: 9rem; margin: 0 2% 2% 0; border: none; border-radius: 1rem; font-size: 1.6rem; font-weight: 500; color: #fff; }
+
+.reglage { margin-bottom: 1.1rem; }
+.reglage label { display: block; color: #9aa5b4; font-size: .9rem; margin-bottom: .3rem; }
+.reglage .ligne { display: flex; }
+.reglage .ligne > * + * { margin-left: .5rem; }
+.reglage input[type=text] { flex: 1; min-width: 0; }
+#reg-infos { font-size: .85rem; color: #9aa5b4; line-height: 1.6; -webkit-user-select: text; user-select: text; }
+
+/* ---------- Barre de navigation ---------- */
+#nav { display: flex; flex: 0 0 auto; margin-top: .5rem; }
+#nav button { flex: 1; background: transparent; border: none; border-radius: .6rem; color: #8994a4; font-size: 1rem; padding: .75rem 0; }
+#nav button + button { margin-left: .3rem; }
+#nav button.actif { background: #1a212b; color: #e8ecf1; }
+
+/* ---------- Mode nuit ---------- */
+#ecran-nuit { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #000; z-index: 50; }
+body.nuit #ecran-nuit { display: block; }
+body.nuit.reveil #ecran-nuit { display: none; }
+body.nuit #app { opacity: .55; }
+body.nuit .masque-nuit { visibility: hidden; }
+#nuit-contenu { position: absolute; left: 50%; top: 50%; width: 80%; margin-left: -40%; text-align: center; color: #6e5a45; transition: transform 4s; }
+#nuit-heure { font-size: 15rem; font-weight: 200; line-height: 1; }
+#nuit-date { font-size: 1.8rem; margin-top: .4rem; }
+#nuit-infos { font-size: 1.3rem; margin-top: 1.2rem; color: #4f4234; line-height: 1.6; }
+
+/* ---------- Messages ---------- */
+#erreur { display: none; position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: #7a1d1d; color: #fff; padding: .6rem 1rem; font-size: .95rem; }
+#toast { display: none; position: fixed; bottom: 5rem; left: 50%; transform: translateX(-50%); background: #2a3444; padding: .7rem 1.4rem; border-radius: 2rem; z-index: 90; font-size: 1rem; }
+.incompat { padding: 2rem; font-size: 20px; line-height: 1.5; color: #fff; background: #222; }
+</style>
+</head>
+<body>
+<div id="erreur" data-action="fermer-erreur"></div>
+<div id="toast"></div>
+
+<div id="app">
+
+  <!-- =============== ÉCRAN PRINCIPAL =============== -->
+  <div id="ecran-accueil" class="ecran actif">
+    <div id="rangee-haut" class="rangee">
+      <section id="bloc-horloge" class="carte">
+        <div id="etat-reseau">● hors ligne</div>
+        <div id="heure">--:--</div>
+        <div id="date"></div>
+        <div id="soleil"></div>
+      </section>
+      <section id="bloc-meteo" class="carte">
+        <div id="meteo-haut">
+          <div id="meteo-icone"></div>
+          <div id="meteo-temp">--°</div>
+          <div id="meteo-details"><div class="vide">Chargement de la météo…</div></div>
+        </div>
+        <div id="meteo-heures"></div>
+      </section>
+    </div>
+
+    <section id="bloc-frise" class="carte">
+      <div class="titre-carte">Aujourd'hui <span class="droite discret" id="frise-info"></span></div>
+      <div id="frise-journee"></div>
+      <div id="frise-barre"></div>
+      <div id="frise-heures"></div>
+      <div id="frise-bas">
+        <div id="prochains"></div>
+        <div id="echeances-mini" data-action="ecran" data-cible="echeances"></div>
+      </div>
+    </section>
+
+    <div id="rangee-bas" class="rangee">
+      <section id="bloc-matin" class="carte masque-nuit">
+        <div class="titre-carte">Ce matin <span class="droite discret" id="matin-maj"></span></div>
+        <ul id="matin-liste"><li class="vide">Chargement des actus…</li></ul>
+        <div id="matin-wiki"></div>
+      </section>
+      <section id="bloc-apprendre" class="carte masque-nuit" data-action="reveler-cdj">
+        <div class="titre-carte" id="cdj-titre">Carte du jour</div>
+        <div><span class="theme-carte" id="cdj-theme"></span></div>
+        <div id="cdj-question" class="vide">Chargement des cartes…</div>
+        <div id="cdj-reponse"></div>
+        <div id="cdj-indice"></div>
+      </section>
+    </div>
+  </div>
+
+  <!-- =============== ACTUS =============== -->
+  <div id="ecran-actus" class="ecran">
+    <h2>Actualités <span class="discret" id="actus-maj"></span></h2>
+    <div id="actus-colonnes"></div>
+  </div>
+
+  <!-- =============== CARTES =============== -->
+  <div id="ecran-cartes" class="ecran">
+    <div class="barre-boutons" id="cs-filtres"></div>
+    <section id="cs-carte" class="carte" data-action="cs-reveler">
+      <div><span class="theme-carte" id="cs-theme"></span> <span class="discret" id="cs-compteur"></span></div>
+      <div id="cs-question"></div>
+      <div id="cs-reponse"></div>
+    </section>
+    <div class="barre-boutons">
+      <button data-action="cs-prec">◀ Précédente</button>
+      <button class="principal" data-action="cs-reveler">Voir la réponse</button>
+      <button data-action="cs-suiv">Suivante ▶</button>
+      <button id="cs-auto" data-action="cs-auto">Défilement auto</button>
+      <button data-action="cs-melanger">Mélanger</button>
+    </div>
+  </div>
+
+  <!-- =============== ÉCHÉANCES =============== -->
+  <div id="ecran-echeances" class="ecran">
+    <h2>Échéances</h2>
+    <div id="ech-form">
+      <input id="ech-nom" type="text" placeholder="Nom (ex. Partiel de stratégie)" maxlength="80">
+      <input id="ech-date" type="date" placeholder="JJ/MM/AAAA">
+      <button class="principal" data-action="ech-ajouter">Ajouter</button>
+    </div>
+    <div class="defile">
+      <div id="ech-liste"></div>
+      <div class="reglage" style="margin-top:1.5rem">
+        <label>Sauvegarde : « Exporter » écrit la liste ci-dessous (copie-la où tu veux). Pour restaurer, colle un texte exporté puis « Importer ».</label>
+        <textarea id="ech-texte"></textarea>
+        <div class="barre-boutons">
+          <button data-action="ech-exporter">Exporter</button>
+          <button data-action="ech-importer">Importer (remplace la liste)</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =============== MUSIQUE =============== -->
+  <div id="ecran-musique" class="ecran">
+    <h2>Musique</h2>
+    <div id="musique-grille"></div>
+    <div class="discret" style="font-size:.85rem">Les playlists s'ouvrent dans l'appli Spotify. Si rien ne se passe, change la « méthode Spotify » dans Réglages.</div>
+  </div>
+
+  <!-- =============== RÉGLAGES =============== -->
+  <div id="ecran-reglages" class="ecran">
+    <h2>Réglages</h2>
+    <div class="defile">
+      <div class="reglage">
+        <label>Adresse de l'agenda (URL Apps Script qui finit par /exec) — enregistrée uniquement sur cet appareil</label>
+        <div class="ligne">
+          <input id="reg-agenda" type="text" placeholder="https://script.google.com/macros/s/.../exec">
+          <button class="principal" data-action="reg-agenda">Enregistrer</button>
+          <button data-action="reg-agenda-effacer">Effacer</button>
+        </div>
+      </div>
+      <div class="reglage">
+        <label>Méthode d'ouverture de Spotify</label>
+        <div class="barre-boutons" id="reg-methodes"></div>
+      </div>
+      <div class="reglage">
+        <label>Outils</label>
+        <div class="barre-boutons">
+          <button data-action="reg-nuit-test">Tester le mode nuit (1 min)</button>
+          <button data-action="reg-maj">Mettre à jour les données</button>
+          <button data-action="reg-recharger">Recharger la page</button>
+        </div>
+      </div>
+      <div class="reglage">
+        <label>Informations (utile en cas de problème)</label>
+        <div id="reg-infos"></div>
+      </div>
+    </div>
+  </div>
+
+  <nav id="nav">
+    <button data-action="ecran" data-cible="accueil" class="actif">Accueil</button>
+    <button data-action="ecran" data-cible="actus" class="masque-nuit">Actus</button>
+    <button data-action="ecran" data-cible="cartes" class="masque-nuit">Cartes</button>
+    <button data-action="ecran" data-cible="echeances">Échéances</button>
+    <button data-action="ecran" data-cible="musique">Musique</button>
+    <button data-action="ecran" data-cible="reglages">Réglages</button>
+  </nav>
+</div>
+
+<!-- =============== ÉCRAN DE NUIT =============== -->
+<div id="ecran-nuit" data-action="nuit-reveil">
+  <div id="nuit-contenu">
+    <div id="nuit-heure">--:--</div>
+    <div id="nuit-date"></div>
+    <div id="nuit-infos"></div>
+  </div>
+</div>
+
+<script>
+/* =====================================================================
+   PROGRAMME — normalement tu n'as pas besoin de modifier la suite.
+   JavaScript volontairement « à l'ancienne » (ES5) pour les vieilles tablettes.
+   ===================================================================== */
+(function () {
+  'use strict';
+  var VERSION = '1.0';
+
+  /* ---------- 0. Vérification de compatibilité ---------- */
+  if (!window.JSON || !window.XMLHttpRequest || !document.querySelector || !document.addEventListener) {
+    document.body.innerHTML = '<div class="incompat">Ce navigateur est trop ancien pour ce tableau de bord.<br>' +
+      'Mets à jour « Android System WebView » (ou Chrome) depuis le Play Store, puis relance.</div>';
+    return;
+  }
+  var stockageOK = true;
+  try { localStorage.setItem('tdb.test', '1'); localStorage.removeItem('tdb.test'); } catch (e) { stockageOK = false; }
+
+  /* ---------- 1. Petits outils ---------- */
+  function $(id) { return document.getElementById(id); }
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+  function pad2(n) { return n < 10 ? '0' + n : '' + n; }
+  function hm(d) { return pad2(d.getHours()) + ':' + pad2(d.getMinutes()); }
+  var JOURS = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+  var JOURS_C = ['dim.', 'lun.', 'mar.', 'mer.', 'jeu.', 'ven.', 'sam.'];
+  var MOIS = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+  var MOIS_C = ['janv.', 'févr.', 'mars', 'avr.', 'mai', 'juin', 'juil.', 'août', 'sept.', 'oct.', 'nov.', 'déc.'];
+  function debutJour(d) { return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+  function ecartJours(a, b) { return Math.round((debutJour(b).getTime() - debutJour(a).getTime()) / 86400000); }
+  function cleDate(d) { return d.getFullYear() + '-' + pad2(d.getMonth() + 1) + '-' + pad2(d.getDate()); }
+  function parseLocal(s) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})(?:T(\d{2}):(\d{2}))?/.exec(s || '');
+    if (!m) return null;
+    return new Date(+m[1], +m[2] - 1, +m[3], m[4] ? +m[4] : 0, m[5] ? +m[5] : 0);
+  }
+  function minutesDe(texte) { var p = String(texte).split(':'); return (+p[0]) * 60 + (+(p[1] || 0)); }
+  function majuscule(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : s; }
+  function lire(cle, defaut) {
+    try { var v = localStorage.getItem('tdb.' + cle); return v === null ? defaut : JSON.parse(v); } catch (e) { return defaut; }
+  }
+  function ecrire(cle, v) { try { localStorage.setItem('tdb.' + cle, JSON.stringify(v)); } catch (e) {} }
+  function melanger(a) {
+    a = a.slice();
+    for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; }
+    return a;
+  }
+  function ajouterParam(url, k, v) { return url + (url.indexOf('?') < 0 ? '?' : '&') + k + '=' + encodeURIComponent(v); }
+  function jourRelatif(d, maintenant) {
+    var e = ecartJours(maintenant, d);
+    if (e === 0) return "Aujourd'hui";
+    if (e === 1) return 'Demain';
+    if (e > 1 && e < 7) return majuscule(JOURS[d.getDay()]);
+    return majuscule(JOURS_C[d.getDay()]) + ' ' + d.getDate() + ' ' + MOIS_C[d.getMonth()];
+  }
+  function dateCourte(d) { return JOURS_C[d.getDay()] + ' ' + d.getDate() + ' ' + MOIS_C[d.getMonth()]; }
+  function hexVersRgba(hex, a) {
+    var m = /^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(hex || '');
+    if (!m) return 'rgba(124,196,255,' + a + ')';
+    return 'rgba(' + parseInt(m[1], 16) + ',' + parseInt(m[2], 16) + ',' + parseInt(m[3], 16) + ',' + a + ')';
+  }
+  var toastMinuteur = null;
+  function toast(texte) {
+    var t = $('toast'); t.innerHTML = esc(texte); t.style.display = 'block';
+    clearTimeout(toastMinuteur);
+    toastMinuteur = setTimeout(function () { t.style.display = 'none'; }, 3500);
+  }
+  function signalerErreur(texte) { if (window.onerror) window.onerror(texte); }
+
+  /* Requête JSON (XMLHttpRequest : plus compatible que fetch sur les vieux Android). */
+  function getJSON(url, ok, ko, delai) {
+    var x = new XMLHttpRequest(), fini = false;
+    function fin(err, data) { if (fini) return; fini = true; if (err) { if (ko) ko(err); } else ok(data); }
+    try {
+      x.open('GET', url, true);
+      x.timeout = delai || 20000;
+    } catch (e) { fin('ouverture impossible'); return; }
+    x.onreadystatechange = function () {
+      if (x.readyState !== 4) return;
+      if (x.status >= 200 && x.status < 300) {
+        var d;
+        try { d = JSON.parse(x.responseText); } catch (e) { fin('JSON invalide'); return; }
+        fin(null, d);
+      } else fin(x.status ? 'erreur HTTP ' + x.status : 'pas de réponse (réseau ou blocage)');
+    };
+    x.ontimeout = function () { fin('délai dépassé'); };
+    try { x.send(); } catch (e) { fin('envoi impossible'); }
+  }
+  /* JSONP : plan B pour l'agenda si la lecture directe est bloquée (CORS). */
+  function jsonp(url, ok, ko) {
+    var nom = '__agenda' + new Date().getTime(), s = document.createElement('script'), fini = false;
+    var minuteur = setTimeout(function () { fin('délai dépassé'); }, 20000);
+    function fin(err, d) {
+      if (fini) return; fini = true; clearTimeout(minuteur);
+      window[nom] = function () {};
+      if (s.parentNode) s.parentNode.removeChild(s);
+      if (err) ko(err); else ok(d);
+    }
+    window[nom] = function (d) { fin(null, d); };
+    s.onerror = function () { fin('réponse illisible'); };
+    s.src = ajouterParam(url, 'callback', nom);
+    document.body.appendChild(s);
+  }
+
+  /* ---------- 2. Icônes météo (dessins SVG intégrés, fonctionnent hors ligne) ---------- */
+  var D = {
+    soleil: '<circle cx="32" cy="32" r="11" fill="#ffc65c"/><path d="M32 7v7M32 50v7M7 32h7M50 32h7M14 14l5 5M45 45l5 5M14 50l5-5M45 19l5-5" stroke="#ffc65c" stroke-width="4" stroke-linecap="round"/>',
+    lune: '<path d="M38 9a23 23 0 1 0 17 33A19 19 0 0 1 38 9z" fill="#d7dcef"/>',
+    nuage: '<path d="M19 50h28a10 10 0 0 0 0-20 14 14 0 0 0-27-4A12 12 0 0 0 19 50z" fill="#c9d3df"/>',
+    nuageSombre: '<path d="M19 50h28a10 10 0 0 0 0-20 14 14 0 0 0-27-4A12 12 0 0 0 19 50z" fill="#8f9bab"/>'
+  };
+  function svg(contenu) { return '<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">' + contenu + '</svg>'; }
+  function petit(contenu) { return '<g transform="translate(-6,-8) scale(.8)">' + contenu + '</g>'; }
+  function haut(contenu) { return '<g transform="translate(0,-9)">' + contenu + '</g>'; }
+  function icone(code, jour) {
+    var astre = jour === false || jour === 0 ? D.lune : D.soleil;
+    if (code === 0 || code === 1) return svg(astre);
+    if (code === 2) return svg(petit(astre) + D.nuage);
+    if (code === 3) return svg(D.nuage);
+    if (code === 45 || code === 48) return svg(haut(D.nuage) + '<path d="M12 50h40M18 57h30" stroke="#8f9bab" stroke-width="4" stroke-linecap="round"/>');
+    if (code >= 95) return svg(haut(D.nuageSombre) + '<path d="M34 40l-9 12h7l-3 10 11-14h-7l4-8z" fill="#ffd84d"/>');
+    if ((code >= 71 && code <= 77) || code === 85 || code === 86)
+      return svg(haut(D.nuage) + '<g fill="#e8f2ff"><circle cx="22" cy="52" r="3"/><circle cx="32" cy="57" r="3"/><circle cx="42" cy="52" r="3"/></g>');
+    if (code >= 51) return svg(haut(D.nuageSombre) + '<path d="M23 48l-3 8M33 48l-3 8M43 48l-3 8" stroke="#6fb6ff" stroke-width="4" stroke-linecap="round"/>');
+    return svg(D.nuage);
+  }
+  var TEXTE_METEO = {
+    0: 'Ciel dégagé', 1: 'Plutôt dégagé', 2: 'Partiellement nuageux', 3: 'Couvert',
+    45: 'Brouillard', 48: 'Brouillard givrant',
+    51: 'Bruine légère', 53: 'Bruine', 55: 'Bruine forte', 56: 'Bruine verglaçante', 57: 'Bruine verglaçante',
+    61: 'Pluie faible', 63: 'Pluie', 65: 'Forte pluie', 66: 'Pluie verglaçante', 67: 'Pluie verglaçante',
+    71: 'Neige faible', 73: 'Neige', 75: 'Forte neige', 77: 'Grains de neige',
+    80: 'Averses', 81: 'Averses', 82: 'Fortes averses', 85: 'Averses de neige', 86: 'Fortes averses de neige',
+    95: 'Orage', 96: 'Orage et grêle', 99: 'Orage et grêle'
+  };
+  var ICONE_LEVER = svg('<path d="M10 46h44" stroke="#ffc65c" stroke-width="4" stroke-linecap="round"/><path d="M20 46a12 12 0 0 1 24 0z" fill="#ffc65c"/><path d="M32 30V12M25 19l7-7 7 7" stroke="#ffc65c" stroke-width="4" fill="none" stroke-linecap="round"/>');
+  var ICONE_COUCHER = svg('<path d="M10 46h44" stroke="#ff9a5c" stroke-width="4" stroke-linecap="round"/><path d="M20 46a12 12 0 0 1 24 0z" fill="#ff9a5c"/><path d="M32 12v18M25 23l7 7 7-7" stroke="#ff9a5c" stroke-width="4" fill="none" stroke-linecap="round"/>');
+
+  /* ---------- 3. État de l'application (avec les dernières données connues) ---------- */
+  var S = {
+    meteo: lire('meteo', null),
+    agenda: lire('agenda', null),
+    actus: lire('actus', null),
+    wiki: lire('wiki', null),
+    cartes: lire('cartes', null),
+    echeances: lire('echeances', []),
+    essais: {},          // heure du dernier essai de chaque chargement
+    statut: {},          // texte d'état de chaque source (pour Réglages)
+    ecran: 'accueil',
+    dernierTouch: new Date().getTime(),
+    demarrage: new Date().getTime(),
+    derniereMinute: -1,
+    nuit: null,
+    reveilJusqua: 0,
+    testNuitJusqua: 0,
+    cdj: null,           // carte du jour
+    cdjRevele: false,
+    rev: null,           // révision automatique sur l'écran principal
+    cs: { filtre: 'Tous', liste: [], i: 0, revele: false, auto: false, depuis: 0 },
+    suppression: null
+  };
+
+  /* ---------- 4. Horloge ---------- */
+  function soleilDuJour() {
+    var m = S.meteo;
+    if (!m || !m.daily || !m.daily.sunrise) return null;
+    var cle = cleDate(new Date());
+    for (var i = 0; i < m.daily.time.length; i++) {
+      if (m.daily.time[i] === cle) return { lever: parseLocal(m.daily.sunrise[i]), coucher: parseLocal(m.daily.sunset[i]) };
+    }
+    return null;
+  }
+  function rendreHorloge() {
+    var n = new Date();
+    $('heure').innerHTML = hm(n);
+    $('date').innerHTML = majuscule(JOURS[n.getDay()]) + ' ' + n.getDate() + ' ' + MOIS[n.getMonth()];
+    var s = soleilDuJour();
+    $('soleil').innerHTML = s ? '<span>' + ICONE_LEVER + hm(s.lever) + '</span><span>' + ICONE_COUCHER + hm(s.coucher) + '</span>' : '';
+  }
+  function rendreEtatReseau() {
+    var horsLigne = navigator.onLine === false || S.statut.meteoEchec;
+    var el = $('etat-reseau');
+    if (horsLigne) {
+      var depuis = S.meteo && S.meteo.recu ? ' · données de ' + hm(new Date(S.meteo.recu)) : '';
+      el.innerHTML = '● hors ligne' + depuis;
+      el.style.display = 'block';
+    } else el.style.display = 'none';
+  }
+
+  /* ---------- 5. Météo (Open-Meteo) ---------- */
+  function trouverCoordonnees(ok, ko) {
+    if (CONFIG.coordonneesForcees) { ok(CONFIG.coordonneesForcees); return; }
+    var cle = CONFIG.ville + '|' + CONFIG.pays + '|' + CONFIG.departement;
+    var c = lire('coords', null);
+    if (c && c.cle === cle) { ok(c); return; }
+    getJSON('https://geocoding-api.open-meteo.com/v1/search?count=10&language=fr&format=json&name=' + encodeURIComponent(CONFIG.ville),
+      function (d) {
+        var res = (d && d.results) || [], choix = null, i, r;
+        for (i = 0; i < res.length && !choix; i++) {
+          r = res[i];
+          if (CONFIG.pays && r.country_code !== CONFIG.pays) continue;
+          if (CONFIG.departement && r.admin2 !== CONFIG.departement && r.admin1 !== CONFIG.departement) continue;
+          choix = r;
+        }
+        for (i = 0; i < res.length && !choix; i++) if (!CONFIG.pays || res[i].country_code === CONFIG.pays) choix = res[i];
+        if (!choix) { ko('ville « ' + CONFIG.ville + ' » introuvable'); return; }
+        c = { cle: cle, lat: choix.latitude, lon: choix.longitude, nom: choix.name, region: choix.admin2 || choix.admin1 || '' };
+        ecrire('coords', c);
+        ok(c);
+      }, ko);
+  }
+  function chargerMeteo() {
+    S.essais.meteo = new Date().getTime();
+    function echec(e) { S.statut.meteoEchec = true; S.statut.meteo = 'échec : ' + e; rendreEtatReseau(); }
+    trouverCoordonnees(function (c) {
+      var url = 'https://api.open-meteo.com/v1/forecast?latitude=' + c.lat + '&longitude=' + c.lon +
+        '&current=temperature_2m,apparent_temperature,weather_code,is_day,precipitation' +
+        '&hourly=temperature_2m,precipitation_probability,precipitation,weather_code,is_day' +
+        '&daily=temperature_2m_max,temperature_2m_min,sunrise,sunset' +
+        '&timezone=' + encodeURIComponent(CONFIG.fuseau) + '&forecast_days=3';
+      getJSON(url, function (d) {
+        if (!d || !d.current || !d.hourly) { echec('réponse inattendue'); return; }
+        d.recu = new Date().getTime();
+        d.lieu = c.nom ? c.nom + (c.region ? ' (' + c.region + ')' : '') : '';
+        S.meteo = d; ecrire('meteo', d);
+        S.statut.meteoEchec = false; S.statut.meteo = 'OK, ' + hm(new Date());
+        rendreMeteo(); rendreHorloge(); rendreFrise(); rendreEtatReseau();
+      }, echec);
+    }, echec);
+  }
+  function rendreMeteo() {
+    var m = S.meteo;
+    if (!m || !m.current) return;
+    var c = m.current, h = m.hourly, n = new Date();
+    $('meteo-icone').innerHTML = icone(c.weather_code, c.is_day);
+    $('meteo-temp').innerHTML = Math.round(c.temperature_2m) + '°';
+    // Index de l'heure en cours dans la prévision horaire
+    var debut = 0;
+    for (var i = 0; i < h.time.length; i++) { if (parseLocal(h.time[i]).getTime() <= n.getTime()) debut = i; else break; }
+    // Min / max du jour
+    var mm = '', cle = cleDate(n);
+    for (i = 0; i < m.daily.time.length; i++) if (m.daily.time[i] === cle)
+      mm = 'Min ' + Math.round(m.daily.temperature_2m_min[i]) + '° · Max ' + Math.round(m.daily.temperature_2m_max[i]) + '°';
+    // Résumé pluie sur les 12 prochaines heures
+    var pluie = null, finPluie = null, probaMax = 0;
+    for (i = debut; i < Math.min(debut + 12, h.time.length); i++) {
+      var mouille = h.precipitation_probability[i] >= CONFIG.meteo.seuilPluie || h.precipitation[i] >= 0.3;
+      if (mouille) {
+        if (pluie === null) pluie = i;
+        if (finPluie === null || finPluie === i - 1) finPluie = i;
+        if (h.precipitation_probability[i] > probaMax) probaMax = h.precipitation_probability[i];
+      }
+    }
+    var txtPluie;
+    if (pluie === null) txtPluie = 'Pas de pluie prévue dans les 12 h';
+    else {
+      var p1 = parseLocal(h.time[pluie]), p2 = parseLocal(h.time[finPluie]);
+      p2 = new Date(p2.getTime() + 3600000);
+      txtPluie = (pluie === debut ? 'Pluie en ce moment, jusqu\'à ' + p2.getHours() + ' h' : 'Pluie probable ' + p1.getHours() + ' h–' + p2.getHours() + ' h') +
+        (probaMax ? ' (' + probaMax + ' %)' : '');
+    }
+    $('meteo-details').innerHTML =
+      '<div id="meteo-desc">' + esc(TEXTE_METEO[c.weather_code] || '—') + '</div>' +
+      '<div>Ressenti ' + Math.round(c.apparent_temperature) + '°</div>' +
+      '<div class="discret">' + mm + '</div>' +
+      '<div id="meteo-pluie">' + txtPluie + '</div>';
+    // Heure par heure
+    var html = '';
+    for (i = debut + 1; i <= Math.min(debut + CONFIG.meteo.heuresAffichees, h.time.length - 1); i++) {
+      var pp = h.precipitation_probability[i];
+      html += '<div class="heure-meteo"><div>' + parseLocal(h.time[i]).getHours() + ' h</div>' + icone(h.weather_code[i], h.is_day[i]) +
+        '<div>' + Math.round(h.temperature_2m[i]) + '°</div><div class="pp">' + (pp >= 20 ? pp + ' %' : '') + '</div></div>';
+    }
+    $('meteo-heures').innerHTML = html;
+  }
+
+  /* ---------- 6. Agenda ---------- */
+  function urlAgenda() { return lire('agendaUrl', '') || CONFIG.agenda.url || ''; }
+  function evenementsExemple() {
+    var j = debutJour(new Date()), y = j.getFullYear(), mo = j.getMonth(), d = j.getDate();
+    function ev(titre, jour, h1, m1, h2, m2) {
+      return { titre: titre, debut: new Date(y, mo, d + jour, h1, m1).getTime(), fin: new Date(y, mo, d + jour, h2, m2).getTime(), journee: false, couleur: '#7cc4ff' };
+    }
+    return [
+      ev('Cours : stratégie de marque', 0, 9, 0, 11, 0), ev('Déjeuner', 0, 12, 30, 13, 30),
+      ev('Mémoire — revue de littérature', 0, 14, 0, 17, 0), ev('Sport', 0, 18, 30, 19, 30),
+      ev('Réunion projet de groupe', 1, 10, 0, 11, 30)
+    ];
+  }
+  function chargerAgenda() {
+    S.essais.agenda = new Date().getTime();
+    var u = urlAgenda();
+    if (!u) { S.statut.agenda = 'non connecté (voir README)'; rendreFrise(); return; }
+    u = ajouterParam(ajouterParam(u, 'jours', CONFIG.agenda.joursAffiches), 't', new Date().getTime());
+    function succes(d) {
+      if (!d || !d.evenements) { echec('réponse inattendue'); return; }
+      d.recu = new Date().getTime();
+      S.agenda = d; ecrire('agenda', d);
+      S.statut.agenda = 'OK, ' + d.evenements.length + ' événement(s), ' + hm(new Date());
+      rendreFrise(); rendreNuit();
+    }
+    function echec(e) {
+      S.statut.agenda = 'échec : ' + e + ' (vérifie que le déploiement est accessible à « Tout le monde »)';
+      rendreFrise();
+    }
+    // Plan A : lecture directe. Plan B : JSONP (contourne un éventuel blocage CORS).
+    getJSON(u, succes, function () { jsonp(u, succes, echec); });
+  }
+  function evenements() {
+    if (S.agenda && S.agenda.evenements) return S.agenda.evenements;
+    if (!urlAgenda() && CONFIG.agenda.exemplesSiVide) return evenementsExemple();
+    return [];
+  }
+  function finEvt(ev) { return ev.journee && ev.fin <= ev.debut ? ev.debut + 86400000 : ev.fin; }
+
+  /* ---------- 7. Frise de la journée ---------- */
+  function rendreFrise() {
+    var n = new Date(), maintenant = n.getTime();
+    var j0 = debutJour(n), y = j0.getFullYear(), mo = j0.getMonth(), d = j0.getDate();
+    var demain = new Date(y, mo, d + 1).getTime();
+    var evts = evenements(), duJour = [], journee = [], i, ev;
+    for (i = 0; i < evts.length; i++) {
+      ev = evts[i];
+      if (ev.debut < demain && finEvt(ev) > j0.getTime()) { if (ev.journee) journee.push(ev); else duJour.push(ev); }
+    }
+    // Plage horaire (s'élargit si un événement dépasse)
+    var hD = CONFIG.frise.heureDebut, hF = CONFIG.frise.heureFin;
+    for (i = 0; i < duJour.length; i++) {
+      var a = new Date(Math.max(duJour[i].debut, j0.getTime())), b = new Date(Math.min(duJour[i].fin, demain));
+      if (a.getHours() < hD) hD = a.getHours();
+      var hb = b.getTime() >= demain ? 24 : b.getHours() + (b.getMinutes() > 0 ? 1 : 0);
+      if (hb > hF) hF = hb;
+    }
+    var t0 = new Date(y, mo, d, hD).getTime(), t1 = new Date(y, mo, d, hF).getTime();
+    function pct(t) { return Math.max(0, Math.min(100, (t - t0) / (t1 - t0) * 100)); }
+
+    var html = '', s = soleilDuJour();
+    if (s) {
+      html += '<div class="frise-nuit" style="left:0;width:' + pct(s.lever.getTime()) + '%"></div>';
+      html += '<div class="frise-nuit" style="left:' + pct(s.coucher.getTime()) + '%;right:0"></div>';
+    }
+    // Répartition en « voies » quand des événements se chevauchent (3 max)
+    duJour.sort(function (p, q) { return p.debut - q.debut; });
+    var voies = [], place = [];
+    for (i = 0; i < duJour.length; i++) {
+      var v = 0;
+      while (v < voies.length && voies[v] > duJour[i].debut) v++;
+      if (v > 2) v = 2;
+      voies[v] = duJour[i].fin; place.push(v);
+    }
+    var nbVoies = Math.max(1, Math.min(3, voies.length));
+    for (i = 0; i < duJour.length; i++) {
+      ev = duJour[i];
+      var g = pct(ev.debut), l = Math.max(pct(ev.fin) - g, 0.6), hauteur = 100 / nbVoies;
+      var coul = ev.couleur || '#7cc4ff';
+      html += '<div class="frise-evt' + (ev.fin < maintenant ? ' passe' : '') + '" style="left:' + g + '%;width:' + l + '%;top:' + (place[i] * hauteur) +
+        '%;height:' + hauteur + '%;border-left-color:' + esc(coul) + ';background:' + hexVersRgba(coul, 0.25) + '">' +
+        (nbVoies < 3 ? hm(new Date(ev.debut)) + ' ' : '') + esc(ev.titre) + '</div>';
+    }
+    if (maintenant >= t0 && maintenant <= t1) html += '<div id="frise-maintenant" style="left:' + pct(maintenant) + '%"></div>';
+    $('frise-barre').innerHTML = html;
+
+    // Graduations des heures + lever/coucher
+    var pas = hF - hD > 12 ? 2 : 1, lab = '', marques = [];
+    if (s) marques = [pct(s.lever.getTime()), pct(s.coucher.getTime())];
+    for (var hh = hD + 1; hh < hF; hh++) {
+      if (hh % pas) continue;
+      var p = pct(new Date(y, mo, d, hh).getTime()), proche = false;
+      for (i = 0; i < marques.length; i++) if (Math.abs(marques[i] - p) < 4) proche = true;
+      if (!proche) lab += '<span style="left:' + p + '%">' + hh + 'h</span>';
+    }
+    if (s) {
+      if (marques[0] > 2 && marques[0] < 98) lab += '<span class="sol" style="left:' + marques[0] + '%">☼ ' + hm(s.lever) + '</span>';
+      if (marques[1] > 2 && marques[1] < 98) lab += '<span class="sol" style="left:' + marques[1] + '%">☾ ' + hm(s.coucher) + '</span>';
+    }
+    $('frise-heures').innerHTML = lab;
+
+    // Événements sur toute la journée
+    var puces = '';
+    for (i = 0; i < journee.length; i++) puces += '<span class="puce">' + esc(journee[i].titre) + '</span>';
+    $('frise-journee').innerHTML = puces;
+    $('frise-journee').style.display = puces ? 'block' : 'none';
+
+    var info = duJour.length ? duJour.length + ' événement' + (duJour.length > 1 ? 's' : '') + ' aujourd\'hui' : 'rien de prévu aujourd\'hui';
+    if (!urlAgenda()) info += CONFIG.agenda.exemplesSiVide ? ' · EXEMPLES, agenda non connecté' : ' · agenda non connecté';
+    else if (S.agenda && S.agenda.recu) info += ' · agenda à jour de ' + hm(new Date(S.agenda.recu));
+    $('frise-info').innerHTML = esc(info);
+
+    // Prochains événements
+    var proch = [];
+    for (i = 0; i < evts.length && proch.length < CONFIG.agenda.nbProchains; i++) {
+      ev = evts[i];
+      if (finEvt(ev) <= maintenant) continue;
+      if (ev.journee && ev.debut < demain) continue; // déjà dans les puces du jour
+      proch.push(ev);
+    }
+    proch.sort(function (p, q) { return p.debut - q.debut; });
+    var lp = '';
+    for (i = 0; i < proch.length; i++) {
+      ev = proch[i];
+      var dd = new Date(ev.debut), quand = ecartJours(n, dd) === 0 && !ev.journee ? hm(dd) : jourRelatif(dd, n) + (ev.journee ? '' : ' ' + hm(dd)), dans = '';
+      if (ev.debut <= maintenant) dans = 'en cours';
+      else if (ev.debut - maintenant < 3600000) dans = 'dans ' + Math.ceil((ev.debut - maintenant) / 60000) + ' min';
+      lp += '<div class="ligne-evt ellipse"><b>' + quand + '</b>' + esc(ev.titre) + (dans ? '<span class="dans">' + dans + '</span>' : '') + '</div>';
+    }
+    $('prochains').innerHTML = lp || '<div class="ligne-evt vide">Aucun événement à venir</div>';
+    rendreEcheancesMini();
+  }
+
+  /* ---------- 8. Échéances (stockées sur la tablette) ---------- */
+  function jx(dateTexte) {
+    var d = parseLocal(dateTexte), e = ecartJours(new Date(), d);
+    if (e === 0) return { txt: "Aujourd'hui", e: 0 };
+    if (e > 0) return { txt: 'J-' + e, e: e };
+    return { txt: 'J+' + (-e), e: e };
+  }
+  function echeancesTriees() {
+    return S.echeances.slice().sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : 0; });
+  }
+  function rendreEcheancesMini() {
+    var l = echeancesTriees(), html = '', n = 0;
+    for (var i = 0; i < l.length && n < 3; i++) {
+      var r = jx(l[i].date);
+      if (r.e < 0) continue;
+      html += '<div class="ligne-evt ellipse"><span class="jx' + (r.e <= 3 ? ' proche' : '') + '">' + r.txt + '</span>' + esc(l[i].nom) + '</div>';
+      n++;
+    }
+    $('echeances-mini').innerHTML = html || '<div class="ligne-evt vide">Aucune échéance — touche pour en ajouter</div>';
+  }
+  function rendreEcheances() {
+    var l = echeancesTriees(), html = '';
+    for (var i = 0; i < l.length; i++) {
+      var r = jx(l[i].date), d = parseLocal(l[i].date), conf = S.suppression === l[i].id;
+      html += '<div class="ech"><span class="jx' + (r.e >= 0 && r.e <= 3 ? ' proche' : '') + '"' + (r.e < 0 ? ' style="color:#6b7686"' : '') + '>' + r.txt + '</span>' +
+        '<span class="n ellipse">' + esc(l[i].nom) + '</span><span class="d">' + dateCourte(d) + ' ' + d.getFullYear() + '</span>' +
+        '<button class="' + (conf ? 'danger' : '') + '" data-action="ech-suppr" data-id="' + esc(l[i].id) + '">' + (conf ? 'Supprimer ?' : '✕') + '</button></div>';
+    }
+    $('ech-liste').innerHTML = html || '<div class="vide" style="padding:1rem 0">Aucune échéance pour le moment.</div>';
+  }
+  function lireDateSaisie(v) {
+    v = (v || '').replace(/\s/g, '');
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(v);
+    if (m) return v;
+    m = /^(\d{1,2})[\/.\-](\d{1,2})[\/.\-](\d{2,4})$/.exec(v);
+    if (m) { var a = +m[3]; if (a < 100) a += 2000; return a + '-' + pad2(+m[2]) + '-' + pad2(+m[1]); }
+    return null;
+  }
+  function sauverEcheances() {
+    ecrire('echeances', S.echeances);
+    if (!stockageOK) toast('Attention : stockage indisponible, rien ne sera sauvegardé');
+  }
+
+  /* ---------- 9. Actus + « Ce jour-là » ---------- */
+  function chargerActus() {
+    S.essais.actus = new Date().getTime();
+    getJSON(ajouterParam(CONFIG.actus.fichier, 't', new Date().getTime()), function (d) {
+      if (!d || !d.themes) { S.statut.actus = 'fichier news.json inattendu'; return; }
+      S.actus = d; ecrire('actus', d);
+      S.statut.actus = 'OK, généré le ' + (d.genereMs ? dateCourte(new Date(d.genereMs)) + ' ' + hm(new Date(d.genereMs)) : '?');
+      rendreActus();
+    }, function (e) { S.statut.actus = 'échec : ' + e; });
+  }
+  function chargerWiki() {
+    if (!CONFIG.actus.ceJourLa) return;
+    var n = new Date(), cle = cleDate(n);
+    if (S.wiki && S.wiki.date === cle) return;
+    S.essais.wiki = n.getTime();
+    var chemin = 'feed/onthisday/events/' + pad2(n.getMonth() + 1) + '/' + pad2(n.getDate());
+    function ok(d) {
+      var ev = (d && d.events) || [], choisis = [];
+      for (var i = 0; i < ev.length; i++) if (ev[i].year && ev[i].text) choisis.push({ annee: ev[i].year, texte: ev[i].text });
+      if (!choisis.length) return;
+      S.wiki = { date: cle, evenements: choisis }; ecrire('wiki', S.wiki);
+      S.statut.wiki = 'OK, ' + hm(new Date());
+      rendreActus();
+    }
+    getJSON('https://fr.wikipedia.org/api/rest_v1/' + chemin, ok, function () {
+      getJSON('https://api.wikimedia.org/feed/v1/wikipedia/fr/' + chemin.replace('feed/', ''), ok, function (e) { S.statut.wiki = 'échec : ' + e; });
+    });
+  }
+  function nettoyerWiki(t) { return majuscule(String(t).replace(/\s*\((photo|image|illustration)\)/g, '').replace(/,+\./g, '.').replace(/\s+/g, ' ')); }
+  function evenementWikiDuJour() {
+    if (!S.wiki || S.wiki.date !== cleDate(new Date()) || !S.wiki.evenements.length) return null;
+    var e = S.wiki.evenements, idx = new Date().getFullYear() % e.length;  // le même toute la journée
+    return e[idx];
+  }
+  function heureActu(ms) {
+    if (!ms) return '';
+    var d = new Date(ms), n = new Date();
+    return ecartJours(d, n) === 0 ? hm(d) : (ecartJours(d, n) === 1 ? 'hier' : d.getDate() + ' ' + MOIS_C[d.getMonth()]);
+  }
+  function itemsAccueil() {
+    var th = (S.actus && S.actus.themes) || [], res = [], pos = [], encore = true, i;
+    for (i = 0; i < th.length; i++) pos.push(0);
+    // On pioche à tour de rôle dans chaque thème (France, International...)
+    while (res.length < CONFIG.actus.nbAccueil && encore) {
+      encore = false;
+      for (i = 0; i < th.length && res.length < CONFIG.actus.nbAccueil; i++) {
+        if (pos[i] < th[i].items.length) { res.push(th[i].items[pos[i]]); pos[i]++; encore = true; }
+      }
+    }
+    res.sort(function (p, q) { return (q.dateMs || 0) - (p.dateMs || 0); });
+    return res;
+  }
+  function attributsLien(lien) { return CONFIG.actus.liensCliquables && lien ? ' data-action="actu" data-lien="' + esc(lien) + '"' : ''; }
+  function rendreActus() {
+    var a = S.actus, html = '', i, it;
+    var items = itemsAccueil();
+    for (i = 0; i < items.length; i++) {
+      it = items[i];
+      html += '<li' + attributsLien(it.lien) + '><span class="h">' + heureActu(it.dateMs) + '</span><span class="t ellipse">' + esc(it.titre) + '</span><span class="s">' + esc(it.source) + '</span></li>';
+    }
+    $('matin-liste').innerHTML = html || '<li class="vide">Pas encore d\'actus (le robot GitHub n\'a pas tourné ?)</li>';
+    var maj = '';
+    if (a && a.genereMs) {
+      var age = (new Date().getTime() - a.genereMs) / 3600000;
+      maj = 'mis à jour ' + (ecartJours(new Date(a.genereMs), new Date()) === 0 ? 'à ' : 'le ' + dateCourte(new Date(a.genereMs)) + ' ') + hm(new Date(a.genereMs));
+      if (age > 36) maj = '⚠ ' + maj;
+    }
+    $('matin-maj').innerHTML = esc(maj);
+    $('actus-maj').innerHTML = esc(maj);
+    var w = evenementWikiDuJour();
+    $('matin-wiki').innerHTML = w ? '<b>Ce jour-là, en ' + w.annee + '</b> — ' + esc(nettoyerWiki(w.texte)) : '';
+
+    // Écran « Actus » complet : une colonne par thème + « Ce jour-là »
+    var cols = '', th = (a && a.themes) || [];
+    for (i = 0; i < th.length; i++) {
+      cols += '<section class="carte"><div class="titre-carte">' + esc(th[i].nom) + '</div><div class="defile">';
+      for (var k = 0; k < th[i].items.length && k < CONFIG.actus.nbParTheme; k++) {
+        it = th[i].items[k];
+        cols += '<div class="actu"' + attributsLien(it.lien) + '>' + esc(it.titre) + '<div class="meta">' + esc(it.source) + ' · ' + heureActu(it.dateMs) + '</div></div>';
+      }
+      cols += '</div></section>';
+    }
+    if (S.wiki && S.wiki.evenements && S.wiki.date === cleDate(new Date())) {
+      cols += '<section class="carte"><div class="titre-carte">Ce jour-là (Wikipédia)</div><div class="defile">';
+      var e = S.wiki.evenements;
+      for (i = 0; i < e.length && i < 10; i++) cols += '<div class="actu"><b style="color:#c9a8ff">' + e[i].annee + '</b> — ' + esc(nettoyerWiki(e[i].texte)) + '</div>';
+      cols += '</div></section>';
+    }
+    $('actus-colonnes').innerHTML = cols || '<div class="vide">Pas encore d\'actus.</div>';
+  }
+
+  /* ---------- 10. Cartes « À apprendre » ---------- */
+  function chargerCartes() {
+    S.essais.cartes = new Date().getTime();
+    getJSON(ajouterParam(CONFIG.cartes.fichier, 't', new Date().getTime()), function (d) {
+      var liste = d && d.length !== undefined ? d : (d && d.cartes) || [], ok = [];
+      for (var i = 0; i < liste.length; i++) {
+        var c = liste[i];
+        if (c && c.question && c.reponse) ok.push({ theme: c.theme || 'Divers', question: String(c.question), reponse: String(c.reponse), exemple: c.exemple ? String(c.exemple) : '' });
+      }
+      if (!ok.length) { S.statut.cartes = 'aucune carte valide dans cards.json'; return; }
+      S.cartes = ok; ecrire('cartes', ok);
+      S.statut.cartes = ok.length + ' cartes';
+      preparerCartes();
+    }, function (e) {
+      S.statut.cartes = e === 'JSON invalide' ? 'cards.json contient une faute de syntaxe (virgule, guillemet ?)' : 'échec : ' + e;
+      if (e === 'JSON invalide') signalerErreur('cards.json contient une faute de syntaxe. Vérifie-le sur jsonlint.com');
+      if (!S.cartes) $('cdj-question').innerHTML = esc(S.statut.cartes);
+    });
+  }
+  function choisirCarteDuJour() {
+    var cartes = S.cartes || [];
+    if (!cartes.length) return null;
+    var cles = [], i;
+    for (i = 0; i < cartes.length; i++) cles.push(cartes[i].question);
+    var etat = lire('cdj', null), auj = cleDate(new Date());
+    if (!etat || !etat.ordre || !etat.ordre.length) etat = { ordre: melanger(cles), index: 0, date: auj };
+    else {
+      // Retire les cartes supprimées du fichier, ajoute les nouvelles en fin de paquet
+      var courante = etat.ordre[etat.index], ordre = [];
+      for (i = 0; i < etat.ordre.length; i++) if (cles.indexOf(etat.ordre[i]) >= 0) ordre.push(etat.ordre[i]);
+      var nouvelles = [];
+      for (i = 0; i < cles.length; i++) if (ordre.indexOf(cles[i]) < 0) nouvelles.push(cles[i]);
+      ordre = ordre.concat(melanger(nouvelles));
+      var idx = ordre.indexOf(courante);
+      etat.index = idx >= 0 ? idx : Math.min(etat.index, ordre.length - 1);
+      etat.ordre = ordre;
+      if (etat.date !== auj) { etat.index++; etat.date = auj; }
+      if (etat.index >= ordre.length) { etat.ordre = melanger(cles); etat.index = 0; }  // paquet terminé : on remélange
+    }
+    ecrire('cdj', etat);
+    var q = etat.ordre[etat.index];
+    for (i = 0; i < cartes.length; i++) if (cartes[i].question === q) return { carte: cartes[i], rang: etat.index + 1, total: etat.ordre.length };
+    return null;
+  }
+  function classeTheme(t) { t = String(t).toLowerCase(); return t.indexOf('market') >= 0 ? 'marketing' : (t === 'ia' || t.indexOf('intellig') >= 0 ? 'ia' : ''); }
+  function htmlReponse(c) { return esc(c.reponse) + (c.exemple ? '<div class="ex">Ex. : ' + esc(c.exemple) + '</div>' : ''); }
+  function rendreCarteAccueil() {
+    var c, titre, revele, indice = '';
+    if (S.rev) {
+      c = S.rev.carte; titre = 'Révision'; revele = S.rev.phase === 'r';
+      indice = 'Défilement automatique — touche l\'écran pour arrêter';
+    } else {
+      if (!S.cdj || S.cdj.date !== cleDate(new Date())) { var r = choisirCarteDuJour(); S.cdj = r ? { date: cleDate(new Date()), info: r } : null; S.cdjRevele = false; }
+      if (!S.cdj) return;
+      c = S.cdj.info.carte; titre = 'Carte du jour'; revele = S.cdjRevele;
+      indice = revele ? 'Carte ' + S.cdj.info.rang + ' / ' + S.cdj.info.total + ' du paquet' : 'Touche pour voir la réponse';
+    }
+    $('cdj-titre').innerHTML = titre;
+    $('cdj-theme').innerHTML = esc(c.theme);
+    $('cdj-theme').className = 'theme-carte ' + classeTheme(c.theme);
+    $('cdj-question').className = '';
+    $('cdj-question').innerHTML = esc(c.question);
+    $('cdj-reponse').innerHTML = revele ? htmlReponse(c) : '';
+    $('cdj-indice').innerHTML = indice;
+  }
+  function carteAuHasard(sauf) {
+    var c = S.cartes || [];
+    if (!c.length) return null;
+    var choix = c[Math.floor(Math.random() * c.length)];
+    if (c.length > 1 && choix === sauf) return carteAuHasard(sauf);
+    return choix;
+  }
+  // Écran « Cartes »
+  function preparerCartes() {
+    var cartes = S.cartes || [], themes = ['Tous'], i;
+    for (i = 0; i < cartes.length; i++) if (themes.indexOf(cartes[i].theme) < 0) themes.push(cartes[i].theme);
+    var f = '';
+    for (i = 0; i < themes.length; i++) f += '<button class="' + (S.cs.filtre === themes[i] ? 'on' : '') + '" data-action="cs-filtre" data-val="' + esc(themes[i]) + '">' + esc(themes[i]) + '</button>';
+    $('cs-filtres').innerHTML = f;
+    var liste = [];
+    for (i = 0; i < cartes.length; i++) if (S.cs.filtre === 'Tous' || cartes[i].theme === S.cs.filtre) liste.push(cartes[i]);
+    S.cs.liste = melanger(liste); S.cs.i = 0; S.cs.revele = false; S.cs.depuis = new Date().getTime();
+    rendreCarteEcran();
+    rendreCarteAccueil();
+  }
+  function rendreCarteEcran() {
+    var c = S.cs.liste[S.cs.i];
+    if (!c) { $('cs-question').innerHTML = '<span class="vide">Aucune carte.</span>'; return; }
+    $('cs-theme').innerHTML = esc(c.theme);
+    $('cs-theme').className = 'theme-carte ' + classeTheme(c.theme);
+    $('cs-compteur').innerHTML = (S.cs.i + 1) + ' / ' + S.cs.liste.length;
+    $('cs-question').innerHTML = esc(c.question);
+    $('cs-reponse').innerHTML = S.cs.revele ? htmlReponse(c) : '';
+    $('cs-auto').className = S.cs.auto ? 'on' : '';
+  }
+  function carteSuivante(sens) {
+    var n = S.cs.liste.length;
+    if (!n) return;
+    S.cs.i = (S.cs.i + sens + n) % n; S.cs.revele = false; S.cs.depuis = new Date().getTime();
+    rendreCarteEcran();
+  }
+
+  /* ---------- 11. Musique ---------- */
+  function rendreMusique() {
+    var html = '';
+    for (var i = 0; i < CONFIG.playlists.length; i++) {
+      var p = CONFIG.playlists[i];
+      html += '<button class="btn-musique" style="background:' + esc(p.couleur || '#2d6cdf') + '" data-action="musique" data-i="' + i + '">' + esc(p.nom) + '</button>';
+    }
+    $('musique-grille').innerHTML = html || '<div class="vide">Ajoute tes playlists dans CONFIG.playlists</div>';
+  }
+  function methodeSpotify() { return lire('methodeSpotify', '') || CONFIG.methodeSpotify || 'intent'; }
+  function ouvrirSpotify(lien) {
+    var m = /open\.spotify\.com\/(?:intl-[a-z]+\/)?(playlist|album|artist|track|show|episode)\/([A-Za-z0-9]+)/.exec(lien || '');
+    var methode = methodeSpotify();
+    if (!m || methode === 'web') { window.location.href = lien; return; }
+    if (methode === 'spotify') { window.location.href = 'spotify:' + m[1] + ':' + m[2]; return; }
+    // Méthode « intent » : demande à Android d'ouvrir le lien avec l'appli Spotify
+    var intent = 'intent://open.spotify.com/' + m[1] + '/' + m[2] + '#Intent;scheme=https;package=com.spotify.music;S.browser_fallback_url=' + encodeURIComponent(lien) + ';end';
+    try { if (window.fully && window.fully.startIntent) { window.fully.startIntent(intent); return; } } catch (e) {}
+    window.location.href = intent;
+  }
+
+  /* ---------- 12. Mode nuit + anti-rémanence + luminosité ---------- */
+  function estNuit(d) {
+    if (S.testNuitJusqua > d.getTime()) return true;
+    if (!CONFIG.nuit.actif) return false;
+    var m = d.getHours() * 60 + d.getMinutes(), a = minutesDe(CONFIG.nuit.debut), b = minutesDe(CONFIG.nuit.fin);
+    return a > b ? (m >= a || m < b) : (m >= a && m < b);
+  }
+  function luminosite(v) { try { if (window.fully && window.fully.setScreenBrightness) window.fully.setScreenBrightness(v); } catch (e) {} }
+  function rendreNuit() {
+    if (!S.nuit) return;
+    var n = new Date();
+    $('nuit-heure').innerHTML = hm(n);
+    $('nuit-date').innerHTML = majuscule(JOURS[n.getDay()]) + ' ' + n.getDate() + ' ' + MOIS[n.getMonth()];
+    var infos = [];
+    if (S.meteo && S.meteo.current) infos.push(Math.round(S.meteo.current.temperature_2m) + '° · ' + (TEXTE_METEO[S.meteo.current.weather_code] || '').toLowerCase());
+    var ev = evenements(), maintenant = n.getTime();
+    for (var i = 0; i < ev.length; i++) {
+      if (ev[i].debut > maintenant && !ev[i].journee) { infos.push(jourRelatif(new Date(ev[i].debut), n) + ' ' + hm(new Date(ev[i].debut)) + ' — ' + esc(ev[i].titre)); break; }
+    }
+    $('nuit-infos').innerHTML = infos.join('<br>');
+  }
+  function deplacerNuit() {
+    var x = Math.round((Math.random() * 2 - 1) * window.innerWidth * 0.08);
+    var y = Math.round((Math.random() * 2 - 1) * window.innerHeight * 0.18);
+    $('nuit-contenu').style.transform = 'translate(' + x + 'px,' + y + 'px) translateY(-50%)';
+  }
+  function verifierNuit(n) {
+    var nuit = estNuit(n);
+    if (nuit === S.nuit) return;
+    S.nuit = nuit;
+    document.body.className = nuit ? 'nuit' : '';
+    luminosite(nuit ? CONFIG.nuit.luminositeNuit : CONFIG.nuit.luminositeJour);
+    if (nuit) { afficherEcran('accueil'); S.rev = null; deplacerNuit(); rendreNuit(); }
+    rendreCarteAccueil();
+  }
+  function decalerPage() {
+    var p = CONFIG.antiRemanence.pixelsMax;
+    var x = Math.round((Math.random() * 2 - 1) * p), y = Math.round((Math.random() * 2 - 1) * p);
+    $('app').style.transform = 'translate(' + x + 'px,' + y + 'px)';
+  }
+
+  /* ---------- 13. Navigation entre écrans ---------- */
+  function afficherEcran(nom) {
+    if (S.nuit && (nom === 'actus' || nom === 'cartes')) return;
+    S.ecran = nom;
+    var ecrans = document.querySelectorAll('.ecran'), i;
+    for (i = 0; i < ecrans.length; i++) ecrans[i].className = 'ecran' + (ecrans[i].id === 'ecran-' + nom ? ' actif' : '');
+    var b = document.querySelectorAll('#nav button');
+    for (i = 0; i < b.length; i++) {
+      var base = b[i].getAttribute('data-cible') === 'actus' || b[i].getAttribute('data-cible') === 'cartes' ? 'masque-nuit' : '';
+      b[i].className = base + (b[i].getAttribute('data-cible') === nom ? ' actif' : '');
+    }
+    if (nom === 'echeances') { S.suppression = null; rendreEcheances(); }
+    if (nom === 'reglages') rendreReglages();
+    if (nom !== 'cartes') S.cs.auto = false;
+  }
+  function rendreReglages() {
+    $('reg-agenda').value = lire('agendaUrl', '');
+    var m = methodeSpotify(), noms = { intent: 'Intent (recommandé)', spotify: 'Lien spotify:', web: 'Lien web' }, h = '';
+    for (var k in noms) if (noms.hasOwnProperty(k)) h += '<button class="' + (m === k ? 'on' : '') + '" data-action="reg-methode" data-val="' + k + '">' + noms[k] + '</button>';
+    $('reg-methodes').innerHTML = h;
+    var ua = navigator.userAgent, chrome = /Chrome\/(\d+)/.exec(ua);
+    $('reg-infos').innerHTML =
+      'Version du tableau de bord : ' + VERSION + '<br>' +
+      'Écran : ' + window.innerWidth + ' × ' + window.innerHeight + ' px (densité ' + (window.devicePixelRatio || 1) + ')<br>' +
+      'Moteur web : ' + (chrome ? 'Chrome ' + chrome[1] : 'inconnu') + (window.fully ? ' · Fully Kiosk détecté (interface JavaScript active)' : '') + '<br>' +
+      'Stockage local : ' + (stockageOK ? 'OK' : 'INDISPONIBLE') + '<br>' +
+      'Météo : ' + esc(S.statut.meteo || (S.meteo ? 'données en cache' : '—')) + (S.meteo && S.meteo.lieu ? ' — lieu : ' + esc(S.meteo.lieu) : '') + '<br>' +
+      'Agenda : ' + esc(S.statut.agenda || '—') + '<br>' +
+      'Actus : ' + esc(S.statut.actus || '—') + '<br>' +
+      'Wikipédia : ' + esc(S.statut.wiki || (S.wiki ? 'en cache' : '—')) + '<br>' +
+      'Cartes : ' + esc(S.statut.cartes || (S.cartes ? S.cartes.length + ' cartes (cache)' : '—')) + '<br>' +
+      (window.__erreurs.length ? 'Erreurs : ' + esc(window.__erreurs.slice(-3).join(' | ')) + '<br>' : '') +
+      '<span style="font-size:.75rem">' + esc(ua) + '</span>';
+  }
+
+  /* ---------- 14. Gestion des touches (un seul écouteur pour tout) ---------- */
+  function activite() {
+    S.dernierTouch = new Date().getTime();
+    if (S.rev) { S.rev = null; rendreCarteAccueil(); }
+  }
+  document.addEventListener('touchstart', activite, true);
+  document.addEventListener('mousedown', activite, true);
+  document.addEventListener('keydown', activite, true);
+
+  document.addEventListener('click', function (e) {
+    var el = e.target;
+    while (el && el !== document && !el.getAttribute('data-action')) el = el.parentNode;
+    if (!el || el === document) return;
+    var a = el.getAttribute('data-action'), i;
+    if (a === 'ecran') afficherEcran(el.getAttribute('data-cible'));
+    else if (a === 'fermer-erreur') el.style.display = 'none';
+    else if (a === 'nuit-reveil') { S.reveilJusqua = new Date().getTime() + 60000; document.body.className = 'nuit reveil'; }
+    else if (a === 'reveler-cdj') { if (!S.rev) { S.cdjRevele = !S.cdjRevele; rendreCarteAccueil(); } }
+    else if (a === 'actu') { var lien = el.getAttribute('data-lien'); if (lien) window.open(lien, '_blank'); }
+    else if (a === 'cs-reveler') { S.cs.revele = !S.cs.revele; S.cs.depuis = new Date().getTime(); rendreCarteEcran(); e.stopPropagation(); }
+    else if (a === 'cs-suiv') carteSuivante(1);
+    else if (a === 'cs-prec') carteSuivante(-1);
+    else if (a === 'cs-auto') { S.cs.auto = !S.cs.auto; S.cs.depuis = new Date().getTime(); rendreCarteEcran(); }
+    else if (a === 'cs-melanger') { preparerCartes(); toast('Cartes mélangées'); }
+    else if (a === 'cs-filtre') { S.cs.filtre = el.getAttribute('data-val'); preparerCartes(); }
+    else if (a === 'ech-ajouter') {
+      var nom = $('ech-nom').value.replace(/^\s+|\s+$/g, ''), date = lireDateSaisie($('ech-date').value);
+      if (!nom) { toast('Indique un nom'); return; }
+      if (!date || !parseLocal(date)) { toast('Date invalide (format JJ/MM/AAAA)'); return; }
+      S.echeances.push({ id: 'e' + new Date().getTime(), nom: nom, date: date });
+      sauverEcheances(); $('ech-nom').value = ''; $('ech-date').value = '';
+      rendreEcheances(); rendreEcheancesMini(); toast('Échéance ajoutée');
+    }
+    else if (a === 'ech-suppr') {
+      var id = el.getAttribute('data-id');
+      if (S.suppression !== id) { S.suppression = id; rendreEcheances(); setTimeout(function () { if (S.suppression === id) { S.suppression = null; rendreEcheances(); } }, 4000); return; }
+      for (i = S.echeances.length - 1; i >= 0; i--) if (S.echeances[i].id === id) S.echeances.splice(i, 1);
+      S.suppression = null; sauverEcheances(); rendreEcheances(); rendreEcheancesMini();
+    }
+    else if (a === 'ech-exporter') {
+      var t = $('ech-texte'); t.value = JSON.stringify({ type: 'echeances', version: 1, echeances: S.echeances });
+      try { t.focus(); t.select(); } catch (x) {}
+      toast('Copie ce texte pour le sauvegarder');
+    }
+    else if (a === 'ech-importer') {
+      try {
+        var d = JSON.parse($('ech-texte').value), l = d.echeances || d, ok = [];
+        for (i = 0; i < l.length; i++) if (l[i].nom && lireDateSaisie(l[i].date)) ok.push({ id: l[i].id || 'e' + new Date().getTime() + i, nom: String(l[i].nom), date: lireDateSaisie(l[i].date) });
+        S.echeances = ok; sauverEcheances(); rendreEcheances(); rendreEcheancesMini();
+        toast(ok.length + ' échéance(s) importée(s)');
+      } catch (x) { toast('Texte invalide : colle exactement un export'); }
+    }
+    else if (a === 'musique') ouvrirSpotify(CONFIG.playlists[+el.getAttribute('data-i')].lien);
+    else if (a === 'reg-agenda') {
+      var u = $('reg-agenda').value.replace(/^\s+|\s+$/g, '');
+      if (u && !/^https:\/\/script\.google(usercontent)?\.com\//.test(u)) { toast('L\'adresse doit commencer par https://script.google.com/'); return; }
+      ecrire('agendaUrl', u); S.agenda = null; ecrire('agenda', null); chargerAgenda(); toast('Agenda enregistré, chargement…');
+      setTimeout(rendreReglages, 4000);
+    }
+    else if (a === 'reg-agenda-effacer') { ecrire('agendaUrl', ''); ecrire('agenda', null); S.agenda = null; $('reg-agenda').value = ''; rendreFrise(); toast('Agenda déconnecté'); }
+    else if (a === 'reg-methode') { ecrire('methodeSpotify', el.getAttribute('data-val')); rendreReglages(); }
+    else if (a === 'reg-nuit-test') { S.testNuitJusqua = new Date().getTime() + 60000; verifierNuit(new Date()); }
+    else if (a === 'reg-maj') { chargerTout(true); toast('Mise à jour lancée'); setTimeout(rendreReglages, 4000); }
+    else if (a === 'reg-recharger') window.location.reload();
+  }, false);
+
+  /* ---------- 15. Boucle principale (chaque seconde) ---------- */
+  function du(nom, minutes) { return !S.essais[nom] || new Date().getTime() - S.essais[nom] > minutes * 60000; }
+  function chargerTout(force) {
+    if (force || du('meteo', CONFIG.meteo.actualisationMinutes)) chargerMeteo();
+    if (force || du('agenda', CONFIG.agenda.actualisationMinutes)) chargerAgenda();
+    if (force || du('actus', CONFIG.actus.actualisationMinutes)) chargerActus();
+    if (force || du('cartes', 360)) chargerCartes();
+    if (force) S.wiki = null;
+    if (du('wiki', 60) || force) chargerWiki();
+  }
+  function rechargementQuotidien() {
+    // On ne recharge que si le site répond (sinon on afficherait une page d'erreur)
+    var x = new XMLHttpRequest();
+    x.open('GET', ajouterParam(window.location.pathname || 'index.html', 't', new Date().getTime()), true);
+    x.onreadystatechange = function () { if (x.readyState === 4 && x.status >= 200 && x.status < 300) window.location.reload(); };
+    try { x.send(); } catch (e) {}
+  }
+  var dernierDecalage = 0, dernierDeplacementNuit = 0;
+  function tic() {
+    var n = new Date(), t = n.getTime(), inactif = t - S.dernierTouch;
+    verifierNuit(n);
+    if (S.nuit && S.reveilJusqua && t > S.reveilJusqua) { S.reveilJusqua = 0; document.body.className = 'nuit'; }
+
+    // Toutes les minutes : horloge, frise, etc.
+    var minute = n.getHours() * 60 + n.getMinutes();
+    if (minute !== S.derniereMinute) {
+      S.derniereMinute = minute;
+      rendreHorloge(); rendreFrise(); rendreNuit(); rendreEtatReseau();
+      if (S.meteo) rendreMeteo();
+      if (!S.rev) rendreCarteAccueil();
+      if (hm(n) === CONFIG.rechargementQuotidien && t - S.demarrage > 3600000) rechargementQuotidien();
+      chargerTout(false);
+    }
+    // Anti-rémanence
+    if (t - dernierDecalage > CONFIG.antiRemanence.intervalleMinutes * 60000) { dernierDecalage = t; decalerPage(); }
+    if (S.nuit && t - dernierDeplacementNuit > CONFIG.nuit.deplacementMinutes * 60000) { dernierDeplacementNuit = t; deplacerNuit(); }
+
+    // Retour à l'accueil après inactivité
+    if (S.ecran !== 'accueil' && !(S.ecran === 'cartes' && S.cs.auto) && inactif > CONFIG.retourAccueilMinutes * 60000) afficherEcran('accueil');
+
+    // Révision automatique sur l'écran principal
+    if (!S.nuit && S.ecran === 'accueil' && S.cartes && S.cartes.length && inactif > CONFIG.cartes.inactiviteMinutes * 60000) {
+      if (!S.rev) { S.rev = { carte: carteAuHasard(null), phase: 'q', depuis: t }; rendreCarteAccueil(); }
+      else if (S.rev.phase === 'q' && t - S.rev.depuis > CONFIG.cartes.secondesQuestion * 1000) { S.rev.phase = 'r'; S.rev.depuis = t; rendreCarteAccueil(); }
+      else if (S.rev.phase === 'r' && t - S.rev.depuis > CONFIG.cartes.secondesReponse * 1000) { S.rev = { carte: carteAuHasard(S.rev.carte), phase: 'q', depuis: t }; rendreCarteAccueil(); }
+    }
+    // Défilement auto sur l'écran « Cartes »
+    if (S.ecran === 'cartes' && S.cs.auto) {
+      if (!S.cs.revele && t - S.cs.depuis > CONFIG.cartes.secondesQuestion * 1000) { S.cs.revele = true; S.cs.depuis = t; rendreCarteEcran(); }
+      else if (S.cs.revele && t - S.cs.depuis > CONFIG.cartes.secondesReponse * 1000) carteSuivante(1);
+    }
+  }
+
+  /* ---------- 16. Démarrage ---------- */
+  // Raccourci : ouvrir la page avec  ...index.html#agenda=URL  enregistre l'agenda sur l'appareil
+  var hash = window.location.hash || '';
+  if (hash.indexOf('#agenda=') === 0) {
+    ecrire('agendaUrl', decodeURIComponent(hash.slice(8)));
+    try { history.replaceState(null, '', window.location.pathname + window.location.search); } catch (e) { window.location.hash = ''; }
+  }
+  if (!stockageOK) signalerErreur('Stockage local indisponible : les échéances ne seront pas sauvegardées.');
+  if (window.__erreurs.length) signalerErreur(window.__erreurs[0]);
+  window.addEventListener('online', function () { chargerTout(true); rendreEtatReseau(); });
+  window.addEventListener('offline', rendreEtatReseau);
+
+  rendreHorloge(); rendreMeteo(); rendreFrise(); rendreActus(); rendreMusique();
+  if (S.cartes) preparerCartes();
+  tic();
+  setInterval(tic, 1000);
+})();
+</script>
+</body>
+</html>

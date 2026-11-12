@@ -1,0 +1,66 @@
+# Robot du tableau de bord
+# 1) récupère les actus (scripts/fetch_news.py) et enregistre news.json dans le dépôt ;
+# 2) publie le site sur GitHub Pages.
+# Il tourne : chaque matin, à chaque modification du dépôt, et à la demande (bouton « Run workflow »).
+name: Actus et publication
+
+on:
+  schedule:
+    # Heures en UTC : 4h30 UTC = 5h30 à Paris l'hiver, 6h30 l'été.
+    # GitHub peut avoir quelques minutes (parfois plus) de retard.
+    - cron: "30 4 * * *"
+    # Décommente la ligne suivante pour une 2e mise à jour vers 13h (heure de Paris, hiver) :
+    # - cron: "0 12 * * *"
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: tableau-de-bord
+  cancel-in-progress: false
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploiement.outputs.page_url }}
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Récupérer les actus
+        # continue-on-error : si les flux sont en panne, on publie quand même le site
+        continue-on-error: true
+        run: python3 scripts/fetch_news.py
+
+      - name: Enregistrer news.json dans le dépôt
+        continue-on-error: true
+        run: |
+          git config user.name "robot-actus"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add news.json
+          if git diff --staged --quiet; then
+            echo "Pas de changement."
+          else
+            git commit -m "Actus du $(date -u +%Y-%m-%d)"
+            git pull --rebase
+            git push
+          fi
+
+      - name: Préparer GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Envoyer les fichiers du site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Publier
+        id: deploiement
+        uses: actions/deploy-pages@v4

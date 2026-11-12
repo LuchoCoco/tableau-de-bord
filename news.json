@@ -1,0 +1,163 @@
+{
+ "genere": "2026-11-12T03:40:15+00:00",
+ "genereMs": 1794454814336,
+ "themes": [
+  {
+   "id": "france",
+   "nom": "France",
+   "items": [
+    {
+     "titre": "Présidentielle 2027 : Sans être candidate à l’Élysée, Lagarde fait mieux que Philippe dans un sondage",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/politique/4262263-20261112-presidentielle-2027-etre-candidate-elysee-lagarde-fait-mieux-philippe-sondage?at_medium=display&at_campaign=149",
+     "dateMs": 1794453367000
+    },
+    {
+     "titre": "Etats-Unis : Alliés de Trump et possibles rivaux en 2028, J.D. Vance et Marco Rubio avancent leurs pions",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/monde/etats-unis/4261808-20261112-etats-unis-allies-trump-possibles-rivaux-2028-vance-marco-rubio-avancent-pions?at_medium=display&at_campaign=149",
+     "dateMs": 1794452558000
+    },
+    {
+     "titre": "A New York, au moins deux morts dans l’effondrement d’un immeuble de Brooklyn",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/international/article/2026/11/12/a-new-york-au-moins-deux-morts-dans-l-effondrement-d-un-immeuble-de-brooklyn_6809041_3210.html",
+     "dateMs": 1794451289000
+    },
+    {
+     "titre": "Un représentant des colonies juives en Cisjordanie refoulé à son arrivée en France, Israël dénonce une mesure « inacceptable »",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/international/article/2026/11/12/un-representant-des-colonies-juives-en-cisjordanie-refoule-a-son-arrivee-en-france-israel-denonce-une-mesure-inacceptable_6809040_3210.html",
+     "dateMs": 1794450963000
+    },
+    {
+     "titre": "États-Unis : Au moins un mort dans l’effondrement d’un immeuble à New York",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/monde/etats-unis/4262261-20261112-etats-unis-moins-mort-effondrement-immeuble-new-york?at_medium=display&at_campaign=149",
+     "dateMs": 1794450348000
+    },
+    {
+     "titre": "Présidentielle 2027 : Mélenchon chambre la droite sur la candidature de Riner à l’Élysée",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/politique/4262258-20261112-presidentielle-2027-melenchon-chambre-droite-candidature-riner-elysee?at_medium=display&at_campaign=149",
+     "dateMs": 1794448256000
+    },
+    {
+     "titre": "La hausse du smic mettra 164 branches professionnelles dans « l’illégalité », pointe la CGT",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/economie/article/2026/11/12/la-hausse-du-smic-mettra-164-branches-professionnelles-dans-l-illegalite-pointe-la-cgt_6809037_3234.html",
+     "dateMs": 1794446299000
+    },
+    {
+     "titre": "Midterms 2026 : le démocrate Scott Colom devient le premier sénateur noir du Mississippi depuis près de 150 ans",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/international/article/2026/11/12/midterms-2026-le-democrate-scott-colom-devient-le-premier-senateur-noir-du-mississippi-depuis-pres-de-150-ans_6809036_3210.html",
+     "dateMs": 1794445496000
+    },
+    {
+     "titre": "Plus de cent constitutionnalistes critiquent le référendum pour changer la Constitution tel que proposé par Marine Le Pen",
+     "source": "franceinfo",
+     "lien": "https://www.franceinfo.fr/politique/marine-le-pen/plus-de-cent-constitutionnalistes-critiquent-le-referendum-pour-changer-la-constitution-tel-que-propose-par-marine-le-pen_8278388.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1794437581000
+    },
+    {
+     "titre": "\"On n'a rien trouvé, dans aucune école\", assure Giorgia Meloni après les milliers d'alertes à la bombe ayant visé des écoles italiennes",
+     "source": "franceinfo",
+     "lien": "https://www.franceinfo.fr/monde/italie/on-n-a-rien-trouve-dans-aucune-ecole-assure-giorgia-meloni-apres-les-milliers-d-alertes-a-la-bombe-ayant-vise-des-ecoles-italiennes_8278382.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1794434962000
+    },
+    {
+     "titre": "Quatre organisations syndicales de journalistes déposent plainte contre X après plusieurs entraves par des forces de l'ordre lors de manifestations",
+     "source": "franceinfo",
+     "lien": "https://www.franceinfo.fr/faits-divers/police/violences-policieres/quatre-organisations-syndicales-de-journalistes-deposent-plainte-contre-x-apres-plusieurs-entraves-par-des-forces-de-l-ordre-lors-de-manifestations_8278373.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1794434209000
+    },
+    {
+     "titre": "Amnesty dénonce l'inaction des autorités et de l'ONU pour empêcher un massacre au Soudan du Sud",
+     "source": "franceinfo",
+     "lien": "https://www.franceinfo.fr/monde/afrique/soudan-du-sud/amnesty-denonce-l-inaction-des-autorites-et-de-l-onu-pour-empecher-un-massacre-au-soudan-du-sud_8278367.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1794434023000
+    }
+   ]
+  },
+  {
+   "id": "monde",
+   "nom": "International",
+   "items": [
+    {
+     "titre": "Le conseil d'administration de Nvidia doit décider de l'avenir de son patron Jensen Huang",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/%C3%A9co-tech/20261112-le-conseil-d-administration-de-nvidia-doit-d%C3%A9cider-de-l-avenir-de-son-patron-jensen-huang",
+     "dateMs": 1794451769000
+    },
+    {
+     "titre": "Australian teen missing in bush for six days rescued alive",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/ckvg25zmppglo?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1794451218000
+    },
+    {
+     "titre": "New York building collapse kills one person and injures 12",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/videos/c60rkwjj7x7go?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1794450792000
+    },
+    {
+     "titre": "Au Canada, la vie au sous-sol se développe avec la crise immobilière",
+     "source": "Le Monde International",
+     "lien": "https://www.lemonde.fr/international/article/2026/11/12/au-canada-la-vie-au-sous-sol-se-developpe-avec-la-crise-immobiliere_6809039_3210.html",
+     "dateMs": 1794450603000
+    },
+    {
+     "titre": "En direct : les émissaires américains vont rencontrer Vladimir Poutine, puis Volodymyr Zelensky",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/europe/20261112-en-direct-ukraine-russie-emissaires-americains-rencontre-vladimir-poutine-volodymyr-zelensky",
+     "dateMs": 1794450063000
+    },
+    {
+     "titre": "Democrat Scott Colom seals historic win in Mississippi Senate race",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/cw7vppyr80eeo?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1794449348000
+    },
+    {
+     "titre": "Le Paraguay rembourse une partie de leurs avoirs à tous les épargnants de Ueno Bank",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/am%C3%A9riques/20261112-paraguay-rembourse-une-partie-de-leurs-avoirs-epargnants-ueno-bank",
+     "dateMs": 1794449347000
+    },
+    {
+     "titre": "Paraguay : la Banque centrale rembourse en partie tous les clients de Ueno Bank dont l’effondrement a provoqué la chute du président",
+     "source": "Le Monde International",
+     "lien": "https://www.lemonde.fr/international/article/2026/11/12/paraguay-la-banque-centrale-rembourse-en-partie-tous-les-clients-de-ueno-bank-dont-l-effondrement-a-provoque-la-chute-du-president_6809038_3210.html",
+     "dateMs": 1794447631000
+    },
+    {
+     "titre": "Nigeria's president launches re-election manifesto but can he regain voters' trust?",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/ck5ynyw527wdo?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1794443771000
+    },
+    {
+     "titre": "États-Unis: le démocrate Scott Colom devient le premier sénateur noir du Mississippi depuis 150 ans",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/am%C3%A9riques/20261112-%C3%A9tats-unis-le-d%C3%A9mocrate-scott-colom-devient-le-premier-s%C3%A9nateur-noir-du-mississippi-depuis-150-ans",
+     "dateMs": 1794442447000
+    },
+    {
+     "titre": "🔴 États-Unis : après une victoire au Mississippi, les démocrates renforcent leur majorité au Sénat",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/am%C3%A9riques/20261111-etats-unis-victoire-mississippi-democrates-renforcent-majorite-senat-scott-colom",
+     "dateMs": 1794440383000
+    },
+    {
+     "titre": "La Birmanie veut attirer les investissements étatsuniens vers ses gisements de terres rares",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/podcasts/chronique-des-mati%C3%A8res-premi%C3%A8res/20261111-la-birmanie-veut-attirer-les-investissements-%C3%A9tatsuniens-vers-ses-gisements-de-terres-rares",
+     "dateMs": 1794438590000
+    }
+   ]
+  }
+ ],
+ "erreurs": []
+}
