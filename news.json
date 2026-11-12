@@ -1,11 +1,17 @@
 {
- "genere": "2026-11-12T04:16:07+00:00",
- "genereMs": 1794456965819,
+ "genere": "2026-11-12T04:46:41+00:00",
+ "genereMs": 1794458799692,
  "themes": [
   {
    "id": "france",
    "nom": "France",
    "items": [
+    {
+     "titre": "Les élus démocrates veulent lancer des enquêtes tous azimuts contre l’administration Trump",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/international/article/2026/11/12/les-elus-democrates-veulent-lancer-des-enquetes-tous-azimuts-contre-l-administration-trump_6809046_3210.html",
+     "dateMs": 1794457773000
+    },
     {
      "titre": "Présidentielle 2027 : Sans être candidate à l’Élysée, Lagarde fait mieux que Philippe dans un sondage",
      "source": "20 Minutes",
@@ -49,12 +55,6 @@
      "dateMs": 1794446299000
     },
     {
-     "titre": "Midterms 2026 : le démocrate Scott Colom devient le premier sénateur noir du Mississippi depuis près de 150 ans",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/12/midterms-2026-le-democrate-scott-colom-devient-le-premier-senateur-noir-du-mississippi-depuis-pres-de-150-ans_6809036_3210.html",
-     "dateMs": 1794445496000
-    },
-    {
      "titre": "Plus de cent constitutionnalistes critiquent le référendum pour changer la Constitution tel que proposé par Marine Le Pen",
      "source": "franceinfo",
      "lien": "https://www.franceinfo.fr/politique/marine-le-pen/plus-de-cent-constitutionnalistes-critiquent-le-referendum-pour-changer-la-constitution-tel-que-propose-par-marine-le-pen_8278388.html#xtor=RSS-3-[lestitres]",
@@ -85,10 +85,28 @@
    "nom": "International",
    "items": [
     {
+     "titre": "En RDC, Félix Tshisekedi promulgue une loi controversée qui lui ouvre la voie à un troisième mandat",
+     "source": "Le Monde International",
+     "lien": "https://www.lemonde.fr/international/article/2026/11/12/en-rdc-felix-tshisekedi-promulgue-une-loi-controversee-qui-lui-ouvre-la-voie-a-un-troisieme-mandat_6809048_3210.html",
+     "dateMs": 1794457803000
+    },
+    {
+     "titre": "En visite dans «sa patrie» au Pérou, Léon XIV appelle à surmonter les divisions du passé",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/am%C3%A9riques/20261112-en-visite-dans-sa-patrie-au-p%C3%A9rou-l%C3%A9on-xiv-appelle-%C3%A0-surmonter-les-divisions-du-pass%C3%A9",
+     "dateMs": 1794456495000
+    },
+    {
      "titre": "Famed ship SS United States sunk off coast of Florida",
      "source": "BBC World",
      "lien": "https://www.bbc.co.uk/news/articles/c3x298n87rn2o?at_medium=RSS&at_campaign=rss",
      "dateMs": 1794456193000
+    },
+    {
+     "titre": "Soudan: une cathédrale enfouie de la Nubie médiévale révèle son architecture monumentale",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/science/20261112-soudan-une-cath%C3%A9drale-enfouie-de-la-nubie-m%C3%A9di%C3%A9vale-r%C3%A9v%C3%A8le-son-architecture-monumentale",
+     "dateMs": 1794456060000
     },
     {
      "titre": "Democrat Scott Colom seals historic win in Mississippi Senate race",
@@ -103,6 +121,18 @@
      "dateMs": 1794456009000
     },
     {
+     "titre": "Orpaillage à Siguiri: face à la justice, l’ex-préfet nie toute responsabilité dans les dégâts environnementaux",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/afrique/20261112-orpaillage-%C3%A0-siguiri-face-%C3%A0-la-justice-l-ex-pr%C3%A9fet-nie-toute-responsabilit%C3%A9-dans-les-d%C3%A9g%C3%A2ts-environnementaux",
+     "dateMs": 1794455205000
+    },
+    {
+     "titre": "Israeli strike on Nasser Hospital kills at least six, Gaza civil defence agency says",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1794454374000
+    },
+    {
      "titre": "Le conseil d'administration de Nvidia doit décider de l'avenir de son patron Jensen Huang",
      "source": "France 24",
      "lien": "https://www.france24.com/fr/%C3%A9co-tech/20261112-le-conseil-d-administration-de-nvidia-doit-d%C3%A9cider-de-l-avenir-de-son-patron-jensen-huang",
@@ -115,18 +145,6 @@
      "dateMs": 1794451218000
     },
     {
-     "titre": "Survivor pulled from rubble of deadly building collapse in New York",
-     "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/videos/c60rkwjj7x7go?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1794450792000
-    },
-    {
-     "titre": "Au Canada, la vie au sous-sol se développe avec la crise immobilière",
-     "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/12/au-canada-la-vie-au-sous-sol-se-developpe-avec-la-crise-immobiliere_6809039_3210.html",
-     "dateMs": 1794450603000
-    },
-    {
      "titre": "En direct : les émissaires américains vont rencontrer Vladimir Poutine, puis Volodymyr Zelensky",
      "source": "France 24",
      "lien": "https://www.france24.com/fr/europe/20261112-en-direct-ukraine-russie-emissaires-americains-rencontre-vladimir-poutine-volodymyr-zelensky",
@@ -137,24 +155,6 @@
      "source": "France 24",
      "lien": "https://www.france24.com/fr/am%C3%A9riques/20261112-paraguay-rembourse-une-partie-de-leurs-avoirs-epargnants-ueno-bank",
      "dateMs": 1794449347000
-    },
-    {
-     "titre": "États-Unis: le démocrate Scott Colom devient le premier sénateur noir du Mississippi depuis 150 ans",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/am%C3%A9riques/20261112-%C3%A9tats-unis-le-d%C3%A9mocrate-scott-colom-devient-le-premier-s%C3%A9nateur-noir-du-mississippi-depuis-150-ans",
-     "dateMs": 1794442447000
-    },
-    {
-     "titre": "🔴 États-Unis : après une victoire au Mississippi, les démocrates renforcent leur majorité au Sénat",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/am%C3%A9riques/20261111-etats-unis-victoire-mississippi-democrates-renforcent-majorite-senat-scott-colom",
-     "dateMs": 1794440383000
-    },
-    {
-     "titre": "La Birmanie veut attirer les investissements étatsuniens vers ses gisements de terres rares",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/podcasts/chronique-des-mati%C3%A8res-premi%C3%A8res/20261111-la-birmanie-veut-attirer-les-investissements-%C3%A9tatsuniens-vers-ses-gisements-de-terres-rares",
-     "dateMs": 1794438590000
     }
    ]
   }
