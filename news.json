@@ -1,6 +1,6 @@
 {
- "genere": "2026-11-12T03:40:15+00:00",
- "genereMs": 1794454814336,
+ "genere": "2026-11-12T04:16:07+00:00",
+ "genereMs": 1794456965819,
  "themes": [
   {
    "id": "france",
@@ -85,6 +85,24 @@
    "nom": "International",
    "items": [
     {
+     "titre": "Famed ship SS United States sunk off coast of Florida",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/c3x298n87rn2o?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1794456193000
+    },
+    {
+     "titre": "Democrat Scott Colom seals historic win in Mississippi Senate race",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/cw7vppyr80eeo?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1794456030000
+    },
+    {
+     "titre": "Guerre en Iran : la population à bout de souffle",
+     "source": "Le Monde International",
+     "lien": "https://www.lemonde.fr/podcasts/article/2026/11/12/guerre-en-iran-la-population-a-bout-de-souffle_6809043_5463015.html",
+     "dateMs": 1794456009000
+    },
+    {
      "titre": "Le conseil d'administration de Nvidia doit décider de l'avenir de son patron Jensen Huang",
      "source": "France 24",
      "lien": "https://www.france24.com/fr/%C3%A9co-tech/20261112-le-conseil-d-administration-de-nvidia-doit-d%C3%A9cider-de-l-avenir-de-son-patron-jensen-huang",
@@ -97,7 +115,7 @@
      "dateMs": 1794451218000
     },
     {
-     "titre": "New York building collapse kills one person and injures 12",
+     "titre": "Survivor pulled from rubble of deadly building collapse in New York",
      "source": "BBC World",
      "lien": "https://www.bbc.co.uk/news/videos/c60rkwjj7x7go?at_medium=RSS&at_campaign=rss",
      "dateMs": 1794450792000
@@ -115,28 +133,10 @@
      "dateMs": 1794450063000
     },
     {
-     "titre": "Democrat Scott Colom seals historic win in Mississippi Senate race",
-     "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/cw7vppyr80eeo?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1794449348000
-    },
-    {
      "titre": "Le Paraguay rembourse une partie de leurs avoirs à tous les épargnants de Ueno Bank",
      "source": "France 24",
      "lien": "https://www.france24.com/fr/am%C3%A9riques/20261112-paraguay-rembourse-une-partie-de-leurs-avoirs-epargnants-ueno-bank",
      "dateMs": 1794449347000
-    },
-    {
-     "titre": "Paraguay : la Banque centrale rembourse en partie tous les clients de Ueno Bank dont l’effondrement a provoqué la chute du président",
-     "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/12/paraguay-la-banque-centrale-rembourse-en-partie-tous-les-clients-de-ueno-bank-dont-l-effondrement-a-provoque-la-chute-du-president_6809038_3210.html",
-     "dateMs": 1794447631000
-    },
-    {
-     "titre": "Nigeria's president launches re-election manifesto but can he regain voters' trust?",
-     "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/ck5ynyw527wdo?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1794443771000
     },
     {
      "titre": "États-Unis: le démocrate Scott Colom devient le premier sénateur noir du Mississippi depuis 150 ans",
