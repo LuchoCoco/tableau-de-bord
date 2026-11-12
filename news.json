@@ -1,82 +1,82 @@
 {
- "genere": "2026-11-12T04:46:41+00:00",
- "genereMs": 1794458799692,
+ "genere": "2026-11-12T13:05:51+00:00",
+ "genereMs": 1794488748837,
  "themes": [
   {
    "id": "france",
    "nom": "France",
    "items": [
     {
-     "titre": "Les élus démocrates veulent lancer des enquêtes tous azimuts contre l’administration Trump",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/12/les-elus-democrates-veulent-lancer-des-enquetes-tous-azimuts-contre-l-administration-trump_6809046_3210.html",
-     "dateMs": 1794457773000
-    },
-    {
-     "titre": "Présidentielle 2027 : Sans être candidate à l’Élysée, Lagarde fait mieux que Philippe dans un sondage",
-     "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/politique/4262263-20261112-presidentielle-2027-etre-candidate-elysee-lagarde-fait-mieux-philippe-sondage?at_medium=display&at_campaign=149",
-     "dateMs": 1794453367000
-    },
-    {
-     "titre": "Etats-Unis : Alliés de Trump et possibles rivaux en 2028, J.D. Vance et Marco Rubio avancent leurs pions",
-     "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/monde/etats-unis/4261808-20261112-etats-unis-allies-trump-possibles-rivaux-2028-vance-marco-rubio-avancent-pions?at_medium=display&at_campaign=149",
-     "dateMs": 1794452558000
-    },
-    {
-     "titre": "A New York, au moins deux morts dans l’effondrement d’un immeuble de Brooklyn",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/12/a-new-york-au-moins-deux-morts-dans-l-effondrement-d-un-immeuble-de-brooklyn_6809041_3210.html",
-     "dateMs": 1794451289000
-    },
-    {
-     "titre": "Un représentant des colonies juives en Cisjordanie refoulé à son arrivée en France, Israël dénonce une mesure « inacceptable »",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/12/un-representant-des-colonies-juives-en-cisjordanie-refoule-a-son-arrivee-en-france-israel-denonce-une-mesure-inacceptable_6809040_3210.html",
-     "dateMs": 1794450963000
-    },
-    {
-     "titre": "États-Unis : Au moins un mort dans l’effondrement d’un immeuble à New York",
-     "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/monde/etats-unis/4262261-20261112-etats-unis-moins-mort-effondrement-immeuble-new-york?at_medium=display&at_campaign=149",
-     "dateMs": 1794450348000
-    },
-    {
-     "titre": "Présidentielle 2027 : Mélenchon chambre la droite sur la candidature de Riner à l’Élysée",
-     "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/politique/4262258-20261112-presidentielle-2027-melenchon-chambre-droite-candidature-riner-elysee?at_medium=display&at_campaign=149",
-     "dateMs": 1794448256000
-    },
-    {
-     "titre": "La hausse du smic mettra 164 branches professionnelles dans « l’illégalité », pointe la CGT",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/economie/article/2026/11/12/la-hausse-du-smic-mettra-164-branches-professionnelles-dans-l-illegalite-pointe-la-cgt_6809037_3234.html",
-     "dateMs": 1794446299000
-    },
-    {
-     "titre": "Plus de cent constitutionnalistes critiquent le référendum pour changer la Constitution tel que proposé par Marine Le Pen",
+     "titre": "Le président du Rassemblement national, Jordan Bardella, porte plainte \"pour faux et usage de faux\" après les accusations d'antisémitisme portées par Mediapart",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/politique/marine-le-pen/plus-de-cent-constitutionnalistes-critiquent-le-referendum-pour-changer-la-constitution-tel-que-propose-par-marine-le-pen_8278388.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1794437581000
+     "lien": "https://www.franceinfo.fr/politique/jordan-bardella/le-president-du-rassemblement-national-jordan-bardella-porte-plainte-pour-faux-et-usage-de-faux-apres-les-accusations-d-antisemitisme-portees-par-mediapart_8279252.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1794488409000
     },
     {
-     "titre": "\"On n'a rien trouvé, dans aucune école\", assure Giorgia Meloni après les milliers d'alertes à la bombe ayant visé des écoles italiennes",
+     "titre": "Une bijouterie de luxe braquée à Paris sans faire de blessé, les suspects armés en fuite",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/monde/italie/on-n-a-rien-trouve-dans-aucune-ecole-assure-giorgia-meloni-apres-les-milliers-d-alertes-a-la-bombe-ayant-vise-des-ecoles-italiennes_8278382.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1794434962000
+     "lien": "https://www.franceinfo.fr/faits-divers/une-bijouterie-de-luxe-braquee-a-paris-sans-faire-de-blesse-les-suspects-armes-en-fuite_8279318.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1794488299000
     },
     {
-     "titre": "Quatre organisations syndicales de journalistes déposent plainte contre X après plusieurs entraves par des forces de l'ordre lors de manifestations",
+     "titre": "Patrick et Isabelle Balkany expulsés de leur moulin de Giverny dans l'Eure",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/faits-divers/police/violences-policieres/quatre-organisations-syndicales-de-journalistes-deposent-plainte-contre-x-apres-plusieurs-entraves-par-des-forces-de-l-ordre-lors-de-manifestations_8278373.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1794434209000
+     "lien": "https://www.franceinfo.fr/politique/affaire/affaire-balkany/patrick-et-isabelle-balkany-expulses-de-leur-moulin-de-giverny-dans-l-eure_8279321.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1794488153000
     },
     {
-     "titre": "Amnesty dénonce l'inaction des autorités et de l'ONU pour empêcher un massacre au Soudan du Sud",
+     "titre": "EN DIRECT, guerre en Ukraine : Vladimir Poutine a « détruit » la sécurité européenne après l’invasion de l’Ukraine, estime Antonio Costa, président du Conseil européen",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/international/live/2026/11/12/en-direct-guerre-en-ukraine-vladimir-poutine-a-detruit-la-securite-europeenne-apres-l-invasion-de-l-ukraine-estime-antonio-costa-president-du-conseil-europeen_6808609_3210.html",
+     "dateMs": 1794487971000
+    },
+    {
+     "titre": "Les Balkany priés de quitter leur moulin de Giverny, n’en ayant plus l’usufruit après une condamnation pour fraude fiscale",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/societe/article/2026/11/12/les-balkany-pries-de-quitter-leur-moulin-de-giverny-n-en-ayant-plus-l-usufruit-apres-une-condamnation-pour-fraude-fiscale_6809103_3224.html",
+     "dateMs": 1794487773000
+    },
+    {
+     "titre": "Un immeuble s'effondre à New York, au moins six morts et 19 blessés",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/monde/afrique/soudan-du-sud/amnesty-denonce-l-inaction-des-autorites-et-de-l-onu-pour-empecher-un-massacre-au-soudan-du-sud_8278367.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1794434023000
+     "lien": "https://www.franceinfo.fr/monde/usa/un-immeuble-s-effondre-a-new-york-au-moins-deux-morts-et-17-blesses-selon-un-bilan-provisoire_8278736.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1794487604000
+    },
+    {
+     "titre": "En 2025, les flux migratoires ont augmenté en Europe du Sud, mais reculé en Amérique du Nord",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/international/article/2026/11/12/en-2025-les-flux-migratoires-ont-augmente-en-europe-du-sud-mais-recule-en-amerique-du-nord_6809102_3210.html",
+     "dateMs": 1794486603000
+    },
+    {
+     "titre": "A New York, au moins six morts dans l’effondrement d’un immeuble à Brooklyn",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/international/article/2026/11/12/a-new-york-au-moins-cinq-morts-dans-l-effondrement-d-un-immeuble-a-brooklyn_6809041_3211.html",
+     "dateMs": 1794486547000
+    },
+    {
+     "titre": "Élysée : Deux membres de la garde républicaine s’effondrent devant Emmanuel Macron",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/societe/4262327-20261112-elysee-deux-membres-garde-republicaine-effondrent-devant-emmanuel-macron?at_medium=display&at_campaign=149",
+     "dateMs": 1794479709000
+    },
+    {
+     "titre": "Le président d’un syndicat de police souvent à la télé est arrêté après une course-poursuite avec d’autres policiers",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/faits_divers/4262290-20261112-president-syndicat-police-souvent-tele-arrete-apres-course-poursuite-autres-policiers?at_medium=display&at_campaign=149",
+     "dateMs": 1794473066000
+    },
+    {
+     "titre": "Nvidia : Le PDG Jensen Huang, soupçonné d’une autre infidélité avec une salariée, sur le point d’être limogé",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/monde/4262294-20261112-nvidia-pdg-jensen-huang-soupconne-autre-infidelite-salariee-point-etre-limoge?at_medium=display&at_campaign=149",
+     "dateMs": 1794472366000
+    },
+    {
+     "titre": "La SNCF ouvre sa billetterie pour les voyages en train des vacances d’hiver et de Pâques",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/economie/4262289-20261112-sncf-ouvre-billetterie-voyages-train-vacances-hiver-paques?at_medium=display&at_campaign=149",
+     "dateMs": 1794468741000
     }
    ]
   },
@@ -85,76 +85,76 @@
    "nom": "International",
    "items": [
     {
-     "titre": "En RDC, Félix Tshisekedi promulgue une loi controversée qui lui ouvre la voie à un troisième mandat",
-     "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/12/en-rdc-felix-tshisekedi-promulgue-une-loi-controversee-qui-lui-ouvre-la-voie-a-un-troisieme-mandat_6809048_3210.html",
-     "dateMs": 1794457803000
-    },
-    {
-     "titre": "En visite dans «sa patrie» au Pérou, Léon XIV appelle à surmonter les divisions du passé",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/am%C3%A9riques/20261112-en-visite-dans-sa-patrie-au-p%C3%A9rou-l%C3%A9on-xiv-appelle-%C3%A0-surmonter-les-divisions-du-pass%C3%A9",
-     "dateMs": 1794456495000
-    },
-    {
-     "titre": "Famed ship SS United States sunk off coast of Florida",
+     "titre": "'We've got to run': Inside ruined Ukraine power plant under constant drone threat",
      "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/c3x298n87rn2o?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1794456193000
+     "lien": "https://www.bbc.co.uk/news/videos/cm93rp3gxn6qo?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1794488566000
     },
     {
-     "titre": "Soudan: une cathédrale enfouie de la Nubie médiévale révèle son architecture monumentale",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/science/20261112-soudan-une-cath%C3%A9drale-enfouie-de-la-nubie-m%C3%A9di%C3%A9vale-r%C3%A9v%C3%A8le-son-architecture-monumentale",
-     "dateMs": 1794456060000
+     "titre": "Millions of Ebola dollars going missing as virus spreads, medical charity warns",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/cx98757ymm6zo?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1794488557000
     },
     {
-     "titre": "Democrat Scott Colom seals historic win in Mississippi Senate race",
+     "titre": "Democrat Scott Colom makes history as Mississippi's first black senator since 19th Century",
      "source": "BBC World",
      "lien": "https://www.bbc.co.uk/news/articles/cw7vppyr80eeo?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1794456030000
+     "dateMs": 1794488215000
     },
     {
-     "titre": "Guerre en Iran : la population à bout de souffle",
-     "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/podcasts/article/2026/11/12/guerre-en-iran-la-population-a-bout-de-souffle_6809043_5463015.html",
-     "dateMs": 1794456009000
-    },
-    {
-     "titre": "Orpaillage à Siguiri: face à la justice, l’ex-préfet nie toute responsabilité dans les dégâts environnementaux",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/afrique/20261112-orpaillage-%C3%A0-siguiri-face-%C3%A0-la-justice-l-ex-pr%C3%A9fet-nie-toute-responsabilit%C3%A9-dans-les-d%C3%A9g%C3%A2ts-environnementaux",
-     "dateMs": 1794455205000
-    },
-    {
-     "titre": "Israeli strike on Nasser Hospital kills at least six, Gaza civil defence agency says",
+     "titre": "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
      "source": "BBC World",
      "lien": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1794454374000
+     "dateMs": 1794486361000
     },
     {
-     "titre": "Le conseil d'administration de Nvidia doit décider de l'avenir de son patron Jensen Huang",
+     "titre": "DIRECT-Séisme chez Nvidia: son PDG Jensen Huang sur la sellette",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/am%C3%A9riques/20261112-direct-nvidia-pdg-jensen-huang-pdg-sellette-wall-street-chine",
+     "dateMs": 1794485892000
+    },
+    {
+     "titre": "Christophe Gleizes: mobiliser contre l'oubli",
      "source": "France 24",
-     "lien": "https://www.france24.com/fr/%C3%A9co-tech/20261112-le-conseil-d-administration-de-nvidia-doit-d%C3%A9cider-de-l-avenir-de-son-patron-jensen-huang",
-     "dateMs": 1794451769000
+     "lien": "https://www.france24.com/fr/%C3%A9missions/on-va-plus-loin/20261112-christophe-gleizes-mobiliser-contre-l-oubli",
+     "dateMs": 1794485733000
     },
     {
-     "titre": "Australian teen missing in bush for six days rescued alive",
-     "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/ckvg25zmppglo?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1794451218000
-    },
-    {
-     "titre": "En direct : les émissaires américains vont rencontrer Vladimir Poutine, puis Volodymyr Zelensky",
+     "titre": "RD Congo : ouverture du procès de l'opposant politique Prince Epenge",
      "source": "France 24",
-     "lien": "https://www.france24.com/fr/europe/20261112-en-direct-ukraine-russie-emissaires-americains-rencontre-vladimir-poutine-volodymyr-zelensky",
-     "dateMs": 1794450063000
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261112-rd-congo-ouverture-du-proc%C3%A8s-de-l-opposant-politique-prince-epenge",
+     "dateMs": 1794485398000
     },
     {
-     "titre": "Le Paraguay rembourse une partie de leurs avoirs à tous les épargnants de Ueno Bank",
+     "titre": "États-Unis : au moins deux morts suite à l'effondrement d'un immeuble",
      "source": "France 24",
-     "lien": "https://www.france24.com/fr/am%C3%A9riques/20261112-paraguay-rembourse-une-partie-de-leurs-avoirs-epargnants-ueno-bank",
-     "dateMs": 1794449347000
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261112-%C3%A9tats-unis-au-moins-deux-morts-suite-%C3%A0-l-effondrement-d-un-immeuble",
+     "dateMs": 1794485205000
+    },
+    {
+     "titre": "\"Éclats de guerre\" : le photoreporter Patrick Chauvel témoigne de ses 60 ans de carrière",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/%C3%A9missions/parlons-en-les-invit%C3%A9s/20261112-%C3%A9clats-de-guerre-le-photoreporter-patrick-chauvel-t%C3%A9moigne-de-ses-60-ans-de-carri%C3%A8re",
+     "dateMs": 1794484921000
+    },
+    {
+     "titre": "« Un sommet Xi-Trump-Poutine serait le symbole de la multipolarité du XXIᵉ siècle, ou la réunion des croque-morts de l’ordre libéral international »",
+     "source": "Le Monde International",
+     "lien": "https://www.lemonde.fr/idees/article/2026/11/12/un-sommet-xi-trump-poutine-serait-le-symbole-de-la-multipolarite-du-xxi-siecle-ou-la-reunion-des-croque-morts-de-l-ordre-liberal-international_6809099_3232.html",
+     "dateMs": 1794484809000
+    },
+    {
+     "titre": "Indonésie: le vice-président Gibran démissionne, nouvelle secousse au sommet de l'État",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/podcasts/la-fabrique-du-monde/20261112-indon%C3%A9sie-vice-pr%C3%A9sident-gibran-d%C3%A9missionne-nouvelle-secousse-au-sommet-de-l-%C3%A9tat",
+     "dateMs": 1794481331000
+    },
+    {
+     "titre": "Bangladesh: nouvelle paralysie dans le textile, une centaine d’usines à l’arrêt",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/asie-pacifique/20261112-bangladesh-textile-industrie-usines-arr%C3%AAt",
+     "dateMs": 1794480308000
     }
    ]
   }
