@@ -1,82 +1,82 @@
 {
- "genere": "2026-11-12T13:05:51+00:00",
- "genereMs": 1794488748837,
+ "genere": "2026-11-13T12:29:47+00:00",
+ "genereMs": 1794572985888,
  "themes": [
   {
    "id": "france",
    "nom": "France",
    "items": [
     {
-     "titre": "Le président du Rassemblement national, Jordan Bardella, porte plainte \"pour faux et usage de faux\" après les accusations d'antisémitisme portées par Mediapart",
+     "titre": "La Russie affirme avoir abattu 1 198 drones ukrainiens dans la nuit de jeudi à vendredi et fait état de neuf morts",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/politique/jordan-bardella/le-president-du-rassemblement-national-jordan-bardella-porte-plainte-pour-faux-et-usage-de-faux-apres-les-accusations-d-antisemitisme-portees-par-mediapart_8279252.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1794488409000
+     "lien": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/la-russie-affirme-avoir-abattu-1-198-drones-ukrainiens-dans-la-nuit-de-jeudi-a-vendredi_8280572.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1794572629000
     },
     {
-     "titre": "Une bijouterie de luxe braquée à Paris sans faire de blessé, les suspects armés en fuite",
+     "titre": "Crise sociale : la CFDT rejoint l'appel à la mobilisation dans le public le 17 novembre, estimant que les propositions du gouvernement \"ne constituent pas de véritables avancées\"",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/faits-divers/une-bijouterie-de-luxe-braquee-a-paris-sans-faire-de-blesse-les-suspects-armes-en-fuite_8279318.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1794488299000
+     "lien": "https://www.franceinfo.fr/economie/pouvoir-achat/direct-crise-sociale-les-syndicats-de-fonctionnaires-recu-vendredi-matin-par-le-premier-ministre-pour-reclamer-de-meilleurs-salaires_8280482.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1794572473000
     },
     {
-     "titre": "Patrick et Isabelle Balkany expulsés de leur moulin de Giverny dans l'Eure",
+     "titre": "Panne mondiale chez Microsoft : Quels sont les pays et principaux services perturbés ce vendredi ?",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/high-tech/by-the-web/4262680-20261113-panne-mondiale-chez-microsoft-pays-principaux-services-perturbes-vendredi?at_medium=display&at_campaign=149",
+     "dateMs": 1794571851000
+    },
+    {
+     "titre": "Ces pays et entreprises qui bannissent le nombre 13 par superstition",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/societe/4262572-20261113-pays-entreprises-bannissent-nombre-13-superstition?at_medium=display&at_campaign=149",
+     "dateMs": 1794571663000
+    },
+    {
+     "titre": "Les meubles totems du designer Martin Szekely s’exposent à Paris",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/m-styles/article/2026/11/13/les-meubles-totems-du-designer-martin-szekely-s-exposent-a-paris_6809322_4497319.html",
+     "dateMs": 1794571208000
+    },
+    {
+     "titre": "\"Comment voulez-vous qu'on rattrape ça ?\" : face aux blocages de leur lycée, des proviseurs parisiens racontent leur désarroi",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/politique/affaire/affaire-balkany/patrick-et-isabelle-balkany-expulses-de-leur-moulin-de-giverny-dans-l-eure_8279321.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1794488153000
+     "lien": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/comment-voulez-vous-qu-on-rattrape-ca-face-aux-blocages-de-leur-lycee-des-proviseurs-parisiens-racontent-leur-desarroi_8279750.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1794571138000
     },
     {
-     "titre": "EN DIRECT, guerre en Ukraine : Vladimir Poutine a « détruit » la sécurité européenne après l’invasion de l’Ukraine, estime Antonio Costa, président du Conseil européen",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/international/live/2026/11/12/en-direct-guerre-en-ukraine-vladimir-poutine-a-detruit-la-securite-europeenne-apres-l-invasion-de-l-ukraine-estime-antonio-costa-president-du-conseil-europeen_6808609_3210.html",
-     "dateMs": 1794487971000
-    },
-    {
-     "titre": "Les Balkany priés de quitter leur moulin de Giverny, n’en ayant plus l’usufruit après une condamnation pour fraude fiscale",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/societe/article/2026/11/12/les-balkany-pries-de-quitter-leur-moulin-de-giverny-n-en-ayant-plus-l-usufruit-apres-une-condamnation-pour-fraude-fiscale_6809103_3224.html",
-     "dateMs": 1794487773000
-    },
-    {
-     "titre": "Un immeuble s'effondre à New York, au moins six morts et 19 blessés",
+     "titre": "Panne mondiale de Microsoft : l'entreprise constate \"des améliorations\", notamment pour rétablir l'accès aux boîtes mail",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/monde/usa/un-immeuble-s-effondre-a-new-york-au-moins-deux-morts-et-17-blesses-selon-un-bilan-provisoire_8278736.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1794487604000
+     "lien": "https://www.franceinfo.fr/internet/microsoft/direct-panne-mondiale-de-microsoft-des-resultats-positifs-en-matiere-de-stabilite-du-service-constates-par-le-geant-americain_8280665.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1794570863000
     },
     {
-     "titre": "En 2025, les flux migratoires ont augmenté en Europe du Sud, mais reculé en Amérique du Nord",
+     "titre": "En Tunisie, comment un projet d’élevage d’insectes a été au cœur de tensions et de violences",
      "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/12/en-2025-les-flux-migratoires-ont-augmente-en-europe-du-sud-mais-recule-en-amerique-du-nord_6809102_3210.html",
-     "dateMs": 1794486603000
+     "lien": "https://www.lemonde.fr/planete/article/2026/11/13/en-tunisie-comment-un-projet-d-elevage-d-insectes-a-ete-au-c-ur-de-tensions-et-de-violences_6809321_3244.html",
+     "dateMs": 1794569410000
     },
     {
-     "titre": "A New York, au moins six morts dans l’effondrement d’un immeuble à Brooklyn",
+     "titre": "Plus de 50 manifestations attendues samedi lors de l’acte V des mobilisations sociales ; 70 000 policiers et gendarmes devraient être mobilisés",
      "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/12/a-new-york-au-moins-cinq-morts-dans-l-effondrement-d-un-immeuble-a-brooklyn_6809041_3211.html",
-     "dateMs": 1794486547000
+     "lien": "https://www.lemonde.fr/societe/article/2026/11/13/acte-v-des-mobilisations-sociales-entre-50-et-60-defiles-sur-l-ensemble-du-territoire-national-prevoit-le-ministre-de-l-interieur_6809320_3224.html",
+     "dateMs": 1794568586000
     },
     {
-     "titre": "Élysée : Deux membres de la garde républicaine s’effondrent devant Emmanuel Macron",
+     "titre": "« Unis sous le même drapeau »… L’influenceur Tibo InShape au cœur d’une nouvelle polémique",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/societe/4262327-20261112-elysee-deux-membres-garde-republicaine-effondrent-devant-emmanuel-macron?at_medium=display&at_campaign=149",
-     "dateMs": 1794479709000
+     "lien": "https://www.20minutes.fr/high-tech/by-the-web/4262586-20261113-unis-sous-drapeau-influenceur-tibo-inshape-ur-nouvelle-polemique?at_medium=display&at_campaign=149",
+     "dateMs": 1794567966000
     },
     {
-     "titre": "Le président d’un syndicat de police souvent à la télé est arrêté après une course-poursuite avec d’autres policiers",
-     "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/faits_divers/4262290-20261112-president-syndicat-police-souvent-tele-arrete-apres-course-poursuite-autres-policiers?at_medium=display&at_campaign=149",
-     "dateMs": 1794473066000
+     "titre": "L’athlète Auriana Lazraq-Khlass suspendue pour vingt-deux mois en raison de manquements à ses obligations de localisation antidopage",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/sport/article/2026/11/13/l-athlete-auriana-lazraq-khlass-suspendue-pour-vingt-deux-mois-en-raison-de-manquements-a-ses-obligations-de-localisation-antidopage_6809317_3242.html",
+     "dateMs": 1794567728000
     },
     {
-     "titre": "Nvidia : Le PDG Jensen Huang, soupçonné d’une autre infidélité avec une salariée, sur le point d’être limogé",
+     "titre": "Course à pied : « Un format un peu méditatif »… Comment Thierry Grajdura reste en équipe de France de Backyard, à 58 ans",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/monde/4262294-20261112-nvidia-pdg-jensen-huang-soupconne-autre-infidelite-salariee-point-etre-limoge?at_medium=display&at_campaign=149",
-     "dateMs": 1794472366000
-    },
-    {
-     "titre": "La SNCF ouvre sa billetterie pour les voyages en train des vacances d’hiver et de Pâques",
-     "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/economie/4262289-20261112-sncf-ouvre-billetterie-voyages-train-vacances-hiver-paques?at_medium=display&at_campaign=149",
-     "dateMs": 1794468741000
+     "lien": "https://www.20minutes.fr/sport/4262448-20261113-course-pied-format-peu-meditatif-comment-thierry-grajdura-reste-equipe-france-backyard-58-ans?at_medium=display&at_campaign=149",
+     "dateMs": 1794566246000
     }
    ]
   },
@@ -85,76 +85,76 @@
    "nom": "International",
    "items": [
     {
-     "titre": "'We've got to run': Inside ruined Ukraine power plant under constant drone threat",
-     "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/videos/cm93rp3gxn6qo?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1794488566000
-    },
-    {
-     "titre": "Millions of Ebola dollars going missing as virus spreads, medical charity warns",
-     "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/cx98757ymm6zo?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1794488557000
-    },
-    {
-     "titre": "Democrat Scott Colom makes history as Mississippi's first black senator since 19th Century",
-     "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/cw7vppyr80eeo?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1794488215000
-    },
-    {
-     "titre": "Israeli strike on Gaza hospital kills six Palestinians, health ministry says",
-     "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/ckzd9p7e4eqeo?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1794486361000
-    },
-    {
-     "titre": "DIRECT-Séisme chez Nvidia: son PDG Jensen Huang sur la sellette",
+     "titre": "Pérou: le pape Léon XIV rend hommage à la jeunesse et à ses «martyrs»",
      "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/am%C3%A9riques/20261112-direct-nvidia-pdg-jensen-huang-pdg-sellette-wall-street-chine",
-     "dateMs": 1794485892000
+     "lien": "https://www.rfi.fr/fr/am%C3%A9riques/20261113-p%C3%A9rou-pape-l%C3%A9on-xiv-jeunesse-martyrs",
+     "dateMs": 1794572342000
     },
     {
-     "titre": "Christophe Gleizes: mobiliser contre l'oubli",
+     "titre": "What we know about the global Microsoft outage",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1794571797000
+    },
+    {
+     "titre": "Teddy Riner lance sa campagne présidentielle dans un hôpital de Saint-Denis",
      "source": "France 24",
-     "lien": "https://www.france24.com/fr/%C3%A9missions/on-va-plus-loin/20261112-christophe-gleizes-mobiliser-contre-l-oubli",
-     "dateMs": 1794485733000
+     "lien": "https://www.france24.com/fr/france/20261113-teddy-riner-lance-sa-campagne-pr%C3%A9sidentielle-dans-un-h%C3%B4pital-de-saint-denis",
+     "dateMs": 1794571345000
     },
     {
-     "titre": "RD Congo : ouverture du procès de l'opposant politique Prince Epenge",
+     "titre": "Pérou : le pape Léon XIV accueilli par trois millions de personnes",
      "source": "France 24",
-     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261112-rd-congo-ouverture-du-proc%C3%A8s-de-l-opposant-politique-prince-epenge",
-     "dateMs": 1794485398000
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261113-p%C3%A9rou-le-pape-l%C3%A9on-xiv-accueilli-par-trois-millions-de-personnes",
+     "dateMs": 1794569637000
     },
     {
-     "titre": "États-Unis : au moins deux morts suite à l'effondrement d'un immeuble",
+     "titre": "Gaza : au moins 11 morts après des frappes israéliennes malgré le cessez-le-feu",
      "source": "France 24",
-     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261112-%C3%A9tats-unis-au-moins-deux-morts-suite-%C3%A0-l-effondrement-d-un-immeuble",
-     "dateMs": 1794485205000
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261113-gaza-au-moins-11-morts-apr%C3%A8s-des-frappes-isra%C3%A9liennes-malgr%C3%A9-le-cessez-le-feu",
+     "dateMs": 1794569564000
     },
     {
-     "titre": "\"Éclats de guerre\" : le photoreporter Patrick Chauvel témoigne de ses 60 ans de carrière",
+     "titre": "Panne mondiale d'Outlook : ce que l’on sait des perturbations et de leurs causes",
      "source": "France 24",
-     "lien": "https://www.france24.com/fr/%C3%A9missions/parlons-en-les-invit%C3%A9s/20261112-%C3%A9clats-de-guerre-le-photoreporter-patrick-chauvel-t%C3%A9moigne-de-ses-60-ans-de-carri%C3%A8re",
-     "dateMs": 1794484921000
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261113-panne-mondiale-d-outlook-ce-que-l-on-sait-des-perturbations-et-de-leurs-causes",
+     "dateMs": 1794569011000
     },
     {
-     "titre": "« Un sommet Xi-Trump-Poutine serait le symbole de la multipolarité du XXIᵉ siècle, ou la réunion des croque-morts de l’ordre libéral international »",
+     "titre": "Salon du Made in France: les entrepreneurs du numérique cherchent leur indépendance face aux Gafam",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/%C3%A9conomie/20261113-salon-du-made-in-france-les-entrepreneurs-du-num%C3%A9rique-cherchent-leur-ind%C3%A9pendance-face-aux-gafam",
+     "dateMs": 1794568383000
+    },
+    {
+     "titre": "En Indonésie, la démission du vice-président rebat les cartes de la présidence",
      "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/idees/article/2026/11/12/un-sommet-xi-trump-poutine-serait-le-symbole-de-la-multipolarite-du-xxi-siecle-ou-la-reunion-des-croque-morts-de-l-ordre-liberal-international_6809099_3232.html",
-     "dateMs": 1794484809000
+     "lien": "https://www.lemonde.fr/international/article/2026/11/13/en-indonesie-la-demission-du-vice-president-rebat-les-cartes-de-la-presidence_6809315_3210.html",
+     "dateMs": 1794567611000
     },
     {
-     "titre": "Indonésie: le vice-président Gibran démissionne, nouvelle secousse au sommet de l'État",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/podcasts/la-fabrique-du-monde/20261112-indon%C3%A9sie-vice-pr%C3%A9sident-gibran-d%C3%A9missionne-nouvelle-secousse-au-sommet-de-l-%C3%A9tat",
-     "dateMs": 1794481331000
+     "titre": "EN DIRECT, guerre en Ukraine : Kaja Kallas met en garde contre les « pièges » tendus par Moscou",
+     "source": "Le Monde International",
+     "lien": "https://www.lemonde.fr/international/live/2026/11/13/en-direct-guerre-en-ukraine-kaja-kallas-met-en-garde-contre-les-pieges-tendus-par-moscou_6808609_3210.html",
+     "dateMs": 1794566679000
     },
     {
-     "titre": "Bangladesh: nouvelle paralysie dans le textile, une centaine d’usines à l’arrêt",
+     "titre": "Au Chili, le gouvernement de José Antonio Kast face à la grève des camionneurs",
      "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/asie-pacifique/20261112-bangladesh-textile-industrie-usines-arr%C3%AAt",
-     "dateMs": 1794480308000
+     "lien": "https://www.rfi.fr/fr/am%C3%A9riques/20261113-chili-le-gouvernement-de-jos%C3%A9-antonio-kast-face-%C3%A0-la-gr%C3%A8ve-des-camionneurs",
+     "dateMs": 1794566523000
+    },
+    {
+     "titre": "Sommet de la Francophonie: au Cambodge, «le français est surtout une langue de spécialisation et de prestige»",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/asie-pacifique/20261113-sommet-de-la-francophonie-au-cambodge-le-fran%C3%A7ais-est-surtout-une-langue-de-sp%C3%A9cialisation-et-de-prestige",
+     "dateMs": 1794566041000
+    },
+    {
+     "titre": "A Taïwan, les écarts de Jensen Huang suscitent davantage d’intérêt que les grandes manœuvres navales chinoises",
+     "source": "Le Monde International",
+     "lien": "https://www.lemonde.fr/international/article/2026/11/13/a-taiwan-les-ecarts-de-jensen-huang-suscitent-davantage-d-interet-que-les-grandes-man-uvres-navales-chinoises_6809308_3210.html",
+     "dateMs": 1794564013000
     }
    ]
   }
