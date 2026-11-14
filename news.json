@@ -1,82 +1,82 @@
 {
- "genere": "2026-11-13T12:29:47+00:00",
- "genereMs": 1794572985888,
+ "genere": "2026-11-14T11:40:30+00:00",
+ "genereMs": 1794656428859,
  "themes": [
   {
    "id": "france",
    "nom": "France",
    "items": [
     {
-     "titre": "La Russie affirme avoir abattu 1 198 drones ukrainiens dans la nuit de jeudi à vendredi et fait état de neuf morts",
-     "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/la-russie-affirme-avoir-abattu-1-198-drones-ukrainiens-dans-la-nuit-de-jeudi-a-vendredi_8280572.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1794572629000
-    },
-    {
-     "titre": "Crise sociale : la CFDT rejoint l'appel à la mobilisation dans le public le 17 novembre, estimant que les propositions du gouvernement \"ne constituent pas de véritables avancées\"",
-     "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/economie/pouvoir-achat/direct-crise-sociale-les-syndicats-de-fonctionnaires-recu-vendredi-matin-par-le-premier-ministre-pour-reclamer-de-meilleurs-salaires_8280482.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1794572473000
-    },
-    {
-     "titre": "Panne mondiale chez Microsoft : Quels sont les pays et principaux services perturbés ce vendredi ?",
-     "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/high-tech/by-the-web/4262680-20261113-panne-mondiale-chez-microsoft-pays-principaux-services-perturbes-vendredi?at_medium=display&at_campaign=149",
-     "dateMs": 1794571851000
-    },
-    {
-     "titre": "Ces pays et entreprises qui bannissent le nombre 13 par superstition",
-     "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/societe/4262572-20261113-pays-entreprises-bannissent-nombre-13-superstition?at_medium=display&at_campaign=149",
-     "dateMs": 1794571663000
-    },
-    {
-     "titre": "Les meubles totems du designer Martin Szekely s’exposent à Paris",
+     "titre": "La France interdit la pêche de loisir de l’anguille jaune, pour contrer l’effondrement de cette espèce",
      "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/m-styles/article/2026/11/13/les-meubles-totems-du-designer-martin-szekely-s-exposent-a-paris_6809322_4497319.html",
-     "dateMs": 1794571208000
+     "lien": "https://www.lemonde.fr/planete/article/2026/11/14/la-france-interdit-la-peche-de-loisir-de-l-anguille-jaune-pour-contrer-l-effondrement-de-cette-espece_6810148_3244.html",
+     "dateMs": 1794655993000
     },
     {
-     "titre": "\"Comment voulez-vous qu'on rattrape ça ?\" : face aux blocages de leur lycée, des proviseurs parisiens racontent leur désarroi",
+     "titre": "Guerre en Ukraine : les Etats-Unis ont proposé des concessions territoriales en échange d'une adhésion de Kiev à l'Otan, selon Volodymyr Zelensky",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/comment-voulez-vous-qu-on-rattrape-ca-face-aux-blocages-de-leur-lycee-des-proviseurs-parisiens-racontent-leur-desarroi_8279750.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1794571138000
+     "lien": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/guerre-en-ukraine-volodymy-zelensky-affirme-que-les-etats-unis-ont-propose-des-concessions-territoriales-en-echange-d-une-adhesion-de-kiev-a-l-otan_8282333.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1794654855000
     },
     {
-     "titre": "Panne mondiale de Microsoft : l'entreprise constate \"des améliorations\", notamment pour rétablir l'accès aux boîtes mail",
+     "titre": "EN DIRECT, guerre en Ukraine : Volodymyr Zelensky affirme que les Etats-Unis ont évoqué des concessions territoriales en échange d’une adhésion à l’OTAN",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/international/live/2026/11/14/en-direct-guerre-en-ukraine-volodymyr-zelensky-affirme-que-les-etats-unis-ont-evoque-des-concessions-territoriales-en-echange-d-une-adhesion-a-l-otan_6808609_3210.html",
+     "dateMs": 1794654807000
+    },
+    {
+     "titre": "L’US Saint-Malo, un petit club à l’ancienne à l’heure de la professionnalisation du football féminin",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/sport/article/2026/11/14/l-us-saint-malo-un-petit-club-a-l-ancienne-a-l-heure-de-la-professionnalisation-du-football-feminin_6810083_3242.html",
+     "dateMs": 1794654476000
+    },
+    {
+     "titre": "Manifestations du 14 novembre : entre 70 000 et 120 000 manifestants attendus partout en France, hors Paris, à l'appel de gilets jaunes et d'organisations de jeunesse",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/internet/microsoft/direct-panne-mondiale-de-microsoft-des-resultats-positifs-en-matiere-de-stabilite-du-service-constates-par-le-geant-americain_8280665.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1794570863000
+     "lien": "https://www.franceinfo.fr/societe/manifestations/direct-manifestations-du-14-novembre-suivez-la-journee-de-mobilisation-a-l-appel-de-gilets-jaunes-et-d-organisations-de-jeunesse_8281187.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1794654363000
     },
     {
-     "titre": "En Tunisie, comment un projet d’élevage d’insectes a été au cœur de tensions et de violences",
+     "titre": "Un vice-président de l'université de Versailles-Saint-Quentin agressé à l'arme blanche",
+     "source": "franceinfo",
+     "lien": "https://www.franceinfo.fr/faits-divers/le-vice-president-d-une-universite-en-ile-de-france-agresse-a-l-arme-blanche_8281703.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1794654294000
+    },
+    {
+     "titre": "Périscolaire à Paris : une famille de l'école Saint-Dominique somme la mairie de fournir les plannings des animateurs",
+     "source": "franceinfo",
+     "lien": "https://www.franceinfo.fr/societe/education/violences-dans-le-periscolaire/periscolaire-a-paris-une-famille-de-l-ecole-saint-dominique-somme-la-mairie-de-fournir-les-plannings-des-animateurs_8282189.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1794654077000
+    },
+    {
+     "titre": "Pour les écoles d’ingénieurs, la difficile équation de la baisse du niveau en maths",
      "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/planete/article/2026/11/13/en-tunisie-comment-un-projet-d-elevage-d-insectes-a-ete-au-c-ur-de-tensions-et-de-violences_6809321_3244.html",
-     "dateMs": 1794569410000
+     "lien": "https://www.lemonde.fr/campus/article/2026/11/14/pour-les-ecoles-d-ingenieurs-la-difficile-equation-de-la-baisse-du-niveau-en-maths_6810082_4401467.html",
+     "dateMs": 1794654010000
     },
     {
-     "titre": "Plus de 50 manifestations attendues samedi lors de l’acte V des mobilisations sociales ; 70 000 policiers et gendarmes devraient être mobilisés",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/societe/article/2026/11/13/acte-v-des-mobilisations-sociales-entre-50-et-60-defiles-sur-l-ensemble-du-territoire-national-prevoit-le-ministre-de-l-interieur_6809320_3224.html",
-     "dateMs": 1794568586000
-    },
-    {
-     "titre": "« Unis sous le même drapeau »… L’influenceur Tibo InShape au cœur d’une nouvelle polémique",
+     "titre": "Intempéries : Les départements des Bouches-du-Rhône et du Gard en vigilance orange",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/high-tech/by-the-web/4262586-20261113-unis-sous-drapeau-influenceur-tibo-inshape-ur-nouvelle-polemique?at_medium=display&at_campaign=149",
-     "dateMs": 1794567966000
+     "lien": "https://www.20minutes.fr/societe/4262844-20261114-intemperies-departements-bouches-rhone-gard-vigilance-orange?at_medium=display&at_campaign=149",
+     "dateMs": 1794652191000
     },
     {
-     "titre": "L’athlète Auriana Lazraq-Khlass suspendue pour vingt-deux mois en raison de manquements à ses obligations de localisation antidopage",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/sport/article/2026/11/13/l-athlete-auriana-lazraq-khlass-suspendue-pour-vingt-deux-mois-en-raison-de-manquements-a-ses-obligations-de-localisation-antidopage_6809317_3242.html",
-     "dateMs": 1794567728000
-    },
-    {
-     "titre": "Course à pied : « Un format un peu méditatif »… Comment Thierry Grajdura reste en équipe de France de Backyard, à 58 ans",
+     "titre": "Ardennes : Une filière de trafic d’armes à feu entre la Belgique et la France démantelée, huit personnes mises en examen",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/sport/4262448-20261113-course-pied-format-peu-meditatif-comment-thierry-grajdura-reste-equipe-france-backyard-58-ans?at_medium=display&at_campaign=149",
-     "dateMs": 1794566246000
+     "lien": "https://www.20minutes.fr/faits_divers/4262838-20261114-ardennes-filiere-trafic-armes-feu-entre-belgique-france-demantelee-huit-personnes-mises-examen?at_medium=display&at_campaign=149",
+     "dateMs": 1794652106000
+    },
+    {
+     "titre": "« Je devais m’adapter à chacun d’entre eux »… Le polyamour rend-il vraiment plus libre ?",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/societe/4262657-20261114-devais-adapter-chacun-entre-polyamour-rend-vraiment-plus-libre?at_medium=display&at_campaign=149",
+     "dateMs": 1794650556000
+    },
+    {
+     "titre": "Chine : Sommet inédit entre Trump, Xi et Poutine qui parleront nucléaire et Iran, mais pas de l’Ukraine",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/monde/chine/4262834-20261114-chine-sommet-inedit-entre-trump-xi-poutine-parleront-nucleaire-iran-ukraine?at_medium=display&at_campaign=149",
+     "dateMs": 1794650274000
     }
    ]
   },
@@ -85,76 +85,76 @@
    "nom": "International",
    "items": [
     {
-     "titre": "Pérou: le pape Léon XIV rend hommage à la jeunesse et à ses «martyrs»",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/am%C3%A9riques/20261113-p%C3%A9rou-pape-l%C3%A9on-xiv-jeunesse-martyrs",
-     "dateMs": 1794572342000
-    },
-    {
-     "titre": "What we know about the global Microsoft outage",
+     "titre": "Watch: Cruise ship seen sinking after collision with cargo ship in New Orleans",
      "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1794571797000
+     "lien": "https://www.bbc.co.uk/news/videos/ck4gn4y77m40o?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1794655810000
     },
     {
-     "titre": "Teddy Riner lance sa campagne présidentielle dans un hôpital de Saint-Denis",
+     "titre": "Nvidia sans Jensen Huang, les risques du culte de la personnalité dans la tech",
      "source": "France 24",
-     "lien": "https://www.france24.com/fr/france/20261113-teddy-riner-lance-sa-campagne-pr%C3%A9sidentielle-dans-un-h%C3%B4pital-de-saint-denis",
-     "dateMs": 1794571345000
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261114-nvidia-sans-jensen-huang-les-risques-du-culte-de-la-personnalit%C3%A9-dans-la-tech",
+     "dateMs": 1794654788000
     },
     {
-     "titre": "Pérou : le pape Léon XIV accueilli par trois millions de personnes",
+     "titre": "Washington a proposé que Kiev cède le Donbass en échange d'une adhésion à l'Otan, affirme Zelensky",
      "source": "France 24",
-     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261113-p%C3%A9rou-le-pape-l%C3%A9on-xiv-accueilli-par-trois-millions-de-personnes",
-     "dateMs": 1794569637000
+     "lien": "https://www.france24.com/fr/europe/20261114-washington-propos%C3%A9-kiev-c%C3%A8de-donbass-%C3%A9change-adh%C3%A9sion-otan-affirme-zelensky",
+     "dateMs": 1794653638000
     },
     {
-     "titre": "Gaza : au moins 11 morts après des frappes israéliennes malgré le cessez-le-feu",
+     "titre": "Hungarian authorities uncover $20m during probe of Orbán-era minister",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/ckjwj03w4w0qo?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1794652940000
+    },
+    {
+     "titre": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/cwvg2l312ylqo?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1794652238000
+    },
+    {
+     "titre": "Les Bleus battent les Springboks à Paris pour la première fois depuis 21 ans",
      "source": "France 24",
-     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261113-gaza-au-moins-11-morts-apr%C3%A8s-des-frappes-isra%C3%A9liennes-malgr%C3%A9-le-cessez-le-feu",
-     "dateMs": 1794569564000
+     "lien": "https://www.france24.com/fr/%C3%A9missions/sports/20261114-bleus-battent-springboks-paris-pour-premi%C3%A8re-fois-depuis-21-ans",
+     "dateMs": 1794652021000
     },
     {
-     "titre": "Panne mondiale d'Outlook : ce que l’on sait des perturbations et de leurs causes",
+     "titre": "Manifestations : qui sont les \"street medics\" qui soignent les blessés ?",
      "source": "France 24",
-     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261113-panne-mondiale-d-outlook-ce-que-l-on-sait-des-perturbations-et-de-leurs-causes",
-     "dateMs": 1794569011000
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261114-manifestations-qui-sont-les-street-medics-qui-soignent-les-bless%C3%A9s",
+     "dateMs": 1794651503000
     },
     {
-     "titre": "Salon du Made in France: les entrepreneurs du numérique cherchent leur indépendance face aux Gafam",
+     "titre": "À l'approche de la présidentielle, crise dans les médias français",
      "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/%C3%A9conomie/20261113-salon-du-made-in-france-les-entrepreneurs-du-num%C3%A9rique-cherchent-leur-ind%C3%A9pendance-face-aux-gafam",
-     "dateMs": 1794568383000
+     "lien": "https://www.rfi.fr/fr/podcasts/menaces-sur-l-information/20261114-%C3%A0-l-approche-de-la-pr%C3%A9sidentielle-crise-dans-les-m%C3%A9dias-fran%C3%A7ais",
+     "dateMs": 1794651485000
     },
     {
-     "titre": "En Indonésie, la démission du vice-président rebat les cartes de la présidence",
-     "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/13/en-indonesie-la-demission-du-vice-president-rebat-les-cartes-de-la-presidence_6809315_3210.html",
-     "dateMs": 1794567611000
-    },
-    {
-     "titre": "EN DIRECT, guerre en Ukraine : Kaja Kallas met en garde contre les « pièges » tendus par Moscou",
-     "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/international/live/2026/11/13/en-direct-guerre-en-ukraine-kaja-kallas-met-en-garde-contre-les-pieges-tendus-par-moscou_6808609_3210.html",
-     "dateMs": 1794566679000
-    },
-    {
-     "titre": "Au Chili, le gouvernement de José Antonio Kast face à la grève des camionneurs",
+     "titre": "Face aux alertes de survols de drones, la Lituanie veut renforcer sa défense anti-aérienne",
      "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/am%C3%A9riques/20261113-chili-le-gouvernement-de-jos%C3%A9-antonio-kast-face-%C3%A0-la-gr%C3%A8ve-des-camionneurs",
-     "dateMs": 1794566523000
+     "lien": "https://www.rfi.fr/fr/europe/20261114-face-aux-alertes-de-survols-de-drones-la-lituanie-veut-renforcer-sa-d%C3%A9fense-anti-a%C3%A9rienne",
+     "dateMs": 1794650911000
     },
     {
-     "titre": "Sommet de la Francophonie: au Cambodge, «le français est surtout une langue de spécialisation et de prestige»",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/asie-pacifique/20261113-sommet-de-la-francophonie-au-cambodge-le-fran%C3%A7ais-est-surtout-une-langue-de-sp%C3%A9cialisation-et-de-prestige",
-     "dateMs": 1794566041000
-    },
-    {
-     "titre": "A Taïwan, les écarts de Jensen Huang suscitent davantage d’intérêt que les grandes manœuvres navales chinoises",
+     "titre": "L’administration Trump percutée par l’onde de choc Nvidia",
      "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/13/a-taiwan-les-ecarts-de-jensen-huang-suscitent-davantage-d-interet-que-les-grandes-man-uvres-navales-chinoises_6809308_3210.html",
-     "dateMs": 1794564013000
+     "lien": "https://www.lemonde.fr/idees/article/2026/11/14/l-administration-trump-percutee-par-l-onde-de-choc-nvidia_6809983_3232.html",
+     "dateMs": 1794650474000
+    },
+    {
+     "titre": "Le visa d’une journaliste norvégienne jugée trop impertinente annulé par l’Inde",
+     "source": "Le Monde International",
+     "lien": "https://www.lemonde.fr/international/article/2026/11/14/le-visa-d-une-journaliste-norvegienne-jugee-trop-impertinente-annule-par-l-inde_6809917_3210.html",
+     "dateMs": 1794647706000
+    },
+    {
+     "titre": "Mobilisation en France: un «acte V» du mouvement social ce samedi avec des revendications variées",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/france/20261114-mobilisation-en-france-un-acte-v-du-mouvement-social-ce-samedi-avec-des-revendications-vari%C3%A9es",
+     "dateMs": 1794645176000
     }
    ]
   }
