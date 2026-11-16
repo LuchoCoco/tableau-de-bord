@@ -1,82 +1,82 @@
 {
- "genere": "2026-11-15T12:09:28+00:00",
- "genereMs": 1794744566562,
+ "genere": "2026-11-16T13:02:41+00:00",
+ "genereMs": 1794834159972,
  "themes": [
   {
    "id": "france",
    "nom": "France",
    "items": [
     {
-     "titre": "Présidentielle 2027 : la députée écologiste Sandrine Rousseau appelle Marine Tondelier \"à se retirer\"",
-     "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-l-entourage-d-emmanuel-macron-etrille-les-candidats-qui-veulent-baisser-l-aide-financiere-a-l-ukraine-dont-marine-le-pen_8283293.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1794742903000
-    },
-    {
-     "titre": "Intempéries dans l’Hérault : Automobilistes bloqués, routes fermées… Les images impressionnantes des inondations",
+     "titre": "Côtes-d’Armor : Un corps et des ossements découverts dans une ferme",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/societe/4262943-20261115-intemperies-automobilistes-bloques-routes-fermees-images-impressionnantes-inondations-herault?at_medium=display&at_campaign=149",
-     "dateMs": 1794742670000
+     "lien": "https://www.20minutes.fr/faits_divers/4263263-20261116-cotes-armor-corps-ossements-decouverts-ferme?at_medium=display&at_campaign=149",
+     "dateMs": 1794833725000
     },
     {
-     "titre": "\"J'ai fait des kilomètres dans l'eau\", piégée par les intempéries, une femme de 73 ans retrouvée saine et sauve à Montpellier",
+     "titre": "Grèves dans la fonction publique, mouvement lycéen, manifestations… A quoi s'attendre pour la mobilisation du 17 novembre ?",
      "source": "franceinfo",
-     "lien": "https://france3-regions.franceinfo.fr/occitanie/herault/montpellier/une-septuagenaire-disparue-au-volant-de-sa-voiture-activement-recherchee-a-montpellier-apres-les-orages-de-la-nuit-une-centaine-d-automobilistes-mis-en-securite-3449907.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1794742006000
+     "lien": "https://www.franceinfo.fr/societe/manifestations/greves-dans-la-fonction-publique-mouvement-lyceen-manifestations-a-quoi-s-attendre-pour-la-mobilisation-du-17-novembre_8284415.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1794833530000
     },
     {
-     "titre": "Nord : Au moins 89 rescapés lors d’un naufrage d’une traversée clandestine, mais un possible disparu",
-     "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/monde/4262940-20261115-nord-moins-89-rescapes-lors-naufrage-traversee-clandestine-possible-disparu?at_medium=display&at_campaign=149",
-     "dateMs": 1794741600000
-    },
-    {
-     "titre": "Un important site industriel russe touché par des frappes attribuées à Kiev",
+     "titre": "\"Le rassemblement commence par la primaire\" de la droite et du centre pour la présidentielle, plaident un millier d'élus locaux dans une tribune",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/un-important-site-industriel-russe-touche-par-des-frappes-attribuees-a-kiev_8283350.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1794741334000
+     "lien": "https://www.franceinfo.fr/elections/le-rassemblement-commence-par-la-primaire-de-la-droite-et-du-centre-plaident-un-millier-d-elus-locaux-dans-une-tribune_8284796.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1794832862000
     },
     {
-     "titre": "Manifestation du 14 novembre : à Paris, 108 personnes placées en garde à vue, dont 38 mineurs",
+     "titre": "L'UE annonce de nouvelles sanctions contre plus de 100 entités et personnes \"pour mieux restreindre la capacité de la Russie à financer sa guerre\" en Ukraine",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/societe/manifestations/manifestation-du-14-novembre-a-paris-108-personnes-placees-en-garde-a-vue-dont-38-mineurs_8283458.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1794741326000
+     "lien": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/l-ue-annonce-de-nouvelles-sanctions-contre-plus-de-100-entites-et-personnes-pour-mieux-restreindre-la-capacite-de-la-russie-a-financer-sa-guerre-en-ukraine_8284817.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1794832284000
     },
     {
-     "titre": "Présidentielle : Le Pen « isolera » la France si elle cesse de soutenir l’Ukraine, met en garde l’entourage de Macron",
+     "titre": "Législatives en Israël : Benyamin Nétanyahou accusé d’avoir tenté un « coup d’Etat » par des opposants",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/international/article/2026/11/16/legislatives-en-israel-benyamin-netanyahou-accuse-d-avoir-tente-un-coup-d-etat-par-des-opposants_6811767_3210.html",
+     "dateMs": 1794831563000
+    },
+    {
+     "titre": "\"C'est toujours mieux d'entendre un agresseur qui reconnaît les faits et qui présente des excuses\", réagit la Fondation des femmes alors que Gérard Depardieu renonce à son procès en appel",
+     "source": "franceinfo",
+     "lien": "https://www.franceinfo.fr/culture/cinema/depardieu/c-est-toujours-mieux-d-entendre-un-agresseur-qui-reconnait-les-faits-et-qui-presente-des-excuses-reagit-la-fondation-des-femmes-alors-que-gerard-depardieu-renonce-a-son-proces-en-appel_8284829.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1794831346000
+    },
+    {
+     "titre": "République tchèque : les images de la plus grande manifestation dans le pays depuis 1989",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/international/video/2026/11/16/republique-tcheque-les-images-de-la-plus-grande-manifestation-dans-le-pays-depuis-1989_6811766_3210.html",
+     "dateMs": 1794831171000
+    },
+    {
+     "titre": "Julien Laroche-Joubert, acteur majeur de la transformation numérique du « Monde », est mort",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/disparitions/article/2026/11/16/julien-laroche-joubert-acteur-majeur-de-la-transformation-numerique-du-monde-est-mort_6811765_3382.html",
+     "dateMs": 1794831091000
+    },
+    {
+     "titre": "Miser sur les risques de catastrophes naturelles rapporte moins",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/economie/article/2026/11/16/miser-sur-les-risques-de-catastrophes-naturelles-rapporte-moins_6811732_3234.html",
+     "dateMs": 1794830403000
+    },
+    {
+     "titre": "Afrique du Sud : Une marathonienne cruellement disqualifiée après l’arrivée… pour un logo d’assurance sur son bandeau !",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/politique/4262942-20261115-presidentielle-pen-isolera-france-si-cesse-soutenir-ukraine-met-garde-entourage-macron?at_medium=display&at_campaign=149",
-     "dateMs": 1794740750000
+     "lien": "https://www.20minutes.fr/sport/4263199-20261116-afrique-sud-marathonienne-cruellement-disqualifiee-apres-arrivee-logo-assurance-bandeau?at_medium=display&at_campaign=149",
+     "dateMs": 1794824328000
     },
     {
-     "titre": "Sandra Wollner, réalisatrice d’« Everytime », une redoutable conteuse et artiste touche-à-tout",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/culture/article/2026/11/15/sandra-wollner-realisatrice-d-everytime-une-redoutable-conteuse-et-artiste-touche-a-tout_6811011_3246.html",
-     "dateMs": 1794740410000
-    },
-    {
-     "titre": "Paul Seixas remporte le Critérium de Saitama, un succès pour « bien finir » sa belle année 2026",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/sport/article/2026/11/15/paul-seixas-remporte-le-criterium-de-saitama-un-succes-pour-bien-finir-sa-belle-annee-2026_6811010_3242.html",
-     "dateMs": 1794739915000
-    },
-    {
-     "titre": "États-Unis : Des câbles en cuivre vétustes à l’origine de l’arrêt du trafic aérien",
+     "titre": "Trump, Xi et Poutine discuteront de la « paix mondiale » lors de leur rencontre de jeudi",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/monde/etats-unis/4262938-20261115-etats-unis-cables-cuivre-vetustes-origine-arret-trafic-aerien?at_medium=display&at_campaign=149",
-     "dateMs": 1794739581000
+     "lien": "https://www.20minutes.fr/monde/chine/4263171-20261116-trump-xi-poutine-discuteront-paix-mondiale-lors-rencontre-jeudi?at_medium=display&at_campaign=149",
+     "dateMs": 1794818807000
     },
     {
-     "titre": "La hausse de 1,6 % du smic et des « bas salaires » des fonctionnaires coûteront « un peu plus de 1 milliard d’euros », selon le gouvernement",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/politique/article/2026/11/15/les-revalorisations-du-smic-et-des-bas-salaires-des-fonctionnaires-couteront-un-peu-plus-de-1-milliard-d-euros-aux-finances-publiques-selon-le-gouvernement_6811009_823448.html",
-     "dateMs": 1794737397000
-    },
-    {
-     "titre": "Au Sénégal, travailler sous 38 °C toute l’année",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/afrique/article/2026/11/15/au-senegal-travailler-sous-38-c-toute-l-annee_6811008_3212.html",
-     "dateMs": 1794737161000
+     "titre": "Gérard Depardieu présente ses « excuses » aux victimes après s’est désisté de l’appel de sa condamnation",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/justice/4263170-20261116-gerard-depardieu-desiste-appel-condamnation-presente-excuses-victimes?at_medium=display&at_campaign=149",
+     "dateMs": 1794817361000
     }
    ]
   },
@@ -85,76 +85,76 @@
    "nom": "International",
    "items": [
     {
-     "titre": "La relation Mbappé-Zidane, l'autre enjeu du match des Bleus contre la Turquie",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/sports/20261115-la-relation-mbapp%C3%A9-zidane-l-autre-enjeu-du-match-des-bleus-contre-la-turquie",
-     "dateMs": 1794744122000
-    },
-    {
-     "titre": "De retour dans les Andes péruviennes, le pape Léon XIV s'inquiète de l'exode rural",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/am%C3%A9riques/20261115-perou-retour-andes-pape-l%C3%A9on-xiv-inquiet-exode-rural-pauvret%C3%A9",
-     "dateMs": 1794740807000
-    },
-    {
-     "titre": "Three men sentenced to death in Jordan over fatal church mass shooting",
-     "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/c3rrg9xgqlwpo?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1794740792000
-    },
-    {
-     "titre": "Sommet de la Francophonie : la rivalité RD Congo-Rwanda au cœur des débats",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261115-sommet-de-la-francophonie-la-rivalit%C3%A9-rd-congo-rwanda-au-c%C5%93ur-des-d%C3%A9bats",
-     "dateMs": 1794740764000
-    },
-    {
-     "titre": "Hongrie : 17,7 millions d'euros saisis dans une enquête visant un ancien ministre",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261115-hongrie-17-7-millions-d-euros-saisis-dans-une-enqu%C3%AAte-visant-un-ancien-ministre",
-     "dateMs": 1794740347000
-    },
-    {
-     "titre": "États-Unis: les ventes de voitures hybrides relancées par la hausse des prix du carburant",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/am%C3%A9riques/20261115-%C3%A9tats-unis-les-ventes-de-voitures-hybrides-relanc%C3%A9es-par-la-hausse-des-prix-du-carburant",
-     "dateMs": 1794740206000
-    },
-    {
-     "titre": "L'Iran revendique des frappes de drones contre une base américaine au Bahreïn",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/moyen-orient/20261115-iran-revendique-frappes-drones-contre-base-am%C3%A9ricaine-au-bahre%C3%AFn",
-     "dateMs": 1794738075000
-    },
-    {
-     "titre": "Des milliers de Portugais manifestent contre la crise du logement et la vie chère",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/europe/20261115-des-milliers-de-portugais-manifestent-contre-la-crise-du-logement-et-la-vie-ch%C3%A8re",
-     "dateMs": 1794737584000
-    },
-    {
-     "titre": "EN DIRECT, guerre en Ukraine : les restrictions d’accès à Starshield persistent et empêchent Kiev de se protéger des attaques russes, dit Volodymyr Zelensky",
+     "titre": "« Nous, soutiens en France du mouvement Femme, vie, liberté, refusons que ce slogan serve de caution à une décoration qui le trahit »",
      "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/international/live/2026/11/15/en-direct-guerre-en-ukraine-l-emissaire-americain-jared-kushner-regrette-la-diffusion-de-positions-maximalistes-apres-les-negociations-avec-l-ukraine-et-la-russie_6810982_3210.html",
-     "dateMs": 1794736799000
+     "lien": "https://www.lemonde.fr/idees/article/2026/11/16/nous-soutiens-en-france-du-mouvement-femme-vie-liberte-refusons-que-ce-slogan-serve-de-caution-a-une-decoration-qui-le-trahit_6811770_3232.html",
+     "dateMs": 1794834009000
     },
     {
-     "titre": "Pope Leo speaks of community 'suffering' on visit to remote Andes town",
-     "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/cr4gnz0lv2vlo?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1794736645000
-    },
-    {
-     "titre": "Fifth Canadian soldier dies from injuries caused by large fire at military base",
-     "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/cmrlgn4x2xw8o?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1794734797000
-    },
-    {
-     "titre": "Katharina Pistor, professeure de droit : « Les citoyens s’apprêtent à n’être qu’une simple ressource gérée par des patrons de la tech tels que Musk, Thiel et Zuckerberg »",
+     "titre": "Cibles des attaques de drones iraniens, les pays du Golfe veulent multiplier les infrastructures souterraines",
      "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/idees/article/2026/11/15/les-citoyens-s-appretent-a-n-etre-qu-une-simple-ressource-geree-par-des-patrons-de-la-tech-tels-que-musk-thiel-et-zuckerberg_6811002_3232.html",
-     "dateMs": 1794733221000
+     "lien": "https://www.lemonde.fr/economie/article/2026/11/16/cibles-des-attaques-de-drones-iraniens-les-pays-du-golfe-veulent-multiplier-les-infrastructures-souterraines_6811769_3234.html",
+     "dateMs": 1794834005000
+    },
+    {
+     "titre": "Five EU countries expected to announce migrant deportation centre in Rwanda",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/cw987343352go?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1794833684000
+    },
+    {
+     "titre": "Ashes of exiled Nobel Laureate Miguel Ángel Asturias returned to Guatemala",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/cvde1klewg88o?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1794832934000
+    },
+    {
+     "titre": "La Jordanie interdit Telegram, accusé de contribuer à « l’extrémisme », après l’attaque meurtrière d’une église",
+     "source": "Le Monde International",
+     "lien": "https://www.lemonde.fr/pixels/article/2026/11/16/la-jordanie-interdit-telegram-accuse-de-contribuer-a-l-extremisme-apres-l-attaque-meurtriere-d-une-eglise_6811768_4408996.html",
+     "dateMs": 1794832605000
+    },
+    {
+     "titre": "Man sentenced over 'horrific' attempted murder of three children",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/cr0qj0nzwj34o?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1794832035000
+    },
+    {
+     "titre": "Elon Musk joins 'Bring Jensen Back' campaign to reinstate the ex-Nvidia boss",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/cry49plv8v3go?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1794831649000
+    },
+    {
+     "titre": "La COP31 publie un projet de décision qui propose d’accélérer la sortie des énergies fossiles",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/environnement/20261116-la-cop31-publie-un-projet-de-d%C3%A9cision-qui-propose-d-acc%C3%A9l%C3%A9rer-la-sortie-des-%C3%A9nergies-fossiles",
+     "dateMs": 1794831459000
+    },
+    {
+     "titre": "Sylviculture douce : jardiner la forêt",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/%C3%A9missions/plan-b-l-%C3%A9conomie-autrement/20261116-sylviculture-douce-jardiner-la-for%C3%AAt",
+     "dateMs": 1794831452000
+    },
+    {
+     "titre": "Agressions sexuelles : Depardieu se désiste de son procès en appel",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261116-agressions-sexuelles-depardieu-se-d%C3%A9siste-de-son-proc%C3%A8s-en-appel",
+     "dateMs": 1794829986000
+    },
+    {
+     "titre": "Estonie : le pays ferme sa frontière avec la Russie après une tentative d'attaque",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261116-estonie-le-pays-ferme-sa-fronti%C3%A8re-avec-la-russie-apr%C3%A8s-une-tentative-d-attaque",
+     "dateMs": 1794829124000
+    },
+    {
+     "titre": "Ebola en RDC : l'épidémie a fait plus de 5400 mort en six mois",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261116-ebola-en-rdc-l-%C3%A9pid%C3%A9mie-a-fait-plus-de-5400-mort-en-six-mois",
+     "dateMs": 1794828969000
     }
    ]
   }
