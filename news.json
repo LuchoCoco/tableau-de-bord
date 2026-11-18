@@ -1,82 +1,82 @@
 {
- "genere": "2026-11-17T13:44:14+00:00",
- "genereMs": 1794923052530,
+ "genere": "2026-11-18T13:19:52+00:00",
+ "genereMs": 1795007990183,
  "themes": [
   {
    "id": "france",
    "nom": "France",
    "items": [
     {
-     "titre": "Dans quelles conditions franceinfo canal 16 a-t-elle précisé à l'antenne le lien conjugal d'une de ses invités ?",
+     "titre": "Quelque 3 000 élèves sont passés en conseil de discipline entre septembre et début novembre du fait de violences lors de la mobilisation lycéenne",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/une-information-transparente-franceinfo/transparence-dans-quelles-conditions-franceinfo-canal-16-a-t-elle-indique-a-l-antenne-le-lien-conjugal-d-une-de-ses-invites_8286473.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1794922531000
+     "lien": "https://www.franceinfo.fr/societe/education/blocage-des-lycees/quelque-3-000-eleves-sont-passes-en-conseil-de-discipline-entre-septembre-et-debut-novembre-du-fait-de-violences-lors-de-la-mobilisation-lyceenne_8288273.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795006854000
     },
     {
-     "titre": "GTA 6 : A deux jours de la sortie du jeu, attention aux arnaques",
-     "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/societe/4263545-20261117-gta-6-deux-jours-sortie-attention-arnaques?at_medium=display&at_campaign=149",
-     "dateMs": 1794922445000
-    },
-    {
-     "titre": "Manifestations du 17 novembre : à Paris, le cortège s'élance de la place de la Nation",
+     "titre": "La Cnil inflige une amende de 5 millions d'euros à l'assureur Macif Vie \"en raison de l'insuffisance des mesures prises pour la sécurité des données\"",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/societe/manifestations/direct-greve-et-manifestations-du-17-novembre-suivez-la-journee-de-mobilisation_8285927.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1794922419000
+     "lien": "https://www.franceinfo.fr/internet/securite-sur-internet/cyberattaques/la-cnil-inflige-une-amende-de-5-millions-d-euros-a-l-assureur-macif-vie-en-raison-de-l-insuffisance-des-mesures-prises-pour-la-securite-des-donnees_8288285.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795006832000
     },
     {
-     "titre": "EN IMAGES : Les pires dispositifs anti-SDF sont à Lyon, Avignon, Paris et Yssingeaux",
-     "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/diaporama/diaporama-4263474-images-pires-dispositifs-anti-sdf-lyon-avignon-paris-yssingeaux?at_medium=display&at_campaign=149",
-     "dateMs": 1794922331000
-    },
-    {
-     "titre": "EN DIRECT, guerre en Ukraine : la Russie dénonce une « participation directe » de la France au conflit",
+     "titre": "Le chanteur espagnol Julio Iglesias visé par une enquête pour agressions sexuelles sur deux anciennes employées",
      "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/international/live/2026/11/17/en-direct-guerre-en-ukraine-la-russie-denonce-une-participation-directe-de-la-france-au-conflit_6810982_3210.html",
-     "dateMs": 1794922184000
+     "lien": "https://www.lemonde.fr/international/article/2026/11/18/le-chanteur-espagnol-julio-iglesias-vise-par-une-enquete-pour-agressions-sexuelles-sur-deux-anciennes-employees_6813131_3210.html",
+     "dateMs": 1795006720000
     },
     {
-     "titre": "\"J'ai le choix entre payer les études de mes enfants et m'habiller\" : dans les manifestations, des fonctionnaires racontent la baisse de leur pouvoir d'achat",
+     "titre": "La justice espagnole ouvre une enquête contre le chanteur Julio Iglesias, accusé d'agressions sexuelles par deux anciennes employées",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/economie/transports/mobilisation-du-17-novembre/il-y-a-des-choses-qu-on-ne-peut-pas-faire-les-fonctionnaires-manifestent-pour-leur-pouvoir-d-achat_8286554.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1794922049000
+     "lien": "https://www.franceinfo.fr/culture/la-justice-espagnole-ouvre-une-enquete-contre-le-chanteur-julio-iglesias-accuse-d-agressions-sexuelles-par-deux-anciennes-employees_8288225.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795005240000
     },
     {
-     "titre": "Mobilisation contre la venue d’un chercheur accusé de racisme à l’université d’Oxford",
+     "titre": "Emmanuel Macron, cet « enfant » qui nous gouverne, raconté dans un livre-enquête de la journaliste Catherine Nay",
      "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/societe/article/2026/11/17/mobilisation-contre-la-venue-d-un-chercheur-accuse-de-racisme-a-l-universite-d-oxford_6812973_3224.html",
-     "dateMs": 1794921929000
+     "lien": "https://www.lemonde.fr/politique/article/2026/11/18/emmanuel-macron-cet-enfant-qui-nous-gouverne-raconte-dans-un-livre-enquete-de-catherine-nay_6813127_823448.html",
+     "dateMs": 1795005002000
     },
     {
-     "titre": "De nombreux CRS consultent leur médecin pour contourner l'interdiction de faire grève, selon le syndicat Un1té CRS",
+     "titre": "Irak : six nouveaux djihadistes français, dont Thomas Barnouin, un vétéran de la filière d’Artigat, condamnés à perpétuité",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/international/article/2026/11/18/irak-six-autres-djihadistes-francais-dont-thomas-barnouin-condamnes-a-perpetuite_6813126_3210.html",
+     "dateMs": 1795004803000
+    },
+    {
+     "titre": "« GTA VI », un jeu de braquage sulfureux devenu mastodonte du divertissement",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/pixels/article/2026/11/18/gta-vi-un-jeu-de-braquage-sulfureux-devenu-mastodonte-du-divertissement_6813125_4408996.html",
+     "dateMs": 1795004622000
+    },
+    {
+     "titre": "Le patron d'Amazon, Jeff Bezos, dit avoir été \"extrêmement impliqué\" dans le choix du nouveau James Bond",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/societe/manifestations/de-nombreux-crs-consultent-leur-medecin-pour-contourner-l-interdiction-de-faire-greve_8286539.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1794920730000
+     "lien": "https://www.franceinfo.fr/culture/cinema/le-patron-d-amazon-jeff-bezos-dit-avoir-ete-extremement-implique-dans-le-choix-du-nouveau-james-bond_8288060.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795003825000
     },
     {
-     "titre": "Plans d’épargne-retraite : ce qui a changé en 2026",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/argent/article/2026/11/17/plans-d-epargne-retraite-ce-qui-a-change-en-2026_6812971_1657007.html",
-     "dateMs": 1794920403000
-    },
-    {
-     "titre": "L’appel d’élus du Conseil national de la vie lycéenne : « A quoi sert notre mandat si nos travaux ne débouchent sur aucune discussion suivie d’effets ? »",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/idees/article/2026/11/17/l-appel-d-elus-du-conseil-national-de-la-vie-lyceenne-a-quoi-sert-notre-mandat-si-nos-travaux-ne-debouchent-sur-aucune-discussion-suivie-d-effets_6812970_3232.html",
-     "dateMs": 1794920401000
-    },
-    {
-     "titre": "New York : Fini le nassage et les lacrymo, Zohran Mamdani dissout une unité de police controversée",
+     "titre": "Julio Iglesias : Après des plaintes pour agressions sexuelles, une enquête a été ouverte contre le chanteur",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/monde/4263559-20261117-etats-unis-plus-nassage-ni-lacrymo-new-york-mamdani-dissout-unite-police-controversee?at_medium=display&at_campaign=149",
-     "dateMs": 1794918959000
+     "lien": "https://www.20minutes.fr/arts-stars/people/4263831-20261118-julio-iglesias-apres-plaintes-agressions-sexuelles-enquete-ouverte-contre-chanteur?at_medium=display&at_campaign=149",
+     "dateMs": 1795003246000
     },
     {
-     "titre": "Présidentielle 2027 : La fortune des plus riches a-t-elle doublé en dix ans, comme le dit Raphaël Glucksmann ?",
+     "titre": "GTA 6 : « Certains joueurs sont ancrés dans le passé »… Pourquoi Lucia Caminos est détestée par une partie des gamers ?",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/politique/4263529-20261117-presidentielle-2027-fortune-plus-riches-double-dix-ans-comme-dit-raphael-glucksmann?at_medium=display&at_campaign=149",
-     "dateMs": 1794918758000
+     "lien": "https://www.20minutes.fr/gaming/jeux_video/4263463-20261118-gta-6-certains-joueurs-ancres-passe-pourquoi-lucia-caminos-detestee-partie-gamers?at_medium=display&at_campaign=149",
+     "dateMs": 1794998453000
+    },
+    {
+     "titre": "Sommet Trump-Xi-Poutine : « Quand elles disent « paix mondiale », les grandes puissances pensent « ordre mondial » »",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/monde/etats-unis/4263761-20261118-sommet-trump-xi-poutine-quand-elles-disent-paix-mondiale-grandes-puissances-pensent-ordre-mondial?at_medium=display&at_campaign=149",
+     "dateMs": 1794998408000
+    },
+    {
+     "titre": "Comment le jeu « Trivial Pursuit » a inspiré la comédie « Camembert »",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/arts-stars/cinema/4262160-20261118-comment-jeu-trivial-pursuit-inspire-comedie-camembert?at_medium=display&at_campaign=149",
+     "dateMs": 1794996157000
     }
    ]
   },
@@ -85,76 +85,76 @@
    "nom": "International",
    "items": [
     {
-     "titre": "Turquie : Sözcü TV, dernière grande chaîne d’opposition, mise sous tutelle par les autorités après une perquisition",
-     "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/17/turquie-sozcu-tv-derniere-grande-chaine-d-opposition-mise-sous-tutelle-par-les-autorites-apres-une-perquisition_6812975_3210.html",
-     "dateMs": 1794922213000
-    },
-    {
-     "titre": "Comment l’Ukraine a en partie détruit le pont de Kertch",
+     "titre": "Au procès de l'interpellation violente de Michel Zecler, les policiers tentent de se justifier et nient tout racisme",
      "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/europe/20261117-comment-l-ukraine-a-en-partie-d%C3%A9truit-le-pont-de-kertch",
-     "dateMs": 1794921065000
+     "lien": "https://www.rfi.fr/fr/france/20261118-au-proc%C3%A8s-de-l-interpellation-violente-de-michel-zecler-les-policiers-tentent-de-se-justifier-et-nient-tout-racisme",
+     "dateMs": 1795005627000
     },
     {
-     "titre": "Palestinian woman, 72, shot dead by Israeli settlers in West Bank, health ministry says",
+     "titre": "Trump shakes hands with Putin and Xi ahead of historic talks in China",
      "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/cqrlg377638yo?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1794920537000
+     "lien": "https://www.bbc.co.uk/news/articles/ck9d75x5wwwwo?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1795005564000
     },
     {
-     "titre": "Putin's Crimea bridge partly collapses as Zelensky hails 'unprecedented' attack by Ukraine",
-     "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/cw772jk4rvmxo?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1794920471000
-    },
-    {
-     "titre": "Ndeye Dieynaba Ndiaye, chercheuse : « Il est temps pour l’Afrique de se doter d’une politique migratoire commune »",
-     "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/afrique/article/2026/11/17/ndeye-dieynaba-ndiaye-chercheuse-il-est-temps-pour-l-afrique-de-se-doter-d-une-politique-migratoire-commune_6812972_3212.html",
-     "dateMs": 1794920410000
-    },
-    {
-     "titre": "La Turquie arrête les directeurs d’une chaîne de télévision d’opposition et lui impose un administrateur",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/moyen-orient/20261117-la-turquie-arr%C3%AAte-les-directeurs-d-une-cha%C3%AEne-de-t%C3%A9l%C3%A9vision-d-opposition-et-lui-impose-un-administrateur",
-     "dateMs": 1794919964000
-    },
-    {
-     "titre": "Mozambique opposition leader faces trial over deadly 2024 election unrest",
-     "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/crq5vl1l6z2po?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1794918957000
-    },
-    {
-     "titre": "«C'est un jour historique»: en Serbie, le mouvement des étudiants fait son entrée au Parlement",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/europe/20261117-c-est-un-jour-historique-en-serbie-le-mouvement-des-%C3%A9tudiants-fait-son-entr%C3%A9e-au-parlement",
-     "dateMs": 1794918810000
-    },
-    {
-     "titre": "Guerre en Ukraine : où en sont les pourparlers de paix ?",
+     "titre": "Automobile : le succès des voitures chinoises en Côte d'Ivoire",
      "source": "France 24",
-     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261117-guerre-en-ukraine-o%C3%B9-en-sont-les-pourparlers-de-paix",
-     "dateMs": 1794916951000
+     "lien": "https://www.france24.com/fr/%C3%A9missions/focus/20261118-automobile-le-succ%C3%A8s-des-voitures-chinoises-en-c%C3%B4te-d-ivoire",
+     "dateMs": 1795005103000
     },
     {
-     "titre": "Le « made in Europe » menace l’écosystème industriel mis en place avec la Turquie",
-     "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/economie/article/2026/11/17/le-made-in-europe-menace-l-ecosysteme-industriel-mis-en-place-avec-la-turquie_6812965_3234.html",
-     "dateMs": 1794916802000
+     "titre": "L'entrée en bourse d'Anthropic teste pour la première fois le cœur de l'intelligence artificielle",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/podcasts/aujourd-hui-l-%C3%A9conomie/20261118-l-entr%C3%A9e-en-bourse-d-anthropic-teste-pour-la-premi%C3%A8re-fois-le-c%C5%93ur-de-l-intelligence-artificielle",
+     "dateMs": 1795004870000
     },
     {
-     "titre": "France : une nouvelle journée de mobilisation sociale",
+     "titre": "Haïti : mobilisation en soutien aux troupes salvadoriennes",
      "source": "France 24",
-     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261117-france-une-nouvelle-journ%C3%A9e-de-mobilisation-sociale",
-     "dateMs": 1794916719000
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261118-ha%C3%AFti-mobilisation-en-soutien-aux-troupes-salvadoriennes",
+     "dateMs": 1795004709000
     },
     {
-     "titre": "Gunmen kill Costa Rican journalist who reported on drugs trade",
+     "titre": "L'UE propose un nouveau prêt de 45 milliards d'euros à l'Ukraine pour 2027",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/europe/20261118-l-ue-propose-un-nouveau-pr%C3%AAt-de-45-milliards-d-euros-%C3%A0-l-ukraine-pour-2027",
+     "dateMs": 1795003845000
+    },
+    {
+     "titre": "Intervention du Salvador en Haïti : entre \"immense soulagement\" et \"potion amère\" pour la population",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/am%C3%A9riques/20261118-intervention-salvador-ha%C3%AFti-gangs-entre-immense-soulagement-et-potion-am%C3%A8re-pour-population",
+     "dateMs": 1795003574000
+    },
+    {
+     "titre": "Aux Etats-Unis, des pannes en cascade rappellent la vulnérabilité des infrastructures américaines, accrue par l’IA",
+     "source": "Le Monde International",
+     "lien": "https://www.lemonde.fr/economie/article/2026/11/18/aux-etats-unis-des-pannes-en-cascade-soulignent-la-vulnerabilite-des-infrastructures-americaines-accrue-par-l-ia_6813123_3234.html",
+     "dateMs": 1795003206000
+    },
+    {
+     "titre": "Tchad : une tournée \"sécuritaire\" du Président pour lutter contre les armes illégales",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261118-tchad-une-tourn%C3%A9e-s%C3%A9curitaire-du-pr%C3%A9sident-pour-lutter-contre-les-armes-ill%C3%A9gales",
+     "dateMs": 1795003024000
+    },
+    {
+     "titre": "Who to watch in Spain's election race",
      "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/c6ly7g5lx7gyo?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1794916696000
+     "lien": "https://www.bbc.co.uk/news/articles/cxr5g4lyp94no?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1795002265000
+    },
+    {
+     "titre": "Sénat américain: les démocrates s'imposent en Alaska et obtiennent leur plus large majorité en 16 ans",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/am%C3%A9riques/20261118-s%C3%A9nat-am%C3%A9ricain-les-d%C3%A9mocrates-s-imposent-en-alaska-et-obtiennent-leur-plus-large-majorit%C3%A9-en-16-ans",
+     "dateMs": 1795001712000
+    },
+    {
+     "titre": "Donald Trump est arrivé en Chine, avant un sommet tripartite inédit avec Xi Jinping et Vladimir Poutine",
+     "source": "Le Monde International",
+     "lien": "https://www.lemonde.fr/international/article/2026/11/18/donald-trump-est-arrive-en-chine-avant-un-sommet-tripartite-inedit-avec-xi-jinping-et-vladimir-poutine_6813120_3210.html",
+     "dateMs": 1795001436000
     }
    ]
   }
