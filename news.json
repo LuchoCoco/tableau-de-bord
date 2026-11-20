@@ -1,82 +1,82 @@
 {
- "genere": "2026-11-19T13:43:40+00:00",
- "genereMs": 1795095819392,
+ "genere": "2026-11-20T13:26:25+00:00",
+ "genereMs": 1795181183030,
  "themes": [
   {
    "id": "france",
    "nom": "France",
    "items": [
     {
-     "titre": "La Commission européenne annonce avoir été la cible d'une cyberattaque assistée par l'intelligence artificielle en octobre",
+     "titre": "\"C'est à peine imaginable\" : les habitants abasourdis après le passage d'une tornade dans un village de l'Aube",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/monde/europe/union-europeenne/la-commission-europeenne-annonce-avoir-ete-la-cible-d-une-cyberattaque-assistee-par-l-intelligence-artificielle-en-octobre_8289959.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1795095506000
+     "lien": "https://france3-regions.franceinfo.fr/grand-est/aube/c-est-a-peine-imaginable-les-habitants-abasourdis-apres-le-passage-d-une-tornade-dans-un-village-de-l-aube-3452946.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795180424000
     },
     {
-     "titre": "Rencontre entre Trump, Poutine et Xi : les trois dirigeants ont adopté \"une déclaration de paix\" à l'issue d'un sommet inédit, rapportent le Kremlin et les médias chinois",
+     "titre": "L'ultime survivant français du camp de concentration nazi du Struthof est mort à 100 ans",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/monde/usa/presidentielle/donald-trump/direct-rencontre-donald-trump-vladimir-poutine-xi-jinping-suivez-l-entretien-inedit-entre-les-trois-presidents-en-chine_8288564.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1795095092000
+     "lien": "https://france3-regions.franceinfo.fr/grand-est/marne/l-ultime-survivant-francais-du-camp-du-struthof-est-mort-a-100-ans-3452865.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795180301000
     },
     {
-     "titre": "Un bassin de rétention d'eau déborde dans le Pas-de-Calais, une école avec 17 élèves évacués puis mis \"en sécurité\"",
+     "titre": "Le Royaume-Uni annonce un accord \"historique\" avec l'Union européenne, Bruxelles salue un \"tournant\", dix ans après le référendum sur le Brexit",
      "source": "franceinfo",
-     "lien": "https://france3-regions.franceinfo.fr/hauts-de-france/pas-calais/touquet/un-bassin-de-retention-d-eau-deborde-une-ecole-avec-17-eleves-evacues-puis-mis-en-securite-3452310.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1795095068000
+     "lien": "https://www.franceinfo.fr/monde/royaume-uni/le-royaume-uni-annonce-un-accord-historique-avec-l-union-europeenne-bruxelles-salue-un-tournant-dix-ans-apres-le-referendum-sur-le-brexit_8292233.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795178996000
     },
     {
-     "titre": "\"La gravité nécessite l'emprisonnement\" : des peines de quatre ans à six ans de prison ferme requises contre les trois policiers accusés d'avoir roué de coups Michel Zecler",
+     "titre": "L'élu insoumis Allan Brunon jugé en février, poursuivi pour complicité dans l'interruption du concert de Barbara Butch à Grenoble",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/faits-divers/producteur-passe-a-tabac-par-des-policiers/des-peines-de-quatre-ans-a-six-ans-de-prison-ferme-requises-contre-les-trois-policiers-accuses-d-avoir-roue-de-coups-michel-zecler_8288789.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1795094299000
+     "lien": "https://www.franceinfo.fr/societe/justice/l-elu-insoumis-allan-brunon-juge-en-fevrier-poursuivi-pour-complicite-dans-l-interruption-du-concert-de-barbara-butch-a-grenoble_8292266.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795178892000
     },
     {
-     "titre": "Pillages du 17 octobre : Une facture de 207 millions d’euros de dégâts selon les assureurs",
-     "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/societe/4264151-20261119-violences-17-octobre-facture-207-millions-euros-selon-assureurs?at_medium=display&at_campaign=149",
-     "dateMs": 1795094100000
-    },
-    {
-     "titre": "Françoise Lebrun, actrice emblématique de « La Maman et la Putain », de Mai 68 au mouvement des lycéens de 2026",
+     "titre": "Au Danemark, âgée de 112 ans, la doyenne du pays est une ancienne nazie",
      "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/culture/article/2026/11/19/francoise-lebrun-actrice-emblematique-de-la-maman-et-la-putain-de-mai-68-au-mouvement-des-lyceens-de-2026_6813304_3246.html",
-     "dateMs": 1795093216000
+     "lien": "https://www.lemonde.fr/international/article/2026/11/20/au-danemark-agee-de-112-ans-la-doyenne-du-pays-est-une-ancienne-nazie_6813635_3210.html",
+     "dateMs": 1795178219000
     },
     {
-     "titre": "Présidentielle 2027 : une campagne « course à l’échalote » pour tenter de répondre aux colères françaises",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/politique/article/2026/11/19/presidentielle-2027-une-campagne-course-a-l-echalote-pour-tenter-de-repondre-aux-coleres-francaises_6813302_823448.html",
-     "dateMs": 1795093202000
-    },
-    {
-     "titre": "Le soutien stratégique d’Emmanuel Macron à la candidature de Philippe Diallo pour la présidence de la FIFA",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/sport/article/2026/11/19/le-soutien-strategique-d-emmanuel-macron-a-la-candidature-de-philippe-diallo-pour-la-presidence-de-la-fifa_6813300_3242.html",
-     "dateMs": 1795092669000
-    },
-    {
-     "titre": "« L’IA redessine les règles du jeu à une vitesse que nous n’avions jamais connue » : des responsables de la cybersécurité de l’Etat sonnent l’alarme",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/pixels/article/2026/11/19/l-ia-redessine-les-regles-du-jeu-a-une-vitesse-que-nous-n-avions-jamais-connue-des-responsables-de-la-cybersecurite-de-l-etat-sonnent-l-alarme_6813298_4408996.html",
-     "dateMs": 1795091407000
-    },
-    {
-     "titre": "La Commission européenne a été ciblée par une cyberattaque assistée par IA",
+     "titre": "Colère sociale : Un nouvel appel à la grève pour le mardi 1er décembre dans la fonction publique",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/monde/4264137-20261119-commission-europeenne-ciblee-cyberattaque-assistee-ia?at_medium=display&at_campaign=149",
-     "dateMs": 1795090367000
+     "lien": "https://www.20minutes.fr/societe/4264421-20261120-colere-sociale-nouvel-appel-greve-mardi-1er-decembre-fonction-publique?at_medium=display&at_campaign=149",
+     "dateMs": 1795177742000
     },
     {
-     "titre": "Procès Zecler : Des peines de quatre, cinq et six ans de prison requises contre les trois policiers",
-     "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/justice/4264136-20261119-proces-zecler-peines-quatre-cinq-six-ans-prison-requises-contre-trois-policiers?at_medium=display&at_campaign=149",
-     "dateMs": 1795090356000
+     "titre": "Garde à vue de mineurs : les parents doivent être informés d’une prolongation, selon le Conseil constitutionnel",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/societe/article/2026/11/20/garde-a-vue-de-mineurs-les-parents-doivent-etre-informes-d-une-prolongation-selon-le-conseil-constitutionnel_6813634_3224.html",
+     "dateMs": 1795177340000
     },
     {
-     "titre": "David Beckham, furieux de voir ses parfums vendus dans des stations-service, réclame 41 millions de dollars de dommages",
+     "titre": "Cargo échoué sur le littoral des Landes : le remorquage du bateau, pour éviter qu’il ne chavire, s’annonce compliqué en raison de la météo",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/societe/article/2026/11/20/cargo-echoue-sur-le-littoral-des-landes-le-remorquage-du-bateau-pour-eviter-qu-il-ne-chavire-s-annonce-complique-en-raison-de-la-meteo_6813591_3225.html",
+     "dateMs": 1795176847000
+    },
+    {
+     "titre": "Ligue des nations : Les Bleus de Zidane héritent des champions du monde espagnols en quart de finale",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/sport/football/4264128-20261119-david-beckham-furieux-voir-parfums-vendus-stations-service-reclame-41-millions-dollars-dommages?at_medium=display&at_campaign=149",
-     "dateMs": 1795090307000
+     "lien": "https://www.20minutes.fr/sport/football/ligue-nations/4264414-20261120-ligue-nations-bleus-zidane-heritent-champions-monde-espagnols-quart-finale?at_medium=display&at_campaign=149",
+     "dateMs": 1795175874000
+    },
+    {
+     "titre": "Roger Boulanger, dernier Français survivant du camp de concentration du Struthof, en Alsace, est mort",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/disparitions/article/2026/11/20/roger-boulanger-dernier-temoin-du-seul-camp-nazi-de-france-est-mort_6813631_3382.html",
+     "dateMs": 1795175230000
+    },
+    {
+     "titre": "Oise : Un bébé de 14 mois retrouvé seul et en pleurs dans une crèche fermée",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/faits_divers/4264407-20261120-oise-bebe-14-mois-retrouve-seul-pleurs-creche-fermee?at_medium=display&at_campaign=149",
+     "dateMs": 1795175080000
+    },
+    {
+     "titre": "Miss France 2027 : Le test de culture générale est tombé, à vous de jouer (sans tricher)",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/arts-stars/television/miss_france/4263531-20261120-miss-france-2027-test-culture-generale-tombe-jouer-tricher?at_medium=display&at_campaign=149",
+     "dateMs": 1795172988000
     }
    ]
   },
@@ -85,76 +85,76 @@
    "nom": "International",
    "items": [
     {
-     "titre": "Danemark: la Première ministre reprend à son compte la thèse raciste du «grand remplacement»",
+     "titre": "Sommet de l’Apec: comment des infox cherchent à ridiculiser Vladimir Poutine",
      "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/europe/20261119-danemark-la-premi%C3%A8re-ministre-reprend-%C3%A0-son-compte-la-th%C3%A8se-raciste-du-grand-remplacement",
-     "dateMs": 1795095689000
+     "lien": "https://www.rfi.fr/fr/monde/20261120-sommet-de-l-apec-comment-des-infox-cherchent-%C3%A0-ridiculiser-vladimir-poutine",
+     "dateMs": 1795180596000
     },
     {
-     "titre": "Venezuela signs military deal with US less than a year after Maduro's ouster",
-     "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/cmwy8pyqlq5vo?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1795095083000
-    },
-    {
-     "titre": "Les images de la rencontre entre Xi Jinping, Donald Trump et Vladimir Poutine au sommet de l’Apec",
-     "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/international/video/2026/11/19/les-images-de-la-rencontre-entre-xi-jinping-donald-trump-et-vladimir-poutine-au-sommet-de-l-apec_6813309_3210.html",
-     "dateMs": 1795095051000
-    },
-    {
-     "titre": "Sénégal : le surf fait de plus en plus d’adeptes chez les jeunes",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261119-s%C3%A9n%C3%A9gal-le-surf-fait-de-plus-en-plus-d-adeptes-chez-les-jeunes",
-     "dateMs": 1795094418000
-    },
-    {
-     "titre": "Putin vows 'far more painful' response to Ukraine's strikes on Crimean Bridge",
-     "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/cm879dqn3e1jo?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1795093655000
-    },
-    {
-     "titre": "Ce qu'il faut retenir du sommet inédit entre Donald Trump, Xi Jinping et Vladimir Poutine",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/asie-pacifique/20261119-ce-qu-il-faut-retenir-du-sommet-in%C3%A9dit-entre-donald-trump-xi-jinping-et-vladimir-poutine",
-     "dateMs": 1795093526000
-    },
-    {
-     "titre": "Victoria Ivleva, la photographe russe qui regarde la guerre du côté ukrainien",
-     "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/m-le-mag/article/2026/11/19/victoria-ivleva-la-photographe-russe-qui-regarde-la-guerre-du-cote-ukrainien_6813301_4500055.html",
-     "dateMs": 1795093204000
-    },
-    {
-     "titre": "US consortium wins huge Kenya mining deal, beating Chinese rivals",
-     "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/cm9q84gp0gr3o?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1795092990000
-    },
-    {
-     "titre": "Pour Sepp Blatter, Gianni Infantino \"n'est plus éligible\" à la tête de la Fifa",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/%C3%A9missions/en-t%C3%AAte-%C3%A0-t%C3%AAte/20261119-entretien-fifa-sepp-blatter-gianni-infantino-plus-%C3%A9ligible-t%C3%AAte-fifa-achat-vote",
-     "dateMs": 1795092494000
-    },
-    {
-     "titre": "Xi-Poutine-Trump : une rencontre inédite, mais peu de détails sur son contenu",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261119-xi-poutine-trump-une-rencontre-in%C3%A9dite-mais-peu-de-d%C3%A9tails-sur-son-contenu",
-     "dateMs": 1795090305000
-    },
-    {
-     "titre": "La Birmanie a commis un génocide à l’encontre de la minorité rohingya, statue la Cour internationale de justice",
-     "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/19/la-birmanie-a-commis-un-genocide-a-l-encontre-de-la-minorite-rohingya-statue-la-cour-internationale-de-justice_6813288_3210.html",
-     "dateMs": 1795088532000
-    },
-    {
-     "titre": "La Birmanie coupable de génocide à l'encontre des Rohingyas, pour la Cour internationale de justice",
+     "titre": "Mali: les dessous de la «libération» de soldats prisonniers du groupe indépendantiste FLA",
      "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/asie-pacifique/20261119-la-birmanie-a-commis-un-g%C3%A9nocide-sur-la-minorit%C3%A9-rohingya-estime-la-cour-internationale-de-justice",
-     "dateMs": 1795088263000
+     "lien": "https://www.rfi.fr/fr/afrique/20261120-mali-les-dessous-de-la-lib%C3%A9ration-de-soldats-prisonniers-du-groupe-ind%C3%A9pendantiste-fla",
+     "dateMs": 1795180375000
+    },
+    {
+     "titre": "Deux missiles russes chutent en Pologne, le Premier ministre Tusk dénonce \"une provocation\"",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/europe/20261120-deux-missiles-chutent-pologne-premier-ministre-donald-tusk-d%C3%A9nonce-provocation-russie",
+     "dateMs": 1795179830000
+    },
+    {
+     "titre": "Russia targets Kyiv crossings days after Ukraine hits Crimean Bridge",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1795179676000
+    },
+    {
+     "titre": "«Le système est plus transparent et plus sûr»: à Cuba, des réformes économiques pour aider le commerce",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/am%C3%A9riques/20261120-le-syst%C3%A8me-est-plus-transparent-et-plus-s%C3%BBr-%C3%A0-cuba-des-r%C3%A9formes-%C3%A9conomiques-pour-aider-le-commerce",
+     "dateMs": 1795179503000
+    },
+    {
+     "titre": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1795179408000
+    },
+    {
+     "titre": "Madagascar : le procès de l'empoisonnement présumé de 31 personnes s'est ouvert",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261120-madagascar-le-proc%C3%A8s-de-l-empoisonnement-pr%C3%A9sum%C3%A9-de-31-personnes-s-est-ouvert",
+     "dateMs": 1795179270000
+    },
+    {
+     "titre": "Pologne : deux missiles russes s’abattent dans le sud-est du pays, frontalier de l’Ukraine",
+     "source": "Le Monde International",
+     "lien": "https://www.lemonde.fr/international/article/2026/11/20/pologne-deux-missiles-russes-s-abattent-dans-le-sud-est-du-pays-frontalier-de-l-ukraine_6813636_3210.html",
+     "dateMs": 1795179234000
+    },
+    {
+     "titre": "Frappes russes sur Kiev: la France réclame une réunion du Conseil de sécurité de l'ONU",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/europe/20261120-frappes-russes-sur-kiev-la-france-r%C3%A9clame-une-r%C3%A9union-du-conseil-de-s%C3%A9curit%C3%A9-de-l-onu",
+     "dateMs": 1795178604000
+    },
+    {
+     "titre": "Une revanche à prendre : la France affrontera l'Espagne en quarts de finale de la Ligue des nations",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/sports/20261120-revanche-%C3%A0-prendre-france-affrontera-espagne-quarts-de-finale-ligue-des-nations",
+     "dateMs": 1795176749000
+    },
+    {
+     "titre": "Amazonie : une partie du peuple Awa sort de l’isolement et cela inquiète les associations",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261120-amazonie-une-partie-du-peuple-awa-sort-de-l-isolement-et-cela-inqui%C3%A8te-les-associations",
+     "dateMs": 1795176299000
+    },
+    {
+     "titre": "EN DIRECT, guerre en Ukraine : la France exige une réunion de l’ONU après la salve de missiles lancée par la Russie contre l’Ukraine dans la nuit de jeudi à vendredi",
+     "source": "Le Monde International",
+     "lien": "https://www.lemonde.fr/international/live/2026/11/20/en-direct-guerre-en-ukraine-la-pologne-accuse-la-russie-d-avoir-viole-son-espace-aerien-et-evoque-un-lien-avec-l-exercice-de-la-coalition-des-volontaires_6810982_3210.html",
+     "dateMs": 1795174004000
     }
    ]
   }
