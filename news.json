@@ -1,82 +1,82 @@
 {
- "genere": "2026-11-20T13:26:25+00:00",
- "genereMs": 1795181183030,
+ "genere": "2026-11-21T12:54:37+00:00",
+ "genereMs": 1795265676184,
  "themes": [
   {
    "id": "france",
    "nom": "France",
    "items": [
     {
-     "titre": "\"C'est à peine imaginable\" : les habitants abasourdis après le passage d'une tornade dans un village de l'Aube",
-     "source": "franceinfo",
-     "lien": "https://france3-regions.franceinfo.fr/grand-est/aube/c-est-a-peine-imaginable-les-habitants-abasourdis-apres-le-passage-d-une-tornade-dans-un-village-de-l-aube-3452946.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1795180424000
-    },
-    {
-     "titre": "L'ultime survivant français du camp de concentration nazi du Struthof est mort à 100 ans",
-     "source": "franceinfo",
-     "lien": "https://france3-regions.franceinfo.fr/grand-est/marne/l-ultime-survivant-francais-du-camp-du-struthof-est-mort-a-100-ans-3452865.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1795180301000
-    },
-    {
-     "titre": "Le Royaume-Uni annonce un accord \"historique\" avec l'Union européenne, Bruxelles salue un \"tournant\", dix ans après le référendum sur le Brexit",
-     "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/monde/royaume-uni/le-royaume-uni-annonce-un-accord-historique-avec-l-union-europeenne-bruxelles-salue-un-tournant-dix-ans-apres-le-referendum-sur-le-brexit_8292233.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1795178996000
-    },
-    {
-     "titre": "L'élu insoumis Allan Brunon jugé en février, poursuivi pour complicité dans l'interruption du concert de Barbara Butch à Grenoble",
-     "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/societe/justice/l-elu-insoumis-allan-brunon-juge-en-fevrier-poursuivi-pour-complicite-dans-l-interruption-du-concert-de-barbara-butch-a-grenoble_8292266.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1795178892000
-    },
-    {
-     "titre": "Au Danemark, âgée de 112 ans, la doyenne du pays est une ancienne nazie",
+     "titre": "Présidentielle 2027 : qui sont les candidats déclarés ou probables ?",
      "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/20/au-danemark-agee-de-112-ans-la-doyenne-du-pays-est-une-ancienne-nazie_6813635_3210.html",
-     "dateMs": 1795178219000
+     "lien": "https://www.lemonde.fr/les-decodeurs/article/2026/11/21/presidentielle-2027-qui-sont-les-candidats-declares-ou-probables_6680905_4355771.html",
+     "dateMs": 1795263205000
     },
     {
-     "titre": "Colère sociale : Un nouvel appel à la grève pour le mardi 1er décembre dans la fonction publique",
-     "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/societe/4264421-20261120-colere-sociale-nouvel-appel-greve-mardi-1er-decembre-fonction-publique?at_medium=display&at_campaign=149",
-     "dateMs": 1795177742000
-    },
-    {
-     "titre": "Garde à vue de mineurs : les parents doivent être informés d’une prolongation, selon le Conseil constitutionnel",
+     "titre": "Alexandre Smia, réalisateur de « Jupiter », spécialiste des histoires à haute tension",
      "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/societe/article/2026/11/20/garde-a-vue-de-mineurs-les-parents-doivent-etre-informes-d-une-prolongation-selon-le-conseil-constitutionnel_6813634_3224.html",
-     "dateMs": 1795177340000
+     "lien": "https://www.lemonde.fr/culture/article/2026/11/21/alexandre-smia-realisateur-de-jupiter-specialiste-des-histoires-a-haute-tension_6814011_3246.html",
+     "dateMs": 1795262409000
     },
     {
-     "titre": "Cargo échoué sur le littoral des Landes : le remorquage du bateau, pour éviter qu’il ne chavire, s’annonce compliqué en raison de la météo",
+     "titre": "Un mathématicien annonce la résolution de l'hypothèse de Riemann, l'un des plus célèbres problèmes du monde, avec l'aide d'une IA d'Anthropic",
+     "source": "franceinfo",
+     "lien": "https://www.franceinfo.fr/internet/intelligence-artificielle/un-mathematicien-annonce-la-resolution-d-un-des-plus-celebres-problemes-du-monde-avec-l-aide-d-une-ia-d-anthropic_8293547.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795262370000
+    },
+    {
+     "titre": "Une conférence de l'ONU ouvre à la voie à un possible encadrement international des \"robots tueurs\"",
+     "source": "franceinfo",
+     "lien": "https://www.franceinfo.fr/societe/armee-securite-defense/une-conference-de-l-onu-ouvre-a-la-voie-a-un-possible-encadrement-international-des-robots-tueurs_8293439.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795261746000
+    },
+    {
+     "titre": "La Bourse de Wall Street enregistre des centaines de milliards de dollars de pertes, pénalisée par le secteur de l'IA",
+     "source": "franceinfo",
+     "lien": "https://www.franceinfo.fr/internet/intelligence-artificielle/la-bourse-de-wall-street-enregistre-des-centaines-de-milliards-de-dollars-de-pertes-penalisee-par-le-secteur-de-l-ia_8293667.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795261482000
+    },
+    {
+     "titre": "Pas-de-Calais : Après les inondations, un deuxième cours d’eau placé en vigilance orange",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/societe/4264650-20261121-calais-apres-inondations-deuxieme-cours-eau-place-vigilance-orange?at_medium=display&at_campaign=149",
+     "dateMs": 1795260893000
+    },
+    {
+     "titre": "Dans la défense, le rapprochement entre le Canada et l’Union européenne prend corps",
      "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/societe/article/2026/11/20/cargo-echoue-sur-le-littoral-des-landes-le-remorquage-du-bateau-pour-eviter-qu-il-ne-chavire-s-annonce-complique-en-raison-de-la-meteo_6813591_3225.html",
-     "dateMs": 1795176847000
+     "lien": "https://www.lemonde.fr/international/article/2026/11/21/dans-la-defense-le-rapprochement-entre-le-canada-et-l-union-europeenne-prend-corps_6814009_3210.html",
+     "dateMs": 1795260605000
     },
     {
-     "titre": "Ligue des nations : Les Bleus de Zidane héritent des champions du monde espagnols en quart de finale",
+     "titre": "Le président du Conseil européen propose un budget de l'UE en baisse de 204 milliards d'euros, aussitôt rejeté par la France",
+     "source": "franceinfo",
+     "lien": "https://www.franceinfo.fr/monde/europe/sommet-de-l-ue/le-president-du-conseil-europeen-propose-un-budget-de-l-ue-en-baisse-de-204-milliards-d-euros-aussitot-rejete-par-la-france_8293637.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795260461000
+    },
+    {
+     "titre": "James Blunt dénonce la rumeur le liant au terrible récit fait par Hayden Panettiere avant sa mort",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/sport/football/ligue-nations/4264414-20261120-ligue-nations-bleus-zidane-heritent-champions-monde-espagnols-quart-finale?at_medium=display&at_campaign=149",
-     "dateMs": 1795175874000
+     "lien": "https://www.20minutes.fr/arts-stars/people/4263978-20261121-james-blunt-denonce-rumeur-liant-terrible-recit-fait-hayden-panettiere-avant-mort?at_medium=display&at_campaign=149",
+     "dateMs": 1795258956000
     },
     {
-     "titre": "Roger Boulanger, dernier Français survivant du camp de concentration du Struthof, en Alsace, est mort",
+     "titre": "Budget de l’UE : Antonio Costa, le président du Conseil européen, propose 204 milliards d’euros d’économies et une taxe numérique",
      "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/disparitions/article/2026/11/20/roger-boulanger-dernier-temoin-du-seul-camp-nazi-de-france-est-mort_6813631_3382.html",
-     "dateMs": 1795175230000
+     "lien": "https://www.lemonde.fr/economie/article/2026/11/21/budget-de-l-ue-antonio-costa-le-president-du-conseil-europeen-propose-204-milliards-d-euros-d-economies-et-une-taxe-numerique_6813983_3234.html",
+     "dateMs": 1795258910000
     },
     {
-     "titre": "Oise : Un bébé de 14 mois retrouvé seul et en pleurs dans une crèche fermée",
+     "titre": "COP31 : Suspense à la conférence sur le climat qui traîne en longueur",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/faits_divers/4264407-20261120-oise-bebe-14-mois-retrouve-seul-pleurs-creche-fermee?at_medium=display&at_campaign=149",
-     "dateMs": 1795175080000
+     "lien": "https://www.20minutes.fr/planete/cop/4264644-20261121-cop31-suspense-conference-climat-traine-longueur?at_medium=display&at_campaign=149",
+     "dateMs": 1795254077000
     },
     {
-     "titre": "Miss France 2027 : Le test de culture générale est tombé, à vous de jouer (sans tricher)",
+     "titre": "EN IMAGES. Chocolat, beauté, déco… Les plus beaux calendriers de l’Avent 2026 pour les adultes",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/arts-stars/television/miss_france/4263531-20261120-miss-france-2027-test-culture-generale-tombe-jouer-tricher?at_medium=display&at_campaign=149",
-     "dateMs": 1795172988000
+     "lien": "https://www.20minutes.fr/diaporama/diaporama-4261025-images-chocolat-beaute-deco-plus-beaux-calendriers-avent-2026-adultes?at_medium=display&at_campaign=149",
+     "dateMs": 1795251756000
     }
    ]
   },
@@ -85,76 +85,76 @@
    "nom": "International",
    "items": [
     {
-     "titre": "Sommet de l’Apec: comment des infox cherchent à ridiculiser Vladimir Poutine",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/monde/20261120-sommet-de-l-apec-comment-des-infox-cherchent-%C3%A0-ridiculiser-vladimir-poutine",
-     "dateMs": 1795180596000
-    },
-    {
-     "titre": "Mali: les dessous de la «libération» de soldats prisonniers du groupe indépendantiste FLA",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/afrique/20261120-mali-les-dessous-de-la-lib%C3%A9ration-de-soldats-prisonniers-du-groupe-ind%C3%A9pendantiste-fla",
-     "dateMs": 1795180375000
-    },
-    {
-     "titre": "Deux missiles russes chutent en Pologne, le Premier ministre Tusk dénonce \"une provocation\"",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/europe/20261120-deux-missiles-chutent-pologne-premier-ministre-donald-tusk-d%C3%A9nonce-provocation-russie",
-     "dateMs": 1795179830000
-    },
-    {
-     "titre": "Russia targets Kyiv crossings days after Ukraine hits Crimean Bridge",
+     "titre": "Zelensky says Crimean Bridge strikes 'fair response' as he meets UK's Streeting",
      "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/c6x29gn4pdn9o?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1795179676000
+     "lien": "https://www.bbc.co.uk/news/articles/c6wy0qj7w5zqo?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1795265520000
     },
     {
-     "titre": "«Le système est plus transparent et plus sûr»: à Cuba, des réformes économiques pour aider le commerce",
+     "titre": "Le Mexique arrête Fausto Isidro Meza, alias « Chapo Isidro », un puissant chef de cartel recherché par le FBI",
+     "source": "Le Monde International",
+     "lien": "https://www.lemonde.fr/international/article/2026/11/21/le-mexique-arrete-fausto-isidro-meza-alias-chapo-isidro-un-puissant-chef-de-cartel-recherche-par-le-fbi_6814013_3210.html",
+     "dateMs": 1795265389000
+    },
+    {
+     "titre": "Acte VI de la mobilisation : les manifestants se rassemblent place de la République",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261121-acte-vi-de-la-mobilisation-les-manifestants-se-rassemblent-place-de-la-r%C3%A9publique",
+     "dateMs": 1795264615000
+    },
+    {
+     "titre": "A Genève, la communauté internationale échoue à interdire les robots tueurs",
+     "source": "Le Monde International",
+     "lien": "https://www.lemonde.fr/international/article/2026/11/21/a-geneve-la-communaute-internationale-echoue-a-interdire-les-robots-tueurs_6814012_3210.html",
+     "dateMs": 1795264613000
+    },
+    {
+     "titre": "Manifestations à travers l'Europe contre la guerre et pour la jeunesse",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261121-manifestations-%C3%A0-travers-l-europe-contre-la-guerre-et-pour-la-jeunesse",
+     "dateMs": 1795263785000
+    },
+    {
+     "titre": "Lutte contre les gangs en Haïti : la coopération avec le Salvador s'intensifie",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261121-lutte-contre-les-gangs-en-ha%C3%AFti-la-coop%C3%A9ration-avec-le-salvador-s-intensifie",
+     "dateMs": 1795263615000
+    },
+    {
+     "titre": "Le Danemark accuse la Russie d'avoir tenté d'assassiner un rappeur ukrainien",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261121-le-danemark-accuse-la-russie-d-avoir-tent%C3%A9-d-assassiner-un-rappeur-ukrainien",
+     "dateMs": 1795263298000
+    },
+    {
+     "titre": "Mobilisation en France: un acte VI sous l'impulsion des syndicats et des gilets jaunes, qui fêtent leurs 8 ans",
      "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/am%C3%A9riques/20261120-le-syst%C3%A8me-est-plus-transparent-et-plus-s%C3%BBr-%C3%A0-cuba-des-r%C3%A9formes-%C3%A9conomiques-pour-aider-le-commerce",
-     "dateMs": 1795179503000
+     "lien": "https://www.rfi.fr/fr/france/20261121-mobilisation-en-france-un-acte-vi-sous-l-impulsion-des-syndicats-et-des-gilets-jaunes-qui-f%C3%AAtent-leurs-8-ans",
+     "dateMs": 1795262156000
     },
     {
-     "titre": "Russian missile hits Poland as Ukraine's allies hold military exercise, says Tusk",
+     "titre": "Détroit d'Ormuz: deux pétroliers touchés par des «projectiles d'origine inconnue»",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/moyen-orient/20261121-d%C3%A9troit-d-ormuz-deux-p%C3%A9troliers-touch%C3%A9s-par-des-projectiles-d-origine-inconnue",
+     "dateMs": 1795256828000
+    },
+    {
+     "titre": "Denmark accuses Russia of plotting to assassinate US-Ukrainian rapper",
      "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/cqx2x9dklxnro?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1795179408000
+     "lien": "https://www.bbc.co.uk/news/articles/cmde1lj4yjxno?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1795256796000
     },
     {
-     "titre": "Madagascar : le procès de l'empoisonnement présumé de 31 personnes s'est ouvert",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261120-madagascar-le-proc%C3%A8s-de-l-empoisonnement-pr%C3%A9sum%C3%A9-de-31-personnes-s-est-ouvert",
-     "dateMs": 1795179270000
-    },
-    {
-     "titre": "Pologne : deux missiles russes s’abattent dans le sud-est du pays, frontalier de l’Ukraine",
-     "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/20/pologne-deux-missiles-russes-s-abattent-dans-le-sud-est-du-pays-frontalier-de-l-ukraine_6813636_3210.html",
-     "dateMs": 1795179234000
-    },
-    {
-     "titre": "Frappes russes sur Kiev: la France réclame une réunion du Conseil de sécurité de l'ONU",
+     "titre": "Russie: privés de GTA VI en raison des sanctions, les Russes imaginent une version locale du jeu",
      "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/europe/20261120-frappes-russes-sur-kiev-la-france-r%C3%A9clame-une-r%C3%A9union-du-conseil-de-s%C3%A9curit%C3%A9-de-l-onu",
-     "dateMs": 1795178604000
+     "lien": "https://www.rfi.fr/fr/europe/20261121-russie-priv%C3%A9s-de-gta-vi-en-raison-des-sanctions-les-russes-imaginent-une-version-locale-du-jeu",
+     "dateMs": 1795254911000
     },
     {
-     "titre": "Une revanche à prendre : la France affrontera l'Espagne en quarts de finale de la Ligue des nations",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/sports/20261120-revanche-%C3%A0-prendre-france-affrontera-espagne-quarts-de-finale-ligue-des-nations",
-     "dateMs": 1795176749000
-    },
-    {
-     "titre": "Amazonie : une partie du peuple Awa sort de l’isolement et cela inquiète les associations",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261120-amazonie-une-partie-du-peuple-awa-sort-de-l-isolement-et-cela-inqui%C3%A8te-les-associations",
-     "dateMs": 1795176299000
-    },
-    {
-     "titre": "EN DIRECT, guerre en Ukraine : la France exige une réunion de l’ONU après la salve de missiles lancée par la Russie contre l’Ukraine dans la nuit de jeudi à vendredi",
-     "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/international/live/2026/11/20/en-direct-guerre-en-ukraine-la-pologne-accuse-la-russie-d-avoir-viole-son-espace-aerien-et-evoque-un-lien-avec-l-exercice-de-la-coalition-des-volontaires_6810982_3210.html",
-     "dateMs": 1795174004000
+     "titre": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/c6ly5w40eg07o?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1795254731000
     }
    ]
   }
