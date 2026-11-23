@@ -1,82 +1,82 @@
 {
- "genere": "2026-11-22T12:46:49+00:00",
- "genereMs": 1795351607617,
+ "genere": "2026-11-23T15:10:14+00:00",
+ "genereMs": 1795446612189,
  "themes": [
   {
    "id": "france",
    "nom": "France",
    "items": [
     {
-     "titre": "\"Je n'ai jamais reçu d'informations confidentielles\", affirme Marine Le Pen, au sujet du préfet Hugues Moutouh, soupçonné d'avoir renseigné le RN",
+     "titre": "Sommet Choose France : Emmanuel Macron annonce la création de \"zones industrielles à fort potentiel\" où les procédures d'installation seront simplifiées",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/elections/presidentielle/direct-campagne-presidentielle-la-secretaire-generale-de-la-cfdt-marylise-leon-appelle-a-changer-la-date-pour-eviter-un-second-tour-le-2-mai_8294528.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1795350912000
+     "lien": "https://www.franceinfo.fr/economie/industrie/direct-sommet-choose-france-emmanuel-macron-en-visite-sur-le-site-d-airbus-a-toulouse_8295704.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795445815000
     },
     {
-     "titre": "Crise climatique : l'Union européenne \"s'oppose\" à l'adoption de la déclaration finale de la COP31, après près de deux jours de prolongations",
+     "titre": "Un mois après l'attentat raciste de Trappes, la famille de Pengo Bossio Wangi regrette qu'aucune date n'ait été annoncée pour l'hommage national au jeune homme",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/environnement/crise-climatique/cop-climat/direct-l-union-europeenne-s-oppose-a-l-adoption-de-la-declaration-finale-de-la-cop31-apres-pres-de-deux-jours-de-prolongations_8294819.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1795350175000
+     "lien": "https://www.franceinfo.fr/faits-divers/terrorisme/attentat-raciste-a-trappes/un-mois-apres-l-attentat-raciste-de-trappes-la-famille-de-pengo-bossio-wangui-regrette-qu-aucune-date-n-ait-ete-annoncee-pour-l-hommage-national-au-jeune-homme_8295758.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795445508000
     },
     {
-     "titre": "Désiré Doué souffre d'une rupture du ligament croisé antérieur du genou droit et devra être opéré \"d'ici la fin du mois\"",
+     "titre": "Présidentielle 2027 : le parti Génération.s soutient officiellement la candidature de Jean-Luc Mélenchon, un accord conclu avec LFI",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/sports/foot/psg/desire-doue-souffre-d-une-rupture-du-ligament-croise-anterieur-du-genou-droit-et-devra-etre-opere-d-ici-la-fin-du-mois_8294843.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1795349692000
+     "lien": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-son-combat-est-le-mien-assure-raphael-glucksmann-sur-francois-ruffin-qui-s-est-retire-de-la-course-a-l-elysee_8295479.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795445125000
     },
     {
-     "titre": "Avec « Cuisiner, c’est raconter », Pierre-Noël Denieuil livre une anthropologie mondiale du « fait culinaire » sans quitter la cuisine",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/livres/article/2026/11/22/avec-cuisiner-c-est-raconter-pierre-noel-denieuil-livre-une-anthropologie-mondiale-du-fait-culinaire-sans-quitter-la-cuisine_6814208_3260.html",
-     "dateMs": 1795348808000
-    },
-    {
-     "titre": "Guerre en Ukraine : les écoles d'Odessa passent à l'enseignement en distanciel après des frappes russes sur le réseau électrique",
+     "titre": "Nvidia annonce la réintégration de Jensen Huang comme PDG, onze jours après son départ lié à une affaire d'adultère et d'espionnage",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/monde/europe/manifestations-en-ukraine/guerre-en-ukraine-les-ecoles-d-odessa-passent-a-l-enseignement-en-distanciel-apres-des-frappes-russes-sur-le-reseau-electrique_8294744.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1795348522000
+     "lien": "https://www.franceinfo.fr/internet/nvidia/nvidia-annonce-la-reintegration-de-jensen-huang-comme-pdg-onze-jours-apres-son-depart-lie-a-une-affaire-d-adultere-et-d-espionnage_8296160.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795444849000
     },
     {
-     "titre": "COP31 : la présidence turque ​annonce le rejet de sa proposition de décision finale, qui ne mentionnait pas la sortie des énergies fossiles",
+     "titre": "Grand Paris Express : Valérie Pécresse juge « très compromise » la mise en service de la ligne 18 avant la fin de l’année",
      "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/climat/article/2026/11/22/climat-l-ue-et-ses-membres-s-opposent-a-l-adoption-de-la-decision-finale-proposee-a-la-cop31_6814199_1652613.html",
-     "dateMs": 1795347170000
+     "lien": "https://www.lemonde.fr/economie/article/2026/11/23/grand-paris-express-valerie-pecresse-juge-tres-compromise-la-mise-en-service-de-la-ligne-18-avant-la-fin-de-l-annee_6814396_3234.html",
+     "dateMs": 1795444520000
     },
     {
-     "titre": "EN DIRECT, guerre en Ukraine : quatorze personnes portées disparues à la suite de l’attaque par un drone russe d’un immeuble d’habitation près de Kiev",
+     "titre": "Nvidia : Coup de théâtre, Jensen Huang réintégré comme directeur général et président",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/high-tech/4265126-20261123-nvidia-coup-theatre-jensen-huang-reintegre-comme-directeur-general-president?at_medium=display&at_campaign=149",
+     "dateMs": 1795444315000
+    },
+    {
+     "titre": "Jensen Huang réintégré à la tête de Nvidia par son conseil d’administration, deux semaines après avoir démissionné à la suite de soupçons d’espionnage chinois",
      "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/international/live/2026/11/22/en-direct-guerre-en-ukraine-quatorze-personnes-portees-disparues-a-la-suite-de-l-attaque-d-un-drone-russe-sur-un-immeuble-d-habitation-pres-de-kiev_6814183_3210.html",
-     "dateMs": 1795344643000
+     "lien": "https://www.lemonde.fr/economie/article/2026/11/23/jensen-huang-reintegre-comme-directeur-general-et-president-de-nvidia-par-le-conseil-d-administration-deux-semaines-apres-avoir-demissionne-suite-a-des-suspicions-d-espionnage-chinois_6814392_3234.html",
+     "dateMs": 1795443712000
     },
     {
-     "titre": "Cisjordanie : enquête ouverte par les autorités israéliennes après des attaques de colons ; Gadi Eisenkot dénonce un « terrorisme juif »",
+     "titre": "Le Tadjikistan annonce son retrait de la Cour pénale internationale",
      "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/guerre-au-proche-orient/article/2026/11/22/cisjordanie-enquete-ouverte-par-les-autorites-israeliennes-apres-des-attaques-de-colons-gadi-eisenkot-denonce-un-terrorisme-juif_6814204_6325529.html",
-     "dateMs": 1795342796000
+     "lien": "https://www.lemonde.fr/international/article/2026/11/23/le-tadjikistan-annonce-son-retrait-de-la-cour-penale-internationale_6814391_3210.html",
+     "dateMs": 1795443539000
     },
     {
-     "titre": "« La vieillesse n’est pas une excuse » : Benjamin Biolay défonce Pierre Perret et sa chanson anti LFI",
+     "titre": "Marseille : « Le commencement de quelque chose »… C’est quoi cette marche contre le racisme qui s’élance ce lundi ?",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/arts-stars/culture/4264745-20261122-vieillesse-excuse-benjamin-biolay-defonce-pierre-perret-chanson-anti-lfi?at_medium=display&at_campaign=149",
-     "dateMs": 1795339398000
+     "lien": "https://www.20minutes.fr/societe/4265013-20261123-marseille-commencement-quelque-chose-quoi-marche-contre-racisme-elance-lundi?at_medium=display&at_campaign=149",
+     "dateMs": 1795442154000
     },
     {
-     "titre": "« Vienna Game » sur Disney+ : Un « Bridgerton » à la sauce autrichienne ?",
+     "titre": "Anne Hidalgo à Tahiti : Les deux enquêtes concernant les déplacements de l’ex maire de Paris classées sans suite",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/arts-stars/serie/4264062-20261122-vienna-game-disney-bridgerton-sauce-autrichienne?at_medium=display&at_campaign=149",
-     "dateMs": 1795332756000
+     "lien": "https://www.20minutes.fr/politique/4265098-20261123-anne-hidalgo-tahiti-deux-enquetes-concernant-deplacements-ex-maire-paris-classees-suite?at_medium=display&at_campaign=149",
+     "dateMs": 1795439831000
     },
     {
-     "titre": "Présidentielle 2027 : Nouvelle réunion jeudi entre Retailleau, Lisnard et Attal...",
+     "titre": "Un clip tourné par des jeunes dans l’Assemblée nationale contre le « permis de tuer », Yaël Braun-Pivet s’indigne",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/politique/4264740-20261122-presidentielle-2027-marylise-leon-veut-eviter-second-tour-lendemain-1er-mai?at_medium=display&at_campaign=149",
-     "dateMs": 1795331424000
+     "lien": "https://www.20minutes.fr/societe/4265100-20261123-clip-tourne-jeunes-assemblee-nationale-contre-permis-tuer-yael-braun-pivet-indigne?at_medium=display&at_campaign=149",
+     "dateMs": 1795439267000
     },
     {
-     "titre": "France - Argentine : « Ça va être la guerre »… Alors, à quelle sauce on va manger l’Afrique du Sud cette fois ?",
-     "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/sport/rugby/4264711-20261122-france-argentine-ca-va-etre-guerre-alors-sauce-va-manger-afrique-sud-fois?at_medium=display&at_campaign=149",
-     "dateMs": 1795330956000
+     "titre": "EN DIRECT, guerre en Ukraine : un cargo russe pris pour cible dans le golfe de Finlande, le Kremlin dénonce « l’expansion de l’activité terroriste » en mer Baltique",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/international/live/2026/11/23/en-direct-guerre-en-ukraine-un-cargo-russe-pris-pour-cible-dans-le-golfe-de-finlande-le-kremlin-denonce-l-expansion-de-l-activite-terroriste-en-mer-baltique_6814183_3210.html",
+     "dateMs": 1795438817000
     }
    ]
   },
@@ -85,76 +85,76 @@
    "nom": "International",
    "items": [
     {
-     "titre": "France : cinquantenaire de la mort d’André Malraux ce lundi",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261122-france-cinquantenaire-de-la-mort-d-andr%C3%A9-malraux-ce-lundi",
-     "dateMs": 1795351243000
-    },
-    {
-     "titre": "Climat : la COP31 en Turquie devient la plus longue de l'histoire",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261122-climat-la-cop31-en-turquie-devient-la-plus-longue-de-l-histoire",
-     "dateMs": 1795351101000
-    },
-    {
-     "titre": "Italie : décès de Gianni De Gennaro, ex-chef de la police",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261122-italie-d%C3%A9c%C3%A8s-de-gianni-de-gennaro-ex-chef-de-la-police",
-     "dateMs": 1795351055000
-    },
-    {
-     "titre": "Corée du Sud: le ministre de l'Éducation démissionne sur fond de scandale de triche aux examens",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/asie-pacifique/20261122-cor%C3%A9e-du-sud-le-ministre-de-l-%C3%A9ducation-d%C3%A9missionne-sur-fond-de-scandale-de-triche-aux-examens",
-     "dateMs": 1795350920000
-    },
-    {
-     "titre": "Sommet tripartite de Shenzhen, COP 31 et gronde sociale en France : la semaine en images",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/asie-pacifique/20261122-sommet-tripartite-de-shenzhen-cop-31-et-gronde-sociale-en-france-la-semaine-en-images",
-     "dateMs": 1795350434000
-    },
-    {
-     "titre": "COP31: faute de consensus, la présidence turque annonce le rejet de la proposition d'accord final",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/environnement/20261122-cop31-faute-de-consensus-la-pr%C3%A9sidence-turque-annonce-le-rejet-de-la-proposition-d-accord-final",
-     "dateMs": 1795349422000
-    },
-    {
-     "titre": "Russia-bound ship still on fire after attack in Gulf of Finland",
-     "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/cj752ddve27ko?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1795346714000
-    },
-    {
-     "titre": "Arrestations de l’ICE dans un aéroport : le gouverneur de Washington dénonce une police de l’immigration « hors de contrôle »",
+     "titre": "Deux navires russes attaqués dans les eaux libyennes, une extension inédite de la guerre russo-ukrainienne",
      "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/22/arrestations-de-l-ice-dans-un-aeroport-le-gouverneur-de-washington-denonce-une-police-de-l-immigration-hors-de-controle_6814205_3210.html",
-     "dateMs": 1795345512000
+     "lien": "https://www.lemonde.fr/afrique/article/2026/11/23/deux-navires-russes-attaques-dans-les-eaux-libyennes-une-extension-inedite-de-la-guerre-russo-ukrainienne_6814397_3212.html",
+     "dateMs": 1795446009000
     },
     {
-     "titre": "France: Emmanuel Macron pense à une «règle d'or» budgétaire, la droite et le RN lui emboitent le pas",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/france/20261122-france-emmanuel-macron-pense-%C3%A0-une-r%C3%A8gle-d-or-budg%C3%A9taire-la-droite-et-le-rn-lui-emboitent-le-pas",
-     "dateMs": 1795344982000
-    },
-    {
-     "titre": "Indonésie: un incendie dans une usine fait au moins trois morts et 36 disparus près de Jakarta",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/asie-pacifique/20261122-indon%C3%A9sie-un-incendie-dans-une-usine-fait-au-moins-trois-morts-et-36-disparus-pr%C3%A8s-de-jakarta",
-     "dateMs": 1795340120000
-    },
-    {
-     "titre": "Au Japon, la pauvreté des jeunes occultée par la société : « Parfois, je n’avais qu’une tranche de pain de mie par jour »",
-     "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/22/au-japon-la-pauvrete-des-jeunes-occultee-par-la-societe-parfois-je-n-avais-qu-une-tranche-de-pain-de-mie-par-jour_6814203_3210.html",
-     "dateMs": 1795339806000
-    },
-    {
-     "titre": "South Korea education minister resigns over exam cheating scandal",
+     "titre": "Mexican soldiers attacked in wake of drug lord's arrest",
      "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/cw3dgk29d37no?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1795339245000
+     "lien": "https://www.bbc.co.uk/news/articles/c5rmgkv2lk73o?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1795445643000
+    },
+    {
+     "titre": "RDC: la police disperse une manifestation de l'Église catholique à Lubumbashi",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/afrique/20261123-rdc-la-police-disperse-une-manifestation-de-l-%C3%A9glise-catholique-%C3%A0-lubumbashi",
+     "dateMs": 1795444792000
+    },
+    {
+     "titre": "Senyss et Anandha Seethanen : deux artistes, deux univers, une même passion pour la scène !",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/%C3%A9missions/%C3%A0-l-affiche/20261123-senyss-et-anandha-seethanen-deux-artistes-deux-univers-une-m%C3%AAme-passion-pour-la-sc%C3%A8ne",
+     "dateMs": 1795444725000
+    },
+    {
+     "titre": "Méditerranée : en frappant deux navires russes en Libye, Kiev ouvre-t-elle un nouveau front ?",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261123-m%C3%A9diterran%C3%A9e-en-frappant-deux-navires-russes-en-libye-kiev-ouvre-t-elle-un-nouveau-front",
+     "dateMs": 1795444392000
+    },
+    {
+     "titre": "Quel avenir pour les discussions climatiques après l'échec de la COP31 ?",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261123-quel-avenir-pour-les-discussions-climatiques-apr%C3%A8s-l-%C3%A9chec-de-la-cop31",
+     "dateMs": 1795444280000
+    },
+    {
+     "titre": "Génocide des Rohingya : « Le champ d’action de la Cour internationale de justice s’est orienté vers les enjeux liés aux droits humains »",
+     "source": "Le Monde International",
+     "lien": "https://www.lemonde.fr/idees/article/2026/11/23/genocide-des-rohingya-le-champ-d-action-de-la-cour-internationale-de-justice-s-est-oriente-vers-les-enjeux-lies-aux-droits-humains_6814395_3232.html",
+     "dateMs": 1795444213000
+    },
+    {
+     "titre": "En images. Volodymyr Zelensky revendique l’attaque de deux bateaux russes en Libye à l’aide de « drones maritimes »",
+     "source": "Le Monde International",
+     "lien": "https://www.lemonde.fr/videos/video/2026/11/23/en-images-volodymyr-zelensky-revendique-l-attaque-de-deux-bateaux-russes-en-libye-a-l-aide-de-drones-maritimes_6814394_1669088.html",
+     "dateMs": 1795444209000
+    },
+    {
+     "titre": "Irak: opération anticorruption à Jurf al-Sakhr, fief des Kataëb Hezbollah",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/moyen-orient/20261123-irak-op%C3%A9ration-anticorruption-%C3%A0-jurf-al-sakhr-fief-des-kata%C3%ABb-hezbollah",
+     "dateMs": 1795444112000
+    },
+    {
+     "titre": "Ukraine : effondrement d'un immeuble après une frappe russe",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261123-ukraine-effondrement-d-un-immeuble-apr%C3%A8s-une-frappe-russe",
+     "dateMs": 1795444059000
+    },
+    {
+     "titre": "Presidential villa suffers water and power cuts, Nigerian leader says",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/cv1j65xjjk65o?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1795443993000
+    },
+    {
+     "titre": "Nvidia annonce la réintégration de Jensen Huang comme PDG dix jours après son départ",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/am%C3%A9riques/20261123-nvidia-annonce-la-r%C3%A9int%C3%A9gration-de-jensen-huang-comme-pdg-deux-semaines-apr%C3%A8s-son-d%C3%A9part",
+     "dateMs": 1795443045000
     }
    ]
   }
