@@ -1,82 +1,82 @@
 {
- "genere": "2026-11-24T15:07:30+00:00",
- "genereMs": 1795532847999,
+ "genere": "2026-11-25T14:48:08+00:00",
+ "genereMs": 1795618086155,
  "themes": [
   {
    "id": "france",
    "nom": "France",
    "items": [
     {
-     "titre": "Le cargo échoué près d'une plage des Landes depuis quatre jours a repris le large, tiré par un remorqueur",
+     "titre": "\"Cannes, c'est nul. Je n'y retournerai pas\" : James Gray annonce \"avec humour\" son divorce avec le festival qui l'a sélectionné six fois en compétition",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/france/nouvelle-aquitaine/landes/le-cargo-echoue-pres-d-une-plage-des-landes-depuis-quatre-jours-a-repris-le-large-tire-par-un-remorqueur_8297847.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1795531569000
+     "lien": "https://www.franceinfo.fr/culture/cinema/cannes-c-est-nul-je-n-y-retournerai-pas-james-gray-annonce-avec-humour-son-divorce-avec-le-festival-qui-l-a-selectionne-six-fois-en-competition_8299440.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795617086000
     },
     {
-     "titre": "Au Royaume-Uni, une tentative de cambriolage signalée dans l'une des résidences de William et Kate, deux hommes arrêtés",
+     "titre": "En Ukraine, face à la multiplication des frappes russes sur les ponts, Kiev songe à se doter d’un tunnel sous le Dniepr",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/international/article/2026/11/25/en-ukraine-face-a-la-multiplication-des-frappes-russes-sur-les-ponts-kiev-songe-a-se-doter-d-un-tunnel-sous-le-dniepr_6815113_3210.html",
+     "dateMs": 1795617014000
+    },
+    {
+     "titre": "La France mettra fin aux négociations sur le budget européen si aucun accord n'est trouvé \"au-delà de décembre\"",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/monde/royaume-uni/au-royaume-uni-une-tentative-de-cambriolage-signalee-dans-l-une-des-residences-de-william-et-kate-deux-hommes-arretes_8297766.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1795531538000
+     "lien": "https://www.franceinfo.fr/monde/europe/union-europeenne/la-france-mettra-fin-aux-negociations-sur-le-budget-europeen-si-aucun-accord-n-est-trouve-au-dela-de-decembre_8299746.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795616850000
     },
     {
-     "titre": "\"Je mets ma main au feu\" : Tadej Pogacar assure que le dopage \"n'existe plus pour la majorité du peloton\"",
+     "titre": "Présidentielle 2027 : Teddy Riner revendique plus d'une centaine de parrainages pour sa candidature",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/sports/cyclisme/tadej-pogacar/je-mets-ma-main-au-feu-tadej-pogacar-assure-que-le-dopage-n-existe-plus-pour-la-majorite-du-peloton_8297838.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1795531263000
+     "lien": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-lance-dans-la-course-a-l-elysee-david-lisnard-fixe-dans-la-journee-sur-sa-reelection-a-la-tete-de-l-association-des-maires-de-france_8298708.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795616821000
     },
     {
-     "titre": "CAN 2025 : Nouvelle folie, le Sénégal récupère finalement son titre au détriment du Maroc !",
-     "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/sport/football/4265419-20261124-can-2025-nouvelle-folie-senegal-recupere-finalement-titre-detriment-maroc?at_medium=display&at_campaign=149",
-     "dateMs": 1795531174000
-    },
-    {
-     "titre": "CAN 2025 : le Tribunal arbitral du sport déclare le Sénégal champion d’Afrique de football, au détriment du Maroc",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/football/article/2026/11/24/can-2025-le-tribunal-arbitral-du-sport-declare-le-senegal-champion-d-afrique-des-nations-au-detriment-du-maroc_6814779_1616938.html",
-     "dateMs": 1795530896000
-    },
-    {
-     "titre": "Projet français, dépendance chinoise, exemple américain… Quatre questions sur les \"stocks stratégiques de terres rares et métaux\"",
+     "titre": "En Israël, un projet de loi pour créer une commission d'enquête sur le 7-Octobre franchit un premier obstacle au Parlement",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/economie/projet-francais-dependance-chinoise-exemple-americain-quatre-questions-sur-les-stocks-strategiques-de-terres-rares-et-metaux_8297829.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1795530429000
+     "lien": "https://www.franceinfo.fr/monde/proche-orient/attaques-du-7-octobre/en-israel-un-projet-de-loi-pour-creer-une-commission-d-enquete-sur-le-7-octobre-franchit-un-premier-obstacle-au-parlement_8299797.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795616791000
     },
     {
-     "titre": "Nicolas Sarkozy, Carla Bruni et Mimi Marchand renvoyés devant le tribunal dans l’affaire de la fausse rétractation de l’homme d’affaires Ziad Takieddine",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/societe/article/2026/11/24/nicolas-sarkozy-carla-bruni-et-mimi-marchand-renvoyes-devant-le-tribunal-dans-l-affaire-de-la-fausse-retractation-de-l-homme-d-affaires-ziad-takieddine_6814770_3224.html",
-     "dateMs": 1795526777000
-    },
-    {
-     "titre": "COP31 : « L’espoir de nombreux observateurs est qu’Antalya crée une sorte de sursaut et permette à la diplomatie climatique de repartir sur de meilleures bases »",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/planete/live/2026/11/24/cop31-comment-rebondir-apres-l-echec-de-la-conference-d-antalya-sur-le-climat-posez-vos-questions-a-notre-journaliste_6814769_3244.html",
-     "dateMs": 1795526708000
-    },
-    {
-     "titre": "Chine : à Shanghai, le chef du Parti communiste visé par une enquête pour des soupçons de corruption",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/24/chine-a-shanghai-le-chef-du-parti-communiste-vise-par-une-enquete-pour-des-soupcons-de-corruption_6814768_3210.html",
-     "dateMs": 1795525328000
-    },
-    {
-     "titre": "Le Havre : Une enquête ouverte pour détournement de fonds publics à l’agglomération présidée par Édouard Philippe",
+     "titre": "Meurtre de Louis à Narbonne : La pétition demandant de revoir l’excuse de minorité approche les 50.000 signatures",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/justice/4265372-20261124-havre-enquete-ouverte-detournement-fonds-publics-agglomeration-presidee-edouard-philippe?at_medium=display&at_campaign=149",
-     "dateMs": 1795523729000
+     "lien": "https://www.20minutes.fr/societe/4265656-20261125-meurtre-louis-narbonne-petition-demandant-revoir-excuse-minorite-approche-50-000-signatures?at_medium=display&at_campaign=149",
+     "dateMs": 1795616178000
     },
     {
-     "titre": "Fausse rétractation de Takieddine : Nicolas Sarkozy et Carla Bruni renvoyés en procès",
-     "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/justice/4265375-20261124-fausse-retractation-takieddine-nicolas-sarkozy-carla-bruni-renvoyes-proces?at_medium=display&at_campaign=149",
-     "dateMs": 1795523335000
+     "titre": "Donald Trump persiste avec une nouvelle salve de droits de douane, notamment contre l’UE et la Chine, malgré la claque électorale",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/economie/article/2026/11/25/donald-trump-persiste-avec-une-nouvelle-salve-de-droits-de-douane-malgre-la-claque-electorale_6815108_3234.html",
+     "dateMs": 1795615489000
     },
     {
-     "titre": "Hautes-Pyrénées : Un hélicoptère transportant une pelle mécanique se crashe dans une forêt, le pilote sain et sauf",
+     "titre": "Philippe Lejeune, grand spécialiste de l’autobiographie et du journal intime, est mort",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/disparitions/article/2026/11/25/philippe-lejeune-grand-specialiste-de-l-autobiographie-et-du-journal-intime-est-mort_6815106_3382.html",
+     "dateMs": 1795615097000
+    },
+    {
+     "titre": "En difficulté depuis plusieurs années, le PMU lance son plan de « reconquête »",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/faits_divers/4265360-20261124-hautes-pyrenees-helicoptere-transportant-pelle-mecanique-crashe-foret-pilote-sain-sauf?at_medium=display&at_campaign=149",
-     "dateMs": 1795522729000
+     "lien": "https://www.20minutes.fr/societe/4265671-20261125-difficulte-depuis-plusieurs-annees-pmu-lance-plan-reconquete?at_medium=display&at_campaign=149",
+     "dateMs": 1795614453000
+    },
+    {
+     "titre": "7-Octobre : en Israël, la Knesset approuve en lecture préliminaire la création d’une commission d’enquête",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/international/article/2026/11/25/7-octobre-en-israel-la-knesset-approuve-en-lecture-preliminaire-la-creation-d-une-commission-d-enquete_6815104_3210.html",
+     "dateMs": 1795614390000
+    },
+    {
+     "titre": "Comment « Blade Runner 2099 » adapte sa dystopie aux angoisses de notre époque",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/arts-stars/serie/4265640-20261125-comment-blade-runner-2099-adapte-dystopie-angoisses-epoque?at_medium=display&at_campaign=149",
+     "dateMs": 1795610734000
+    },
+    {
+     "titre": "Affaire Patrick Bruel : Une nouvelle plainte pour un viol en marge d’un spectacle des Enfoirés",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/justice/4265652-20261125-affaire-patrick-bruel-nouvelle-plainte-viol-marge-spectacle-enfoires?at_medium=display&at_campaign=149",
+     "dateMs": 1795609731000
     }
    ]
   },
@@ -85,76 +85,76 @@
    "nom": "International",
    "items": [
     {
-     "titre": "Le Sénégal officiellement désigné vainqueur de la CAN 2025",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261124-le-s%C3%A9n%C3%A9gal-officiellement-d%C3%A9sign%C3%A9-vainqueur-de-la-can-2025",
-     "dateMs": 1795532290000
-    },
-    {
-     "titre": "Fausse rétractation de Takieddine : renvoi en procès de Nicolas Sarkozy et Carla Bruni",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/france/20261124-fausse-r%C3%A9tractation-takieddine-renvoi-proc%C3%A8s-nicolas-sarkozy-carla-bruni",
-     "dateMs": 1795532035000
-    },
-    {
-     "titre": "Présidentielle 2027: le Congrès des maires de France, marché aux parrainages des candidats",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/france/20261124-pr%C3%A9sidentielle-2027-le-congr%C3%A8s-des-maires-de-france-march%C3%A9-aux-parrainages-des-candidats",
-     "dateMs": 1795532016000
-    },
-    {
-     "titre": "CAN-2025: le Sénégal récupère son titre, le Maroc déchu (TAS)",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261124-can-2025-le-s%C3%A9n%C3%A9gal-r%C3%A9cup%C3%A8re-son-titre-le-maroc-d%C3%A9chu-tas",
-     "dateMs": 1795531698000
-    },
-    {
-     "titre": "Verdict du TAS : existe-t-il un recours pour le Maroc ?",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/sports/20261124-verdict-tas-recours-possible-maroc-senegal",
-     "dateMs": 1795531430000
-    },
-    {
-     "titre": "La CAN 2025 attribuée définitivement au Sénégal par le Tribunal arbitral du sport",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/afrique-foot/20261124-la-can-2025-attribu%C3%A9e-d%C3%A9finitivement-au-s%C3%A9n%C3%A9gal-par-le-tribunal-arbitral-du-sport",
-     "dateMs": 1795530445000
-    },
-    {
-     "titre": "La CEDH autorise le refoulement des migrants arrivés d’un pays « instrumentalisant » les flux migratoires",
+     "titre": "Le Haut-Commissariat des Nations unies aux droits de l’homme alerte sur le risque de nouveaux « crimes atroces » commis par Israël contre les Palestiniens",
      "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/24/la-cedh-autorise-le-refoulement-des-migrants-arrives-d-un-pays-instrumentalisant-les-flux-migratoires_6814777_3210.html",
-     "dateMs": 1795529656000
+     "lien": "https://www.lemonde.fr/international/article/2026/11/25/le-haut-commissariat-des-nations-unies-aux-droits-de-l-homme-alerte-sur-le-risque-de-nouveaux-crimes-atroces-commis-par-israel-contre-les-palestiniens_6815114_3210.html",
+     "dateMs": 1795617249000
     },
     {
-     "titre": "Bloquer les visas des athlètes russes, une décision moralement justifiable mais qui crée un dangereux précédent",
-     "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/sport/article/2026/11/24/bloquer-les-visas-des-athletes-russes-une-decision-moralement-justifiable-mais-qui-cree-un-dangereux-precedent_6814775_3242.html",
-     "dateMs": 1795528811000
+     "titre": "\"Paper Tiger\" : Scarlett Johansson et Adam Driver face à la mafia russe",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/%C3%A9missions/%C3%A0-l-affiche/20261125-paper-tiger-scarlett-johansson-et-adam-driver-face-%C3%A0-la-mafia-russe",
+     "dateMs": 1795615585000
     },
     {
-     "titre": "Slovaquie : le gouvernement supprime le vote par correspondance, l’opposition affirme que la coalition « a peur de perdre les prochaines élections »",
-     "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/24/slovaquie-le-gouvernement-supprime-le-vote-par-correspondance-l-opposition-affirme-que-la-coalition-a-peur-de-perdre-les-prochaines-elections_6814773_3210.html",
-     "dateMs": 1795528735000
+     "titre": "En Espagne, l’extrême droite aux portes du pouvoir",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261125-en-espagne-l-extr%C3%AAme-droite-aux-portes-du-pouvoir",
+     "dateMs": 1795615295000
     },
     {
-     "titre": "Éthiopie: Amnesty réclame une enquête sur de possibles crimes de guerre de l'armée fédérale au Tigré",
+     "titre": "Congrès des maires : les candidats à la Présidentielle défilent en quête de parrainages",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261125-congr%C3%A8s-des-maires-les-candidats-%C3%A0-la-pr%C3%A9sidentielle-d%C3%A9filent-en-qu%C3%AAte-de-parrainages",
+     "dateMs": 1795615209000
+    },
+    {
+     "titre": "Édition spéciale : Journée internationale de lutte contre les violences faites aux femmes",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/%C3%A9missions/parlons-en-les-invit%C3%A9s/20261125-%C3%A9dition-sp%C3%A9ciale-journ%C3%A9e-internationale-de-lutte-contre-les-violences-faites-aux-femmes",
+     "dateMs": 1795614894000
+    },
+    {
+     "titre": "L'administration Trump veut instaurer de nouveaux droits de douane contre ses principaux partenaires commerciaux",
      "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/afrique/20261124-%C3%A9thiopie-amnesty-r%C3%A9clame-une-enqu%C3%AAte-sur-de-possibles-crimes-de-guerre-de-l-arm%C3%A9e-f%C3%A9d%C3%A9rale-au-tigr%C3%A9",
-     "dateMs": 1795525898000
+     "lien": "https://www.rfi.fr/fr/am%C3%A9riques/20261125-l-administration-trump-veut-instaurer-de-nouveaux-droits-de-douane-contre-ses-principaux-partenaires-commerciaux",
+     "dateMs": 1795614610000
     },
     {
-     "titre": "DIRECT- Le TAS déclare le Sénégal vainqueur de la CAN 2025",
+     "titre": "David Lisnard, candidat à la présidentielle, réélu à la tête de l'Association des maires de France",
      "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/afrique-foot/20261124-can-2025-suivez-en-direct-la-d%C3%A9cision-du-tas-sur-la-finale-entre-le-maroc-et-le-s%C3%A9n%C3%A9gal",
-     "dateMs": 1795525792000
+     "lien": "https://www.rfi.fr/fr/france/20261125-david-lisnard-candidat-%C3%A0-la-pr%C3%A9sidentielle-r%C3%A9%C3%A9lu-%C3%A0-la-t%C3%AAte-de-l-association-des-maires-de-france",
+     "dateMs": 1795614087000
     },
     {
-     "titre": "Russian governor detained in rare criminal case against regional leader",
+     "titre": "La Malaisie poursuit Google pour des contenus «nocifs» sur YouTube",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/asie-pacifique/20261125-la-malaisie-poursuit-google-pour-des-contenus-nocifs-sur-youtube",
+     "dateMs": 1795611837000
+    },
+    {
+     "titre": "Kilmar Ábrego García arrives in Spain, ending Trump deportation battle",
      "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/cmwy868v3nneo?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1795524343000
+     "lien": "https://www.bbc.co.uk/news/articles/c6808pyy5dl9o?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1795610531000
+    },
+    {
+     "titre": "La Corée du Nord expulse un diplomate suisse après des sanctions contre un camp accusé de «russifier» des enfants ukrainiens",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/asie-pacifique/20261125-la-cor%C3%A9e-du-nord-expulse-un-diplomate-suisse-apr%C3%A8s-des-sanctions-contre-un-camp-accus%C3%A9-de-russifier-des-enfants-ukrainiens",
+     "dateMs": 1795610439000
+    },
+    {
+     "titre": "Veteran Nigerian Nollywood actor Pete Edochie dies aged 79",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/cqwy0rr4rr4yo?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1795609452000
+    },
+    {
+     "titre": "Russia's own figures show it has lost nearly 500,000 people in Ukraine war",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/cmx27g533zwyo?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1795609309000
     }
    ]
   }
