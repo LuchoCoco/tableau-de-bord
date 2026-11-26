@@ -1,82 +1,82 @@
 {
- "genere": "2026-11-25T14:48:08+00:00",
- "genereMs": 1795618086155,
+ "genere": "2026-11-26T14:13:01+00:00",
+ "genereMs": 1795702379521,
  "themes": [
   {
    "id": "france",
    "nom": "France",
    "items": [
     {
-     "titre": "\"Cannes, c'est nul. Je n'y retournerai pas\" : James Gray annonce \"avec humour\" son divorce avec le festival qui l'a sélectionné six fois en compétition",
+     "titre": "Gérard Depardieu est renvoyé devant la cour criminelle pour viol commis sur la comédienne Charlotte Arnould",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/culture/cinema/cannes-c-est-nul-je-n-y-retournerai-pas-james-gray-annonce-avec-humour-son-divorce-avec-le-festival-qui-l-a-selectionne-six-fois-en-competition_8299440.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1795617086000
+     "lien": "https://www.franceinfo.fr/culture/cinema/depardieu/gerard-depardieu-est-renvoye-devant-la-justice-pour-viol-commis-sur-la-comedienne-charlotte-arnould_8301426.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795702007000
     },
     {
-     "titre": "En Ukraine, face à la multiplication des frappes russes sur les ponts, Kiev songe à se doter d’un tunnel sous le Dniepr",
-     "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/25/en-ukraine-face-a-la-multiplication-des-frappes-russes-sur-les-ponts-kiev-songe-a-se-doter-d-un-tunnel-sous-le-dniepr_6815113_3210.html",
-     "dateMs": 1795617014000
-    },
-    {
-     "titre": "La France mettra fin aux négociations sur le budget européen si aucun accord n'est trouvé \"au-delà de décembre\"",
+     "titre": "Présidentielle 2027 : \"La guerre en Ukraine est notre guerre\", répond Raphaël Glucksmann à Teddy Riner, réticent à aider Kiev",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/monde/europe/union-europeenne/la-france-mettra-fin-aux-negociations-sur-le-budget-europeen-si-aucun-accord-n-est-trouve-au-dela-de-decembre_8299746.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1795616850000
+     "lien": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-a-l-assemblee-les-republicains-proposent-de-durcir-la-reponse-penale-lors-de-leur-niche-parlementaire_8300802.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795701844000
     },
     {
-     "titre": "Présidentielle 2027 : Teddy Riner revendique plus d'une centaine de parrainages pour sa candidature",
+     "titre": "\"C'est très préoccupant\" : l'inquiétude après le naufrage d'un pétrolier transportant 7 000 tonnes de diesel au large d'Ibiza",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/elections/direct-presidentielle-2027-lance-dans-la-course-a-l-elysee-david-lisnard-fixe-dans-la-journee-sur-sa-reelection-a-la-tete-de-l-association-des-maires-de-france_8298708.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1795616821000
+     "lien": "https://www.franceinfo.fr/environnement/pollution/naufrages/c-est-quelque-chose-qui-est-tres-preoccupant-l-inquietude-apres-le-naufrage-d-un-petrolier-avec-7-000-tonnes-de-diesel-a-bord-au-large-d-ibiza_8301390.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795700699000
     },
     {
-     "titre": "En Israël, un projet de loi pour créer une commission d'enquête sur le 7-Octobre franchit un premier obstacle au Parlement",
+     "titre": "Une bombe lacrymogène tirée à l'intérieur du lycée Mandela à Nantes, les cours suspendus pour la journée",
      "source": "franceinfo",
-     "lien": "https://www.franceinfo.fr/monde/proche-orient/attaques-du-7-octobre/en-israel-un-projet-de-loi-pour-creer-une-commission-d-enquete-sur-le-7-octobre-franchit-un-premier-obstacle-au-parlement_8299797.html#xtor=RSS-3-[lestitres]",
-     "dateMs": 1795616791000
+     "lien": "https://france3-regions.franceinfo.fr/pays-de-la-loire/loire-atlantique/nantes/blocage-du-lycee-mandela-de-nantes-un-barrage-filtrant-installe-par-les-eleves-des-policiers-sont-sur-place-3456173.html#xtor=RSS-3-[lestitres]",
+     "dateMs": 1795700572000
     },
     {
-     "titre": "Meurtre de Louis à Narbonne : La pétition demandant de revoir l’excuse de minorité approche les 50.000 signatures",
+     "titre": "Affaire Depardieu : L’acteur sera bien jugé pour viols sur Charlotte Arnould",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/societe/4265656-20261125-meurtre-louis-narbonne-petition-demandant-revoir-excuse-minorite-approche-50-000-signatures?at_medium=display&at_campaign=149",
-     "dateMs": 1795616178000
+     "lien": "https://www.20minutes.fr/justice/4265991-20261126-affaire-depardieu-acteur-bien-juge-viols-charlotte-arnould?at_medium=display&at_campaign=149",
+     "dateMs": 1795700159000
     },
     {
-     "titre": "Donald Trump persiste avec une nouvelle salve de droits de douane, notamment contre l’UE et la Chine, malgré la claque électorale",
+     "titre": "Lilia Hassaine remporte le prix Goncourt des lycéens avec son roman « JE »",
      "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/economie/article/2026/11/25/donald-trump-persiste-avec-une-nouvelle-salve-de-droits-de-douane-malgre-la-claque-electorale_6815108_3234.html",
-     "dateMs": 1795615489000
+     "lien": "https://www.lemonde.fr/livres/article/2026/11/26/lilia-hassaine-remporte-le-prix-goncourt-des-lyceens-avec-son-roman-je_6815534_3260.html",
+     "dateMs": 1795698092000
     },
     {
-     "titre": "Philippe Lejeune, grand spécialiste de l’autobiographie et du journal intime, est mort",
+     "titre": "Elon Musk promet d’offrir deux actions de SpaceX à « chaque enfant » aux Etats-Unis",
      "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/disparitions/article/2026/11/25/philippe-lejeune-grand-specialiste-de-l-autobiographie-et-du-journal-intime-est-mort_6815106_3382.html",
-     "dateMs": 1795615097000
+     "lien": "https://www.lemonde.fr/international/article/2026/11/26/elon-musk-promet-d-offrir-deux-actions-de-spacex-a-chaque-enfant-aux-etats-unis_6815531_3210.html",
+     "dateMs": 1795696966000
     },
     {
-     "titre": "En difficulté depuis plusieurs années, le PMU lance son plan de « reconquête »",
+     "titre": "La Rochelle : Un médecin régulateur jugé après la mort de Sarah Tijou, femme enceinte qui avait contacté le Samu",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/societe/4265671-20261125-difficulte-depuis-plusieurs-annees-pmu-lance-plan-reconquete?at_medium=display&at_campaign=149",
-     "dateMs": 1795614453000
+     "lien": "https://www.20minutes.fr/justice/4265912-20261126-rochelle-medecin-regulateur-juge-apres-mort-sarah-tijou-femme-enceinte-contacte-samu?at_medium=display&at_campaign=149",
+     "dateMs": 1795694638000
     },
     {
-     "titre": "7-Octobre : en Israël, la Knesset approuve en lecture préliminaire la création d’une commission d’enquête",
+     "titre": "A Paris et en Île-de-France, trois adresses où les cuisines africaines brillent de toutes leurs saveurs",
      "source": "Le Monde",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/25/7-octobre-en-israel-la-knesset-approuve-en-lecture-preliminaire-la-creation-d-une-commission-d-enquete_6815104_3210.html",
-     "dateMs": 1795614390000
+     "lien": "https://www.lemonde.fr/m-styles/article/2026/11/26/a-paris-et-en-ile-de-france-trois-adresses-ou-les-cuisines-africaines-brillent-de-toutes-leurs-saveurs_6815529_4497319.html",
+     "dateMs": 1795694418000
     },
     {
-     "titre": "Comment « Blade Runner 2099 » adapte sa dystopie aux angoisses de notre époque",
-     "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/arts-stars/serie/4265640-20261125-comment-blade-runner-2099-adapte-dystopie-angoisses-epoque?at_medium=display&at_campaign=149",
-     "dateMs": 1795610734000
+     "titre": "Présidentielle 2027 : Edouard Philippe passe à l’offensive face à David Lisnard",
+     "source": "Le Monde",
+     "lien": "https://www.lemonde.fr/politique/article/2026/11/26/presidentielle-2027-edouard-philippe-passe-a-l-offensive-face-a-david-lisnard_6815527_823448.html",
+     "dateMs": 1795694407000
     },
     {
-     "titre": "Affaire Patrick Bruel : Une nouvelle plainte pour un viol en marge d’un spectacle des Enfoirés",
+     "titre": "« Ce n’est pas notre guerre »… Quels étaient les liens entre Riner l’athlète et la Russie de Poutine, fan de judo ?",
      "source": "20 Minutes",
-     "lien": "https://www.20minutes.fr/justice/4265652-20261125-affaire-patrick-bruel-nouvelle-plainte-viol-marge-spectacle-enfoires?at_medium=display&at_campaign=149",
-     "dateMs": 1795609731000
+     "lien": "https://www.20minutes.fr/politique/4265901-20261126-guerre-liens-entre-riner-athlete-russie-poutine-fan-judo?at_medium=display&at_campaign=149",
+     "dateMs": 1795692915000
+    },
+    {
+     "titre": "Mouvement lycéen : « La stratégie du pourrissement ne marche pas »… La mobilisation reprend ce jeudi",
+     "source": "20 Minutes",
+     "lien": "https://www.20minutes.fr/societe/4265882-20261126-mouvement-lyceen-strategie-pourrissement-marche-mobilisation-reprend-jeudi?at_medium=display&at_campaign=149",
+     "dateMs": 1795687718000
     }
    ]
   },
@@ -85,76 +85,76 @@
    "nom": "International",
    "items": [
     {
-     "titre": "Le Haut-Commissariat des Nations unies aux droits de l’homme alerte sur le risque de nouveaux « crimes atroces » commis par Israël contre les Palestiniens",
+     "titre": "Diesel tanker carrying up to 7,000 tonnes sinks near Ibiza, killing one",
+     "source": "BBC World",
+     "lien": "https://www.bbc.co.uk/news/articles/c9gklryvj24do?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1795701642000
+    },
+    {
+     "titre": "Gérard Depardieu renvoyé en procès pour une partie des viols dénoncés par Charlotte Arnould",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/france/20261126-gerard-depardieu-renvoy%C3%A9-en-appel-pour-une-partie-des-viols-dont-il-est-accuse-par-charlotte-arnould",
+     "dateMs": 1795700927000
+    },
+    {
+     "titre": "Gérard Depardieu renvoyé en procès pour une partie des viols dont l'accuse Charlotte Arnould",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/france/20261126-gerard-depardieu-renvoy%C3%A9-en-appel-pour-une-partie-des-viols-dont-il-est-accuse-par-charlotte-arnould",
+     "dateMs": 1795700819000
+    },
+    {
+     "titre": "Le renvoi en procès de Gérard Depardieu pour une partie des viols dont il est accusé confirmé en appel",
+     "source": "RFI",
+     "lien": "https://www.rfi.fr/fr/france/20261126-le-renvoi-en-proc%C3%A8s-de-g%C3%A9rard-depardieu-pour-une-partie-des-viols-dont-il-est-accus%C3%A9-confirm%C3%A9-en-appel",
+     "dateMs": 1795700187000
+    },
+    {
+     "titre": "Législatives anticipées en Espagne : le logement au cœur du scrutin",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/%C3%A9missions/focus/20261126-l%C3%A9gislatives-anticip%C3%A9es-en-espagne-le-logement-au-c%C5%93ur-du-scrutin",
+     "dateMs": 1795699823000
+    },
+    {
+     "titre": "Dix ans après l’accord avec les FARC en Colombie : « Négocier la paix dans une démocratie est très difficile car elle devient alors un moyen de faire de la politique »",
      "source": "Le Monde International",
-     "lien": "https://www.lemonde.fr/international/article/2026/11/25/le-haut-commissariat-des-nations-unies-aux-droits-de-l-homme-alerte-sur-le-risque-de-nouveaux-crimes-atroces-commis-par-israel-contre-les-palestiniens_6815114_3210.html",
-     "dateMs": 1795617249000
+     "lien": "https://www.lemonde.fr/international/article/2026/11/26/dix-ans-apres-l-accord-avec-les-farc-en-colombie-negocier-la-paix-dans-une-democratie-est-tres-difficile-car-elle-devient-alors-un-moyen-de-faire-de-la-politique_6815536_3210.html",
+     "dateMs": 1795699803000
     },
     {
-     "titre": "\"Paper Tiger\" : Scarlett Johansson et Adam Driver face à la mafia russe",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/%C3%A9missions/%C3%A0-l-affiche/20261125-paper-tiger-scarlett-johansson-et-adam-driver-face-%C3%A0-la-mafia-russe",
-     "dateMs": 1795615585000
-    },
-    {
-     "titre": "En Espagne, l’extrême droite aux portes du pouvoir",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261125-en-espagne-l-extr%C3%AAme-droite-aux-portes-du-pouvoir",
-     "dateMs": 1795615295000
-    },
-    {
-     "titre": "Congrès des maires : les candidats à la Présidentielle défilent en quête de parrainages",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/vid%C3%A9o/20261125-congr%C3%A8s-des-maires-les-candidats-%C3%A0-la-pr%C3%A9sidentielle-d%C3%A9filent-en-qu%C3%AAte-de-parrainages",
-     "dateMs": 1795615209000
-    },
-    {
-     "titre": "Édition spéciale : Journée internationale de lutte contre les violences faites aux femmes",
-     "source": "France 24",
-     "lien": "https://www.france24.com/fr/%C3%A9missions/parlons-en-les-invit%C3%A9s/20261125-%C3%A9dition-sp%C3%A9ciale-journ%C3%A9e-internationale-de-lutte-contre-les-violences-faites-aux-femmes",
-     "dateMs": 1795614894000
-    },
-    {
-     "titre": "L'administration Trump veut instaurer de nouveaux droits de douane contre ses principaux partenaires commerciaux",
+     "titre": "Guinée: adoption du projet de loi créant un fonds souverain alimenté par l'exploitation de la mine de Simandou",
      "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/am%C3%A9riques/20261125-l-administration-trump-veut-instaurer-de-nouveaux-droits-de-douane-contre-ses-principaux-partenaires-commerciaux",
-     "dateMs": 1795614610000
+     "lien": "https://www.rfi.fr/fr/afrique/20261126-guin%C3%A9e-adoption-du-projet-de-loi-cr%C3%A9ant-un-fonds-souverain-aliment%C3%A9-par-l-exploitation-de-la-mine-de-simandou",
+     "dateMs": 1795699584000
     },
     {
-     "titre": "David Lisnard, candidat à la présidentielle, réélu à la tête de l'Association des maires de France",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/france/20261125-david-lisnard-candidat-%C3%A0-la-pr%C3%A9sidentielle-r%C3%A9%C3%A9lu-%C3%A0-la-t%C3%AAte-de-l-association-des-maires-de-france",
-     "dateMs": 1795614087000
-    },
-    {
-     "titre": "La Malaisie poursuit Google pour des contenus «nocifs» sur YouTube",
-     "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/asie-pacifique/20261125-la-malaisie-poursuit-google-pour-des-contenus-nocifs-sur-youtube",
-     "dateMs": 1795611837000
-    },
-    {
-     "titre": "Kilmar Ábrego García arrives in Spain, ending Trump deportation battle",
+     "titre": "Miami runway incident disrupts flights on Thanksgiving eve",
      "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/c6808pyy5dl9o?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1795610531000
+     "lien": "https://www.bbc.co.uk/news/articles/ckm2mz3prq77o?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1795698555000
     },
     {
-     "titre": "La Corée du Nord expulse un diplomate suisse après des sanctions contre un camp accusé de «russifier» des enfants ukrainiens",
+     "titre": "Naufrage d'un pétrolier au large d'Ibiza: l'Espagne se mobilise pour empêcher une marée noire",
      "source": "RFI",
-     "lien": "https://www.rfi.fr/fr/asie-pacifique/20261125-la-cor%C3%A9e-du-nord-expulse-un-diplomate-suisse-apr%C3%A8s-des-sanctions-contre-un-camp-accus%C3%A9-de-russifier-des-enfants-ukrainiens",
-     "dateMs": 1795610439000
+     "lien": "https://www.rfi.fr/fr/europe/20261126-naufrage-d-un-p%C3%A9trolier-au-large-d-ibiza-l-espagne-se-mobilise-pour-emp%C3%AAcher-une-mar%C3%A9e-noire",
+     "dateMs": 1795697735000
     },
     {
-     "titre": "Veteran Nigerian Nollywood actor Pete Edochie dies aged 79",
-     "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/cqwy0rr4rr4yo?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1795609452000
+     "titre": "Gaza : Israël menace de déplacer un million de Palestiniens si le Hamas ne désarme pas",
+     "source": "France 24",
+     "lien": "https://www.france24.com/fr/moyen-orient/20261126-gaza-isra%C3%ABl-menace-de-d%C3%A9placer-un-million-de-palestiniens-si-le-hamas-ne-d%C3%A9sarme-pas",
+     "dateMs": 1795696759000
     },
     {
-     "titre": "Russia's own figures show it has lost nearly 500,000 people in Ukraine war",
+     "titre": "Tributes for Duran Duran guitarist Andy Taylor after his death aged 65",
      "source": "BBC World",
-     "lien": "https://www.bbc.co.uk/news/articles/cmx27g533zwyo?at_medium=RSS&at_campaign=rss",
-     "dateMs": 1795609309000
+     "lien": "https://www.bbc.co.uk/news/articles/cmp3vk6vr44po?at_medium=RSS&at_campaign=rss",
+     "dateMs": 1795696403000
+    },
+    {
+     "titre": "En Grèce, le « mini Dubaï » de la Méditerranée, zone immobilière de luxe, fortement contaminé aux PFAS",
+     "source": "Le Monde International",
+     "lien": "https://www.lemonde.fr/les-decodeurs/article/2026/11/26/en-grece-le-mini-dubai-de-la-mediterranee-zone-immobiliere-de-luxe-fortement-contamine-aux-pfas_6815528_4355770.html",
+     "dateMs": 1795694415000
     }
    ]
   }
